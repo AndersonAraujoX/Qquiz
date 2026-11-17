@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'"
+  >
+  <title>Quantum Quiz Analytics — Top 10 &amp; Estatísticas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-badge" aria-hidden="true">Q</span>
+        <div>
+          <h1>Quiz Analytics</h1>
+          <p class="brand-subtitle" id="quiz-subtitle">Carregando dados...</p>
+        </div>
+      </div>
+
+      <div class="controls-bar" role="region" aria-label="Controles do painel">
+        <label class="control-group" for="dataset-select">
+          <span class="control-label">Arquivo (dados/)</span>
+          <select id="dataset-select" class="select-input" aria-label="Selecionar dataset do quiz">
+            <option value="">Carregando...</option>
+          </select>
+        </label>
+
+        <label class="control-group" for="sort-select">
+          <span class="control-label">Critério Top 10</span>
+          <select id="sort-select" class="select-input" aria-label="Critério de ordenação do ranking">
+            <option value="score">Pontuação (Score)</option>
+            <option value="sheet_rank">Acertos + Menor Tempo</option>
+          </select>
+        </label>
+
+        <label class="toggle-chip" for="include-zero-toggle">
+          <input type="checkbox" id="include-zero-toggle">
+          <span>Incluir 0 questões</span>
+        </label>
+
+        <button type="button" id="refresh-btn" class="btn btn-secondary" title="Recarregar dados">
+          Atualizar
+        </button>
+
+        <button type="button" id="export-csv-btn" class="btn btn-primary" title="Exportar ranking em CSV">
+          Exportar CSV
+        </button>
+
+        <button type="button" id="theme-toggle-btn" class="btn btn-ghost" aria-pressed="false" title="Alternar tema claro/escuro">
+          Tema
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container main-content">
+    <div id="status-banner" class="status-banner" role="status" aria-live="polite" hidden></div>
+
+    <section class="session-meta" id="session-meta" aria-label="Metadados da sessão"></section>
+
+    <section class="kpi-grid" id="kpi-grid" aria-label="Indicadores principais"></section>
+
+    <section class="section-block" aria-labelledby="heading-top10">
+      <div class="section-header">
+        <div>
+          <h2 id="heading-top10">Top 10 Melhores Alunos</h2>
+          <p class="section-desc" id="top10-desc">Pódio e classificação dos 10 melhores desempenhos.</p>
+        </div>
+        <span class="pill-badge" id="ranking-mode-badge">Ordenado por Pontuação</span>
+      </div>
+
+      <div class="podium-grid" id="podium-grid" aria-label="Pódio dos 3 primeiros colocados"></div>
+
+      <div class="card table-card">
+        <div class="table-responsive">
+          <table class="data-table" id="top10-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Aluno</th>
+                <th scope="col">Apelido</th>
+                <th scope="col" class="num">Pontuação</th>
+                <th scope="col">Acurácia</th>
+                <th scope="col" class="num">Acertos</th>
+                <th scope="col" class="num">Tempo Total</th>
+                <th scope="col">Dispositivo</th>
+              </tr>
+            </thead>
+            <tbody id="top10-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="heading-stats">
+      <div class="section-header">
+        <div>
+          <h2 id="heading-stats">Dados Estatísticos da Turma</h2>
+          <p class="section-desc">Distribuições, dispersão tempo × pontuação, análise descritiva e dificuldade por questão.</p>
+        </div>
+        <span class="pill-badge" id="correlation-badge">Correlação: --</span>
+      </div>
+
+      <div class="charts-grid">
+        <article class="card chart-card">
+          <h3>Distribuição de Acurácia (% de acertos)</h3>
+          <p class="chart-subtitle">Quantidade de alunos por faixa de acerto</p>
+          <div id="chart-accuracy-dist" class="chart-host"></div>
+        </article>
+
+        <article class="card chart-card">
+          <h3>Distribuição de Pontuação (Score)</h3>
+          <p class="chart-subtitle">Frequência de alunos por faixa de pontos</p>
+          <div id="chart-score-dist" class="chart-host"></div>
+        </article>
+
+        <article class="card chart-card chart-wide">
+          <h3>Dispersão: Tempo Total vs Pontuação</h3>
+          <p class="chart-subtitle">Relação entre rapidez e nota final (Top 10 em destaque)</p>
+          <div id="chart-scatter" class="chart-host"></div>
+        </article>
+      </div>
+
+      <div class="analytics-split">
+        <article class="card">
+          <div class="card-head-row">
+            <h3>Estatística Descritiva</h3>
+            <span class="muted-small" id="stats-sample-label">--</span>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table compact-table">
+              <thead>
+                <tr>
+                  <th scope="col">Métrica</th>
+                  <th scope="col" class="num">Média</th>
+                  <th scope="col" class="num">Mediana</th>
+                  <th scope="col" class="num">Desvio Padrão</th>
+                  <th scope="col" class="num">Q1 (25%)</th>
+                  <th scope="col" class="num">Q3 (75%)</th>
+                  <th scope="col" class="num">Mínimo</th>
+                  <th scope="col" class="num">Máximo</th>
+                </tr>
+              </thead>
+              <tbody id="descriptive-tbody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head-row">
+            <h3>Dispositivos e Navegadores</h3>
+            <span class="muted-small">Origem dos acessos</span>
+          </div>
+          <div id="device-breakdown-host" class="device-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="heading-questions">
+      <div class="section-header">
+        <div>
+          <h2 id="heading-questions">Desempenho por Questão</h2>
+          <p class="section-desc">Clique em uma questão para inspecionar o enunciado e os contadores detalhados.</p>
+        </div>
+        <div class="question-highlights" id="question-highlights"></div>
+      </div>
+
+      <div class="card">
+        <div id="questions-chart-host" class="questions-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="heading-all">
+      <div class="section-header">
+        <div>
+          <h2 id="heading-all">Classificação Completa</h2>
+          <p class="section-desc" id="all-count-desc">Todos os participantes filtrados.</p>
+        </div>
+        <label class="search-box" for="participant-search">
+          <span class="sr-only">Buscar aluno</span>
+          <input
+            type="search"
+            id="participant-search"
+            class="search-input"
+            placeholder="Filtrar por nome, apelido ou dispositivo..."
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <div class="card table-card">
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Rank Planilha</th>
+                <th scope="col">Aluno</th>
+                <th scope="col">Apelido</th>
+                <th scope="col" class="num">Pontuação</th>
+                <th scope="col">Acurácia</th>
+                <th scope="col" class="num">Acertos / Tent.</th>
+                <th scope="col" class="num">Tempo</th>
+                <th scope="col">Dispositivo</th>
+              </tr>
+            </thead>
+            <tbody id="all-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="question-dialog" class="modal-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header">
+      <h3 id="dialog-title">Detalhes da Questão</h3>
+      <button type="button" id="dialog-close-btn" class="btn btn-ghost" aria-label="Fechar janela">Fechar</button>
+    </div>
+    <div id="dialog-body" class="dialog-body"></div>
+  </dialog>
+
+  <div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden></div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
