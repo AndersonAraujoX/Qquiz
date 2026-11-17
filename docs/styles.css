@@ -234,16 +234,24 @@ body {
 }
 
 .brand-badge {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 14px;
-  background: var(--wg-magenta);
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: var(--wg-oat);
+  color: var(--wg-blackberry);
+  border: 2px solid var(--wg-magenta);
   box-shadow: 0 3px 0 var(--wg-magenta-press);
   display: grid;
   place-items: center;
+  padding: 3px;
   flex-shrink: 0;
+}
+
+.brand-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-title-row {

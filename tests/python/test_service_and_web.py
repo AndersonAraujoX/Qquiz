@@ -101,6 +101,8 @@ class TestQuizWebServer(unittest.TestCase):
         self._tmp = tempfile.TemporaryDirectory()
         static_dir = Path(self._tmp.name)
         (static_dir / "index.html").write_text("<html><body>Quiz</body></html>", encoding="utf-8")
+        (static_dir / "assets").mkdir()
+        (static_dir / "assets" / "icon.png").write_bytes(b"\x89PNG\r\n\x1a\nmockpng")
         (static_dir / "secret.env").write_text("SECRET=123", encoding="utf-8")
 
         self.mock_service = MagicMock(spec=QuizDashboardService)
@@ -168,6 +170,23 @@ class TestQuizWebServer(unittest.TestCase):
         with self.assertRaises(HTTPError) as ctx:
             urlopen(req)
         self.assertEqual(ctx.exception.code, 405)
+
+    def test_static_server_serves_allowlisted_png_icon_with_security_headers(self) -> None:
+        # Arrange
+        url = f"http://127.0.0.1:{self.port}/assets/icon.png"
+
+        # Act
+        with urlopen(url) as resp:
+            status = resp.status
+            content_type = resp.headers.get("Content-Type")
+            nosniff = resp.headers.get("X-Content-Type-Options")
+            body = resp.read()
+
+        # Assert
+        self.assertEqual(status, 200)
+        self.assertEqual(content_type, "image/png")
+        self.assertEqual(nosniff, "nosniff")
+        self.assertTrue(body.startswith(b"\x89PNG"))
 
     def test_static_server_blocks_non_allowlisted_extension_and_traversal(self) -> None:
         # Arrange / Act / Assert
