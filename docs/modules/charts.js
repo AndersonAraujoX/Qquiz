@@ -27,10 +27,18 @@ function attachTooltipHandlers(targetNode, tooltipEl, text) {
   targetNode.addEventListener("blur", hide);
 }
 
-export function renderBarChart(container, buckets, tooltipEl, { ariaLabel, barColor = "var(--accent)" } = {}) {
+export function renderBarChart(
+  container,
+  buckets,
+  tooltipEl,
+  { ariaLabel, barColor = "var(--accent)", doc = globalThis.document } = {}
+) {
+  if (!container) {
+    return;
+  }
   clear(container);
   if (!Array.isArray(buckets) || buckets.length === 0) {
-    const empty = document.createElement("p");
+    const empty = doc.createElement("p");
     empty.className = "muted-small";
     empty.textContent = "Sem dados suficientes para exibir distribuição.";
     container.appendChild(empty);
@@ -94,8 +102,8 @@ export function renderBarChart(container, buckets, tooltipEl, { ariaLabel, barCo
       x,
       y,
       width: barW,
-      height: Math.max(2, barH),
-      rx: 6,
+      height: Math.max(4, barH),
+      rx: 8,
       fill: barColor,
       tabindex: "0",
       "aria-label": `${bucket.label}: ${bucket.count} alunos (${formatPercent(bucket.percentage)})`,
@@ -142,14 +150,28 @@ export function renderBarChart(container, buckets, tooltipEl, { ariaLabel, barCo
   container.appendChild(svg);
 }
 
-export function renderScatterPlot(container, participants, top10Set, tooltipEl) {
+export function renderScatterPlot(
+  container,
+  participants,
+  top10Set,
+  tooltipEl,
+  {
+    top10Color = "var(--accent)",
+    otherColor = "var(--scatter-other, var(--peach-strong, #c27849))",
+    doc = globalThis.document,
+  } = {}
+) {
+  if (!container) {
+    return;
+  }
   clear(container);
+  const safeTop10Set = top10Set instanceof Set ? top10Set : new Set();
   const active = (Array.isArray(participants) ? participants : []).filter(
-    (p) => p.is_active && p.total_time_seconds > 0
+    (p) => p && p.is_active && p.total_time_seconds > 0
   );
 
   if (active.length === 0) {
-    const empty = document.createElement("p");
+    const empty = doc.createElement("p");
     empty.className = "muted-small";
     empty.textContent = "Sem registros com tempo maior que zero para dispersão.";
     container.appendChild(empty);
@@ -244,23 +266,23 @@ export function renderScatterPlot(container, participants, top10Set, tooltipEl) 
   );
 
   const ordered = [
-    ...active.filter((p) => !top10Set.has(p.rank)),
-    ...active.filter((p) => top10Set.has(p.rank)),
+    ...active.filter((p) => !safeTop10Set.has(p.rank)),
+    ...active.filter((p) => safeTop10Set.has(p.rank)),
   ];
 
   for (const p of ordered) {
-    const isTop10 = top10Set.has(p.rank);
+    const isTop10 = safeTop10Set.has(p.rank);
     const cx = pad.left + (p.total_time_seconds / maxTime) * plotW;
     const cy = pad.top + plotH - (p.score / maxScore) * plotH;
 
     const circle = svgEl("circle", {
       cx,
       cy,
-      r: isTop10 ? 6.5 : 4.5,
-      fill: isTop10 ? "var(--gold)" : "var(--accent-2)",
-      "fill-opacity": isTop10 ? "0.95" : "0.68",
-      stroke: isTop10 ? "var(--text)" : "none",
-      "stroke-width": isTop10 ? "1.5" : "0",
+      r: isTop10 ? 7 : 4.5,
+      fill: isTop10 ? top10Color : otherColor,
+      "fill-opacity": isTop10 ? "0.96" : "0.75",
+      stroke: isTop10 ? "var(--surface)" : "none",
+      "stroke-width": isTop10 ? "2" : "0",
       tabindex: "0",
       "aria-label": `#${p.rank} ${p.display_name}: ${formatNumber(p.score)} pts em ${formatSeconds(p.total_time_seconds)}`,
     });

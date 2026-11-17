@@ -14,6 +14,8 @@ import {
   formatSeconds,
   medalLabel,
 } from "./modules/formatters.js";
+import { TabController, normalizeTabId } from "./modules/tabs.js";
+import { ThemeController } from "./modules/theme.js";
 
 const api = new QuizApiClient();
 
@@ -398,7 +400,10 @@ function renderReport(report) {
   });
 
   const top10Set = new Set(report.top_10.map((p) => p.rank));
-  renderScatterPlot(dom.chartScatter, report.all_ranked, top10Set, dom.chartTooltip);
+  renderScatterPlot(dom.chartScatter, report.all_ranked, top10Set, dom.chartTooltip, {
+    top10Color: "var(--accent)",
+    otherColor: "var(--scatter-other)",
+  });
 
   renderDescriptiveStats(report);
   renderDevices(report.device_breakdown);
@@ -447,12 +452,20 @@ async function initDatasetsAndLoad({ forceRefresh = false } = {}) {
   }
 }
 
+const themeController = new ThemeController({
+  root: document.documentElement,
+  button: dom.themeToggleBtn,
+  storage: (() => {
+    try {
+      return window.localStorage;
+    } catch {
+      return null;
+    }
+  })(),
+});
+
 function toggleTheme() {
-  const root = document.documentElement;
-  const current = root.getAttribute("data-theme");
-  const next = current === "dark" ? "light" : "dark";
-  root.setAttribute("data-theme", next);
-  dom.themeToggleBtn.setAttribute("aria-pressed", String(next === "dark"));
+  themeController.toggle();
 }
 
 function exportCsv() {
@@ -503,5 +516,23 @@ function bindEvents() {
   });
 }
 
+themeController.init();
+const tabController = new TabController({
+  tabButtons: Array.from(document.querySelectorAll("[data-tab]")),
+  tabPanels: Array.from(document.querySelectorAll("[data-tab-panel]")),
+  initialTab: normalizeTabId(window.location.hash),
+  onChange: (tabId) => {
+    const nextHash = `#${tabId}`;
+    if (window.location.hash !== nextHash) {
+      history.replaceState(null, "", nextHash);
+    }
+  },
+});
+
+window.addEventListener("hashchange", () => {
+  tabController.activate(normalizeTabId(window.location.hash), { notify: false });
+});
+
+tabController.init();
 bindEvents();
 initDatasetsAndLoad();
