@@ -2,7 +2,7 @@
  * Main Quiz Analytics Dashboard controller (Static GitHub Pages compatible).
  */
 
-import { QuizApiClient } from "./modules/api_client.js";
+import { ALL_DATASETS_KEY, QuizApiClient } from "./modules/api_client.js";
 import { renderBarChart, renderScatterPlot } from "./modules/charts.js";
 import { clear, el } from "./modules/dom.js";
 import {
@@ -76,13 +76,14 @@ function setStatus(message, isError = false) {
 function renderSessionMeta(report) {
   clear(dom.sessionMeta);
   const details = report.details || {};
+  const isCombined = Array.isArray(details.quiz_titles) && details.quiz_titles.length > 1;
   const chips = [
-    ["Arquivo", report.filename],
+    [isCombined ? "Quizzes somados" : "Arquivo", isCombined ? details.quiz_titles.join(" + ") : report.filename],
     ["Tipo", details.game_type || "Quiz"],
     ["Início", details.game_started_on || "--"],
     ["Término", details.game_ended_on || "--"],
-    ["Participantes únicos (planilha)", String(details.reported_participants ?? "--")],
-    ["Total de linhas/tentativas", String(report.total_attempts_count)],
+    [isCombined ? "Participantes únicos (combinados)" : "Participantes únicos (planilha)", String(details.reported_participants ?? "--")],
+    ["Total de linhas/tentativas", String(details.total_raw_attempts ?? report.total_attempts_count)],
   ];
   for (const [label, value] of chips) {
     dom.sessionMeta.appendChild(
@@ -155,6 +156,16 @@ function renderPodium(top10) {
   }
 
   for (const student of top3) {
+    const subParts = [];
+    if (student.player_name && student.player_name !== student.display_name) {
+      subParts.push(`Apelido: ${student.player_name}`);
+    } else if (!student.total_quizzes || student.total_quizzes <= 1) {
+      subParts.push(`Rank na planilha: #${student.sheet_rank}`);
+    }
+    if (student.total_quizzes > 1) {
+      subParts.push(`${student.quizzes_count}/${student.total_quizzes} quizzes`);
+    }
+
     dom.podiumGrid.appendChild(
       el("article", { className: `podium-card rank-${student.rank}` }, [
         el("div", { className: "podium-top" }, [
@@ -164,9 +175,7 @@ function renderPodium(top10) {
         el("h3", { className: "podium-name", text: student.display_name }),
         el("span", {
           className: "podium-nick",
-          text: student.player_name && student.player_name !== student.display_name
-            ? `Apelido: ${student.player_name}`
-            : `Rank na planilha: #${student.sheet_rank}`,
+          text: subParts.join(" · "),
         }),
         el("div", { className: "podium-metrics" }, [
           el("span", { text: `Acurácia: ${formatPercent(student.accuracy_percent)}` }),
@@ -439,11 +448,22 @@ async function initDatasetsAndLoad({ forceRefresh = false } = {}) {
       return;
     }
 
+    if (datasets.length > 1) {
+      dom.datasetSelect.appendChild(
+        el("option", {
+          attrs: { value: ALL_DATASETS_KEY },
+          text: `Soma Geral (${datasets.length} quizzes)`,
+        })
+      );
+    }
+
     for (const file of datasets) {
       dom.datasetSelect.appendChild(el("option", { attrs: { value: file }, text: file }));
     }
-    if (!state.selectedFile || !datasets.includes(state.selectedFile)) {
-      state.selectedFile = datasets[0];
+
+    const validChoices = datasets.length > 1 ? [ALL_DATASETS_KEY, ...datasets] : datasets;
+    if (!state.selectedFile || !validChoices.includes(state.selectedFile)) {
+      state.selectedFile = datasets.length > 1 ? ALL_DATASETS_KEY : datasets[0];
     }
     dom.datasetSelect.value = state.selectedFile;
     await loadReport({ forceRefresh });
@@ -475,7 +495,9 @@ function exportCsv() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `ranking-${state.report.filename.replace(/\.xlsx$/i, "")}.csv`;
+  const rawStem = state.report.filename.replace(/\.xlsx$/i, "");
+  const safeStem = rawStem.replace(/[^A-Za-z0-9._-]+/g, "-").replace(/^-+|-+$/g, "") || "quiz";
+  link.download = `ranking-${safeStem}.csv`;
   document.body.appendChild(link);
   link.click();
   link.remove();

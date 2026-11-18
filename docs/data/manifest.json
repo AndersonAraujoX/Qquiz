@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T12:34:56.722181+00:00",
+  "generated_at": "2026-11-18T14:26:00.371807+00:00",
   "datasets": [
     {
       "filename": "QuantumComputingSchool-2026-11-16.xlsx",
@@ -7,6 +7,13 @@
       "title": "QuantumComputingSchool-2026-11-16",
       "total_attempts": 73,
       "active_participants": 67
+    },
+    {
+      "filename": "Quantumcomputignschool2ndday-2026-11-18.xlsx",
+      "data_file": "Quantumcomputignschool2ndday-2026-11-18.json",
+      "title": "Quantumcomputignschool2ndday-2026-11-18",
+      "total_attempts": 50,
+      "active_participants": 48
     }
   ]
 }

@@ -5,6 +5,8 @@ import {
   buildAnalyticsReport,
   computeDescriptiveStats,
   computePearsonCorrelation,
+  mergeDatasets,
+  normalizeParticipantKey,
 } from "../../docs/modules/analytics.js";
 
 test("computeDescriptiveStats handles empty, single, and multi-element arrays", () => {
@@ -92,4 +94,135 @@ test("buildAnalyticsReport throws on invalid dataset or unsupported sortBy", () 
     () => buildAnalyticsReport({ participants: [] }, { sortBy: "bad" }),
     Error
   );
+});
+
+test("normalizeParticipantKey normalizes accents, case, extra spaces, and reconnect asterisks", () => {
+  // Arrange / Act / Assert
+  assert.equal(normalizeParticipantKey({ display_name: "Kevin Martínez" }), "kevin martinez");
+  assert.equal(normalizeParticipantKey({ display_name: "  kevin   martinez*** " }), "kevin martinez");
+  assert.equal(normalizeParticipantKey({ display_name: "", player_name: "L*" }), "l");
+  assert.equal(normalizeParticipantKey(null), "");
+  assert.equal(normalizeParticipantKey({ display_name: "   " }), "");
+});
+
+test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and identifies 1st place", () => {
+  // Arrange
+  const day1 = {
+    filename: "Day1.xlsx",
+    details: { game_started_on: "Mon 16", game_ended_on: "Mon 16" },
+    participants: [
+      {
+        sheet_rank: 1,
+        display_name: "Pedro Marques",
+        player_name: "Pedro Marques",
+        attempted_questions: 8,
+        accuracy_percent: 100,
+        score: 6330,
+        correct: 8,
+        total_time_seconds: 219,
+        device_info: "Chrome",
+      },
+      {
+        sheet_rank: 2,
+        display_name: "Kevin Martinez",
+        player_name: "Kevin Martinez",
+        attempted_questions: 8,
+        accuracy_percent: 62.5,
+        score: 4590,
+        correct: 5,
+        total_time_seconds: 100,
+        device_info: "Chrome",
+      },
+      {
+        sheet_rank: 3,
+        display_name: "Nathália Ferino",
+        player_name: "Nathália Ferino***",
+        attempted_questions: 6,
+        accuracy_percent: 16.7,
+        score: 740,
+        correct: 1,
+        total_time_seconds: 179,
+        device_info: "Safari",
+      },
+      {
+        sheet_rank: 4,
+        display_name: "Nathália Ferino",
+        player_name: "Nathália Ferino",
+        attempted_questions: 0,
+        accuracy_percent: 0,
+        score: 0,
+        correct: 0,
+        total_time_seconds: 0,
+        device_info: "Safari",
+      },
+    ],
+    questions: [{ number: 1, question_text: "Qubit?", accuracy_percent: 80, average_time_seconds: 20 }],
+  };
+
+  const day2 = {
+    filename: "Day2.xlsx",
+    details: { game_started_on: "Wed 18", game_ended_on: "Wed 18" },
+    participants: [
+      {
+        sheet_rank: 1,
+        display_name: "Pedro Marques",
+        player_name: "Pedro Marques",
+        attempted_questions: 8,
+        accuracy_percent: 100,
+        score: 5080,
+        correct: 8,
+        total_time_seconds: 274,
+        device_info: "Chrome",
+      },
+      {
+        sheet_rank: 2,
+        display_name: "Kevin Martínez",
+        player_name: "Kevin Martínez",
+        attempted_questions: 8,
+        accuracy_percent: 75,
+        score: 4930,
+        correct: 6,
+        total_time_seconds: 107,
+        device_info: "Firefox",
+      },
+      {
+        sheet_rank: 3,
+        display_name: "Arthur Kenzo",
+        player_name: "ArtKenzo",
+        attempted_questions: 8,
+        accuracy_percent: 100,
+        score: 5780,
+        correct: 8,
+        total_time_seconds: 163,
+        device_info: "Chrome",
+      },
+    ],
+    questions: [{ number: 1, question_text: "Entanglement?", accuracy_percent: 60, average_time_seconds: 25 }],
+  };
+
+  // Act
+  const merged = mergeDatasets([day1, day2]);
+  const report = buildAnalyticsReport(merged, { sortBy: "score" });
+
+  // Assert
+  assert.equal(report.top_10.length, 4);
+  assert.equal(report.highlights.leader_name, "Pedro Marques");
+  assert.equal(report.highlights.leader_score, 11410);
+  const kevin = report.all_ranked.find((p) => p.display_name.startsWith("Kevin"));
+  assert.equal(kevin.score, 9520);
+  assert.equal(kevin.correct, 11);
+  assert.equal(kevin.attempted_questions, 16);
+  assert.equal(kevin.quizzes_count, 2);
+  const nathalia = report.all_ranked.find((p) => p.display_name.startsWith("Nathália"));
+  assert.equal(nathalia.score, 740);
+  assert.equal(nathalia.quizzes_count, 1);
+  assert.equal(report.questions.length, 2);
+  assert.equal(report.score_distribution.length, 5);
+});
+
+test("mergeDatasets throws TypeError on empty or invalid datasets", () => {
+  // Arrange / Act / Assert
+  assert.throws(() => mergeDatasets([]), TypeError);
+  assert.throws(() => mergeDatasets(null), TypeError);
+  assert.throws(() => mergeDatasets([null]), TypeError);
 });

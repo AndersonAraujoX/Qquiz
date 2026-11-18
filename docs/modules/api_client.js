@@ -3,9 +3,10 @@
  * Works directly on GitHub Pages without requiring a backend server.
  */
 
-import { buildAnalyticsReport } from "./analytics.js";
+import { buildAnalyticsReport, mergeDatasets } from "./analytics.js";
 
 const SAFE_DATA_FILE_RE = /^[A-Za-z0-9._-]+\.json$/;
+export const ALL_DATASETS_KEY = "__ALL__";
 
 export class QuizApiClient {
   constructor(fetchFn = (...args) => globalThis.fetch(...args), { basePath = "./data" } = {}) {
@@ -37,17 +38,7 @@ export class QuizApiClient {
     return this._manifestCache.map((entry) => entry.filename);
   }
 
-  async fetchReport({ file = "", sortBy = "score", includeZero = false, forceRefresh = false } = {}) {
-    if (forceRefresh) {
-      this._manifestCache = null;
-      this._datasetCache.clear();
-    }
-    await this.listDatasets();
-
-    const entry = file
-      ? this._manifestCache.find((item) => item.filename === file)
-      : this._manifestCache[0];
-
+  async _loadDatasetByEntry(entry) {
     if (!entry) {
       throw new Error("Dataset solicitado não encontrado.");
     }
@@ -67,6 +58,38 @@ export class QuizApiClient {
       dataset = await this._parseJson(response);
       this._datasetCache.set(entry.data_file, dataset);
     }
+    return dataset;
+  }
+
+  async fetchReport({ file = "", sortBy = "score", includeZero = false, forceRefresh = false } = {}) {
+    if (forceRefresh) {
+      this._manifestCache = null;
+      this._datasetCache.clear();
+    }
+    await this.listDatasets();
+
+    if (this._manifestCache.length === 0) {
+      throw new Error("Nenhum dataset disponível.");
+    }
+
+    if (file === ALL_DATASETS_KEY) {
+      const datasets = await Promise.all(
+        this._manifestCache.map((entry) => this._loadDatasetByEntry(entry))
+      );
+      const combined = mergeDatasets(datasets, {
+        includeZeroAttempts: includeZero,
+      });
+      return buildAnalyticsReport(combined, {
+        sortBy,
+        includeZeroAttempts: includeZero,
+      });
+    }
+
+    const entry = file
+      ? this._manifestCache.find((item) => item.filename === file)
+      : this._manifestCache[0];
+
+    const dataset = await this._loadDatasetByEntry(entry);
 
     return buildAnalyticsReport(dataset, {
       sortBy,
