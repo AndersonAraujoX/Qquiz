@@ -63,6 +63,8 @@ test("normalizeTheme, computeNextTheme, and formatThemeButtonLabel handle valid 
 
   assert.equal(formatThemeButtonLabel("dark"), "Tema: Escuro");
   assert.equal(formatThemeButtonLabel("light"), "Tema: Claro");
+  assert.equal(formatThemeButtonLabel("dark", "en"), "Theme: Dark");
+  assert.equal(formatThemeButtonLabel("light", "en"), "Theme: Light");
 });
 
 test("resolveInitialTheme prioritizes valid stored preference and falls back to media query", () => {

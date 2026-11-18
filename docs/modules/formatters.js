@@ -20,11 +20,12 @@ export function formatPercent(value) {
   return `${Number.isInteger(rounded) ? rounded.toFixed(0) : rounded.toFixed(1)}%`;
 }
 
-export function formatNumber(value) {
+export function formatNumber(value, locale = "pt") {
   if (typeof value !== "number" || !Number.isFinite(value)) {
     return "0";
   }
-  return new Intl.NumberFormat("pt-BR", {
+  const intlLocale = locale === "en" ? "en-US" : "pt-BR";
+  return new Intl.NumberFormat(intlLocale, {
     maximumFractionDigits: 2,
   }).format(value);
 }
@@ -38,7 +39,13 @@ export function accuracyTierClass(accuracyPercent) {
   return "low";
 }
 
-export function medalLabel(rank) {
+export function medalLabel(rank, locale = "pt") {
+  if (locale === "en") {
+    if (rank === 1) return "1st Place · Gold";
+    if (rank === 2) return "2nd Place · Silver";
+    if (rank === 3) return "3rd Place · Bronze";
+    return `${rank}th Place`;
+  }
   if (rank === 1) return "1º Lugar · Ouro";
   if (rank === 2) return "2º Lugar · Prata";
   if (rank === 3) return "3º Lugar · Bronze";
@@ -69,19 +76,33 @@ export function sanitizeCsvCell(value) {
   return `"${escaped}"`;
 }
 
-export function buildRankingCsv(participants) {
-  const headers = [
-    "Rank",
-    "Rank Planilha",
-    "Aluno",
-    "Apelido",
-    "Pontuacao",
-    "Acuracia (%)",
-    "Acertos",
-    "Tentativas",
-    "Tempo (s)",
-    "Dispositivo",
-  ];
+export function buildRankingCsv(participants, locale = "pt") {
+  const headers =
+    locale === "en"
+      ? [
+          "Rank",
+          "Sheet Rank",
+          "Student",
+          "Nickname",
+          "Score",
+          "Accuracy (%)",
+          "Correct",
+          "Attempted",
+          "Time (s)",
+          "Device",
+        ]
+      : [
+          "Rank",
+          "Rank Planilha",
+          "Aluno",
+          "Apelido",
+          "Pontuacao",
+          "Acuracia (%)",
+          "Acertos",
+          "Tentativas",
+          "Tempo (s)",
+          "Dispositivo",
+        ];
   const lines = [headers.map(sanitizeCsvCell).join(",")];
   for (const p of Array.isArray(participants) ? participants : []) {
     lines.push(

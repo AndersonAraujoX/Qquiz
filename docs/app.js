@@ -14,6 +14,7 @@ import {
   formatSeconds,
   medalLabel,
 } from "./modules/formatters.js";
+import { LocaleController, applyStaticTranslations, t } from "./modules/i18n.js";
 import { TabController, normalizeTabId } from "./modules/tabs.js";
 import { ThemeController } from "./modules/theme.js";
 
@@ -25,6 +26,7 @@ const state = {
   sortBy: "score",
   includeZero: false,
   searchQuery: "",
+  locale: "pt",
   report: null,
 };
 
@@ -35,6 +37,7 @@ const dom = {
   includeZeroToggle: document.getElementById("include-zero-toggle"),
   refreshBtn: document.getElementById("refresh-btn"),
   exportCsvBtn: document.getElementById("export-csv-btn"),
+  langToggleBtn: document.getElementById("lang-toggle-btn"),
   themeToggleBtn: document.getElementById("theme-toggle-btn"),
   statusBanner: document.getElementById("status-banner"),
   sessionMeta: document.getElementById("session-meta"),
@@ -61,6 +64,14 @@ const dom = {
   chartTooltip: document.getElementById("chart-tooltip"),
 };
 
+function getSafeStorage() {
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
 function setStatus(message, isError = false) {
   if (!message) {
     dom.statusBanner.hidden = true;
@@ -73,17 +84,71 @@ function setStatus(message, isError = false) {
   dom.statusBanner.classList.toggle("error", Boolean(isError));
 }
 
+function renderDatasetSelectOptions() {
+  clear(dom.datasetSelect);
+  if (state.datasets.length === 0) {
+    dom.datasetSelect.appendChild(
+      el("option", { value: "", text: t(state.locale, "noDatasetOption") })
+    );
+    return;
+  }
+
+  if (state.datasets.length > 1) {
+    dom.datasetSelect.appendChild(
+      el("option", {
+        attrs: { value: ALL_DATASETS_KEY },
+        text: t(state.locale, "combinedOption", { count: state.datasets.length }),
+      })
+    );
+  }
+
+  for (const file of state.datasets) {
+    dom.datasetSelect.appendChild(el("option", { attrs: { value: file }, text: file }));
+  }
+
+  const validChoices =
+    state.datasets.length > 1 ? [ALL_DATASETS_KEY, ...state.datasets] : state.datasets;
+  if (!state.selectedFile || !validChoices.includes(state.selectedFile)) {
+    state.selectedFile = state.datasets.length > 1 ? ALL_DATASETS_KEY : state.datasets[0];
+  }
+  dom.datasetSelect.value = state.selectedFile;
+}
+
+function resolveDisplayFilename(report) {
+  const count = Number(report.details?.dataset_count);
+  if (count > 1) {
+    return t(state.locale, "combinedFilename", { count });
+  }
+  return report.filename;
+}
+
+function resolveDisplayGameType(report) {
+  if (Number(report.details?.dataset_count) > 1) {
+    return t(state.locale, "combinedGameType");
+  }
+  return report.details?.game_type || "Quiz";
+}
+
 function renderSessionMeta(report) {
   clear(dom.sessionMeta);
   const details = report.details || {};
   const isCombined = Array.isArray(details.quiz_titles) && details.quiz_titles.length > 1;
   const chips = [
-    [isCombined ? "Quizzes somados" : "Arquivo", isCombined ? details.quiz_titles.join(" + ") : report.filename],
-    ["Tipo", details.game_type || "Quiz"],
-    ["Início", details.game_started_on || "--"],
-    ["Término", details.game_ended_on || "--"],
-    [isCombined ? "Participantes únicos (combinados)" : "Participantes únicos (planilha)", String(details.reported_participants ?? "--")],
-    ["Total de linhas/tentativas", String(details.total_raw_attempts ?? report.total_attempts_count)],
+    [
+      isCombined ? t(state.locale, "metaQuizzesSummed") : t(state.locale, "metaFile"),
+      isCombined ? details.quiz_titles.join(" + ") : report.filename,
+    ],
+    [t(state.locale, "metaType"), resolveDisplayGameType(report)],
+    [t(state.locale, "metaStarted"), details.game_started_on || "--"],
+    [t(state.locale, "metaEnded"), details.game_ended_on || "--"],
+    [
+      isCombined ? t(state.locale, "metaUniqueCombined") : t(state.locale, "metaUniqueSheet"),
+      String(details.reported_participants ?? "--"),
+    ],
+    [
+      t(state.locale, "metaAttempts"),
+      String(details.total_raw_attempts ?? report.total_attempts_count),
+    ],
   ];
   for (const [label, value] of chips) {
     dom.sessionMeta.appendChild(
@@ -98,39 +163,50 @@ function renderSessionMeta(report) {
 function renderKpis(report) {
   clear(dom.kpiGrid);
   const h = report.highlights || {};
+  const lang = state.locale;
   const zeroCount = report.total_attempts_count - report.active_participants_count;
   const kpis = [
     {
-      label: "Alunos Analisados",
+      label: t(lang, "kpiStudents"),
       value: String(report.filtered_count),
-      sub: `${report.active_participants_count} ativos · ${zeroCount} com 0 questões`,
+      sub: t(lang, "kpiStudentsSub", {
+        active: report.active_participants_count,
+        zero: zeroCount,
+      }),
     },
     {
-      label: "Acurácia da Turma",
+      label: t(lang, "kpiClassAcc"),
       value: formatPercent(report.details?.class_accuracy_percent ?? report.accuracy_stats.mean),
-      sub: `Mediana individual: ${formatPercent(report.accuracy_stats.median)}`,
+      sub: t(lang, "kpiClassAccSub", { median: formatPercent(report.accuracy_stats.median) }),
     },
     {
-      label: "Pontuação Média",
-      value: formatNumber(report.score_stats.mean),
-      sub: `Mediana: ${formatNumber(report.score_stats.median)} · Máx: ${formatNumber(report.score_stats.max_value)}`,
+      label: t(lang, "kpiMeanScore"),
+      value: formatNumber(report.score_stats.mean, lang),
+      sub: t(lang, "kpiMeanScoreSub", {
+        median: formatNumber(report.score_stats.median, lang),
+        max: formatNumber(report.score_stats.max_value, lang),
+      }),
     },
     {
-      label: "Tempo Médio Ativo",
+      label: t(lang, "kpiMeanTime"),
       value: formatSeconds(report.time_stats.mean),
-      sub: `Mediana: ${formatSeconds(report.time_stats.median)}`,
+      sub: t(lang, "kpiMeanTimeSub", { median: formatSeconds(report.time_stats.median) }),
     },
     {
-      label: "Líder Geral",
+      label: t(lang, "kpiLeader"),
       value: h.leader_name ? String(h.leader_name) : "--",
-      sub: h.leader_score !== undefined
-        ? `${formatNumber(Number(h.leader_score))} pts (${formatPercent(Number(h.leader_accuracy || 0))})`
-        : "Sem registros",
+      sub:
+        h.leader_score !== undefined
+          ? t(lang, "kpiLeaderSub", {
+              score: formatNumber(Number(h.leader_score), lang),
+              acc: formatPercent(Number(h.leader_accuracy || 0)),
+            })
+          : t(lang, "kpiNoRecords"),
     },
     {
-      label: "Notas ≥ 70% / 100%",
+      label: t(lang, "kpiThresholds"),
       value: `${h.above_70_percent_count ?? 0} / ${h.perfect_scores_count ?? 0}`,
-      sub: "Acima de 70% / gabaritaram",
+      sub: t(lang, "kpiThresholdsSub"),
     },
   ];
 
@@ -147,10 +223,11 @@ function renderKpis(report) {
 
 function renderPodium(top10) {
   clear(dom.podiumGrid);
+  const lang = state.locale;
   const top3 = top10.slice(0, 3);
   if (top3.length === 0) {
     dom.podiumGrid.appendChild(
-      el("p", { className: "muted-small", text: "Nenhum aluno encontrado para o pódio." })
+      el("p", { className: "muted-small", text: t(lang, "podiumEmpty") })
     );
     return;
   }
@@ -158,19 +235,27 @@ function renderPodium(top10) {
   for (const student of top3) {
     const subParts = [];
     if (student.player_name && student.player_name !== student.display_name) {
-      subParts.push(`Apelido: ${student.player_name}`);
+      subParts.push(t(lang, "podiumNickname", { nick: student.player_name }));
     } else if (!student.total_quizzes || student.total_quizzes <= 1) {
-      subParts.push(`Rank na planilha: #${student.sheet_rank}`);
+      subParts.push(t(lang, "podiumSheetRank", { rank: student.sheet_rank }));
     }
     if (student.total_quizzes > 1) {
-      subParts.push(`${student.quizzes_count}/${student.total_quizzes} quizzes`);
+      subParts.push(
+        t(lang, "podiumQuizzes", {
+          count: student.quizzes_count,
+          total: student.total_quizzes,
+        })
+      );
     }
 
     dom.podiumGrid.appendChild(
       el("article", { className: `podium-card rank-${student.rank}` }, [
         el("div", { className: "podium-top" }, [
-          el("span", { className: "medal-pill", text: medalLabel(student.rank) }),
-          el("span", { className: "podium-score", text: `${formatNumber(student.score)} pts` }),
+          el("span", { className: "medal-pill", text: medalLabel(student.rank, lang) }),
+          el("span", {
+            className: "podium-score",
+            text: `${formatNumber(student.score, lang)} ${t(lang, "chartPointsUnit")}`,
+          }),
         ]),
         el("h3", { className: "podium-name", text: student.display_name }),
         el("span", {
@@ -178,9 +263,18 @@ function renderPodium(top10) {
           text: subParts.join(" · "),
         }),
         el("div", { className: "podium-metrics" }, [
-          el("span", { text: `Acurácia: ${formatPercent(student.accuracy_percent)}` }),
-          el("span", { text: `Acertos: ${student.correct}/${student.attempted_questions}` }),
-          el("span", { text: `Tempo: ${formatSeconds(student.total_time_seconds)}` }),
+          el("span", {
+            text: t(lang, "podiumAcc", { value: formatPercent(student.accuracy_percent) }),
+          }),
+          el("span", {
+            text: t(lang, "podiumHits", {
+              correct: student.correct,
+              attempted: student.attempted_questions,
+            }),
+          }),
+          el("span", {
+            text: t(lang, "podiumTime", { value: formatSeconds(student.total_time_seconds) }),
+          }),
         ]),
       ])
     );
@@ -201,10 +295,11 @@ function buildAccuracyCell(accuracyPercent) {
 
 function renderTop10Table(report) {
   clear(dom.top10Tbody);
+  const lang = state.locale;
   dom.rankingModeBadge.textContent =
     report.sort_by === "sheet_rank"
-      ? "Ordenado por Acertos + Menor Tempo"
-      : "Ordenado por Pontuação (Score)";
+      ? t(lang, "rankingModeSheet")
+      : t(lang, "rankingModeScore");
 
   for (const p of report.top_10) {
     const rankClass = p.rank <= 3 ? `rank-badge top-${p.rank}` : "rank-badge";
@@ -212,7 +307,7 @@ function renderTop10Table(report) {
       el("td", {}, [el("span", { className: rankClass, text: String(p.rank) })]),
       el("td", {}, [el("strong", { text: p.display_name })]),
       el("td", { text: p.player_name || "--" }),
-      el("td", { className: "num", text: formatNumber(p.score) }),
+      el("td", { className: "num", text: formatNumber(p.score, lang) }),
       buildAccuracyCell(p.accuracy_percent),
       el("td", { className: "num", text: `${p.correct}/${p.attempted_questions}` }),
       el("td", { className: "num", text: formatSeconds(p.total_time_seconds) }),
@@ -224,20 +319,30 @@ function renderTop10Table(report) {
 
 function renderDescriptiveStats(report) {
   clear(dom.descriptiveTbody);
-  dom.statsSampleLabel.textContent = `Amostra: ${report.filtered_count} registros`;
+  const lang = state.locale;
+  dom.statsSampleLabel.textContent = t(lang, "sampleLabel", { count: report.filtered_count });
 
   const corr = report.time_score_correlation;
   if (corr === null || corr === undefined) {
-    dom.correlationBadge.textContent = "Correlação Tempo × Score: N/D";
+    dom.correlationBadge.textContent = t(lang, "corrUnavailable");
   } else {
-    const direction = corr < -0.2 ? "negativa (mais rápido = maior nota)" : corr > 0.2 ? "positiva" : "fraca";
-    dom.correlationBadge.textContent = `Correlação Tempo × Score: r = ${corr.toFixed(2)} (${direction})`;
+    const dir =
+      corr < -0.2
+        ? t(lang, "corrNeg")
+        : corr > 0.2
+          ? t(lang, "corrPos")
+          : t(lang, "corrWeak");
+    dom.correlationBadge.textContent = t(lang, "corrLabel", {
+      r: corr.toFixed(2),
+      dir,
+    });
   }
 
+  const fmtNum = (v) => formatNumber(v, lang);
   const rows = [
-    { label: "Pontuação (Score)", stats: report.score_stats, fmt: formatNumber },
-    { label: "Acurácia (%)", stats: report.accuracy_stats, fmt: formatPercent },
-    { label: "Tempo Total", stats: report.time_stats, fmt: formatSeconds },
+    { label: t(lang, "metricScore"), stats: report.score_stats, fmt: fmtNum },
+    { label: t(lang, "metricAccuracy"), stats: report.accuracy_stats, fmt: formatPercent },
+    { label: t(lang, "metricTime"), stats: report.time_stats, fmt: formatSeconds },
   ];
 
   for (const { label, stats, fmt } of rows) {
@@ -260,7 +365,7 @@ function renderDevices(breakdown) {
   clear(dom.deviceBreakdownHost);
   if (!Array.isArray(breakdown) || breakdown.length === 0) {
     dom.deviceBreakdownHost.appendChild(
-      el("p", { className: "muted-small", text: "Sem dados de dispositivos." })
+      el("p", { className: "muted-small", text: t(state.locale, "noDevices") })
     );
     return;
   }
@@ -280,30 +385,34 @@ function renderDevices(breakdown) {
 }
 
 function openQuestionDialog(q) {
-  dom.dialogTitle.textContent = `Questão ${q.number} · ${q.question_type}`;
+  const lang = state.locale;
+  dom.dialogTitle.textContent = t(lang, "questionDialogTitle", {
+    number: q.number,
+    type: q.question_type,
+  });
   clear(dom.dialogBody);
 
   dom.dialogBody.appendChild(el("p", { text: q.question_text }));
   dom.dialogBody.appendChild(
     el("div", { className: "dialog-metrics" }, [
       el("div", { className: "dialog-metric-box" }, [
-        el("div", { className: "kpi-label", text: "Acurácia" }),
+        el("div", { className: "kpi-label", text: t(lang, "qAcc") }),
         el("strong", { text: formatPercent(q.accuracy_percent) }),
       ]),
       el("div", { className: "dialog-metric-box" }, [
-        el("div", { className: "kpi-label", text: "Tempo Médio" }),
+        el("div", { className: "kpi-label", text: t(lang, "qAvgTime") }),
         el("strong", { text: formatSeconds(q.average_time_seconds) }),
       ]),
       el("div", { className: "dialog-metric-box" }, [
-        el("div", { className: "kpi-label", text: "Corretas" }),
+        el("div", { className: "kpi-label", text: t(lang, "qCorrect") }),
         el("strong", { text: String(q.correct_count) }),
       ]),
       el("div", { className: "dialog-metric-box" }, [
-        el("div", { className: "kpi-label", text: "Incorretas" }),
+        el("div", { className: "kpi-label", text: t(lang, "qIncorrect") }),
         el("strong", { text: String(q.incorrect_count) }),
       ]),
       el("div", { className: "dialog-metric-box" }, [
-        el("div", { className: "kpi-label", text: "Não tentadas" }),
+        el("div", { className: "kpi-label", text: t(lang, "qUnattempted") }),
         el("strong", { text: String(q.unattempted_count) }),
       ]),
     ])
@@ -317,12 +426,16 @@ function openQuestionDialog(q) {
 function renderQuestions(report) {
   clear(dom.questionHighlights);
   clear(dom.questionsChartHost);
+  const lang = state.locale;
 
   if (report.easiest_question) {
     dom.questionHighlights.appendChild(
       el("span", {
         className: "highlight-tag easy",
-        text: `Mais fácil: Q${report.easiest_question.number} (${formatPercent(report.easiest_question.accuracy_percent)})`,
+        text: t(lang, "easiestQuestion", {
+          number: report.easiest_question.number,
+          acc: formatPercent(report.easiest_question.accuracy_percent),
+        }),
       })
     );
   }
@@ -330,14 +443,17 @@ function renderQuestions(report) {
     dom.questionHighlights.appendChild(
       el("span", {
         className: "highlight-tag hard",
-        text: `Mais difícil: Q${report.hardest_question.number} (${formatPercent(report.hardest_question.accuracy_percent)})`,
+        text: t(lang, "hardestQuestion", {
+          number: report.hardest_question.number,
+          acc: formatPercent(report.hardest_question.accuracy_percent),
+        }),
       })
     );
   }
 
   if (!Array.isArray(report.questions) || report.questions.length === 0) {
     dom.questionsChartHost.appendChild(
-      el("p", { className: "muted-small", text: "Nenhuma questão encontrada na aba Overview." })
+      el("p", { className: "muted-small", text: t(lang, "noQuestions") })
     );
     return;
   }
@@ -351,7 +467,7 @@ function renderQuestions(report) {
       "button",
       {
         className: "question-row-btn",
-        attrs: { type: "button", title: "Clique para ver detalhes da questão" },
+        attrs: { type: "button", title: t(lang, "questionClickTitle") },
         onClick: () => openQuestionDialog(q),
       },
       [
@@ -370,8 +486,12 @@ function renderQuestions(report) {
 
 function renderAllParticipantsTable(report) {
   clear(dom.allTbody);
+  const lang = state.locale;
   const filtered = filterParticipants(report.all_ranked, state.searchQuery);
-  dom.allCountDesc.textContent = `Exibindo ${filtered.length} de ${report.all_ranked.length} participantes.`;
+  dom.allCountDesc.textContent = t(lang, "allCountDesc", {
+    shown: filtered.length,
+    total: report.all_ranked.length,
+  });
 
   for (const p of filtered) {
     dom.allTbody.appendChild(
@@ -380,7 +500,7 @@ function renderAllParticipantsTable(report) {
         el("td", { text: `#${p.sheet_rank}` }),
         el("td", {}, [el("strong", { text: p.display_name })]),
         el("td", { text: p.player_name || "--" }),
-        el("td", { className: "num", text: formatNumber(p.score) }),
+        el("td", { className: "num", text: formatNumber(p.score, lang) }),
         buildAccuracyCell(p.accuracy_percent),
         el("td", { className: "num", text: `${p.correct} / ${p.attempted_questions}` }),
         el("td", { className: "num", text: formatSeconds(p.total_time_seconds) }),
@@ -392,7 +512,8 @@ function renderAllParticipantsTable(report) {
 
 function renderReport(report) {
   state.report = report;
-  dom.quizSubtitle.textContent = `${report.filename} · ${report.details?.game_type || "Quiz"}`;
+  const lang = state.locale;
+  dom.quizSubtitle.textContent = `${resolveDisplayFilename(report)} · ${resolveDisplayGameType(report)}`;
 
   renderSessionMeta(report);
   renderKpis(report);
@@ -400,18 +521,28 @@ function renderReport(report) {
   renderTop10Table(report);
 
   renderBarChart(dom.chartAccuracyDist, report.accuracy_distribution, dom.chartTooltip, {
-    ariaLabel: "Distribuição de acurácia em porcentagem",
+    ariaLabel: t(lang, "chartAccAria"),
     barColor: "var(--success)",
+    emptyText: t(lang, "chartBarEmpty"),
+    studentsUnit: t(lang, "chartStudentsUnit"),
   });
   renderBarChart(dom.chartScoreDist, report.score_distribution, dom.chartTooltip, {
-    ariaLabel: "Distribuição de pontuação",
+    ariaLabel: t(lang, "chartScoreAria"),
     barColor: "var(--accent)",
+    emptyText: t(lang, "chartBarEmpty"),
+    studentsUnit: t(lang, "chartStudentsUnit"),
   });
 
   const top10Set = new Set(report.top_10.map((p) => p.rank));
   renderScatterPlot(dom.chartScatter, report.all_ranked, top10Set, dom.chartTooltip, {
     top10Color: "var(--accent)",
     otherColor: "var(--scatter-other)",
+    emptyText: t(lang, "chartScatterEmpty"),
+    ariaLabel: t(lang, "chartScatterAria"),
+    xAxisLabel: t(lang, "chartScatterXAxis"),
+    pointsUnit: t(lang, "chartPointsUnit"),
+    inTimeLabel: t(lang, "chartInTime"),
+    locale: lang,
   });
 
   renderDescriptiveStats(report);
@@ -420,9 +551,21 @@ function renderReport(report) {
   renderAllParticipantsTable(report);
 }
 
+function applyLocaleToUi(locale) {
+  state.locale = locale;
+  applyStaticTranslations(document, locale);
+  themeController.setLocale(locale);
+  renderDatasetSelectOptions();
+  if (state.report) {
+    renderReport(state.report);
+  } else {
+    dom.quizSubtitle.textContent = t(locale, "loadingSubtitle");
+  }
+}
+
 async function loadReport({ forceRefresh = false } = {}) {
   try {
-    setStatus("Carregando estatísticas e ranking...");
+    setStatus(t(state.locale, "loadingStatus"));
     const report = await api.fetchReport({
       file: state.selectedFile,
       sortBy: state.sortBy,
@@ -432,7 +575,10 @@ async function loadReport({ forceRefresh = false } = {}) {
     setStatus("");
     renderReport(report);
   } catch (error) {
-    setStatus(error instanceof Error ? error.message : "Erro ao carregar dados.", true);
+    setStatus(
+      error instanceof Error ? error.message : t(state.locale, "loadError"),
+      true
+    );
   }
 }
 
@@ -440,48 +586,37 @@ async function initDatasetsAndLoad({ forceRefresh = false } = {}) {
   try {
     const datasets = await api.listDatasets({ forceRefresh });
     state.datasets = datasets;
-    clear(dom.datasetSelect);
+    renderDatasetSelectOptions();
 
     if (datasets.length === 0) {
-      dom.datasetSelect.appendChild(el("option", { value: "", text: "Nenhum dataset encontrado" }));
-      setStatus("Nenhum dataset encontrado. Execute build_static_data.py após adicionar arquivos em dados/.", true);
+      setStatus(t(state.locale, "noDatasetStatus"), true);
       return;
     }
 
-    if (datasets.length > 1) {
-      dom.datasetSelect.appendChild(
-        el("option", {
-          attrs: { value: ALL_DATASETS_KEY },
-          text: `Soma Geral (${datasets.length} quizzes)`,
-        })
-      );
-    }
-
-    for (const file of datasets) {
-      dom.datasetSelect.appendChild(el("option", { attrs: { value: file }, text: file }));
-    }
-
-    const validChoices = datasets.length > 1 ? [ALL_DATASETS_KEY, ...datasets] : datasets;
-    if (!state.selectedFile || !validChoices.includes(state.selectedFile)) {
-      state.selectedFile = datasets.length > 1 ? ALL_DATASETS_KEY : datasets[0];
-    }
-    dom.datasetSelect.value = state.selectedFile;
     await loadReport({ forceRefresh });
   } catch (error) {
-    setStatus(error instanceof Error ? error.message : "Falha ao consultar datasets.", true);
+    setStatus(
+      error instanceof Error ? error.message : t(state.locale, "datasetsError"),
+      true
+    );
   }
 }
+
+const storage = getSafeStorage();
 
 const themeController = new ThemeController({
   root: document.documentElement,
   button: dom.themeToggleBtn,
-  storage: (() => {
-    try {
-      return window.localStorage;
-    } catch {
-      return null;
-    }
-  })(),
+  storage,
+});
+
+const localeController = new LocaleController({
+  root: document.documentElement,
+  button: dom.langToggleBtn,
+  storage,
+  onChange: (nextLocale) => {
+    applyLocaleToUi(nextLocale);
+  },
 });
 
 function toggleTheme() {
@@ -490,7 +625,7 @@ function toggleTheme() {
 
 function exportCsv() {
   if (!state.report) return;
-  const csv = buildRankingCsv(state.report.all_ranked);
+  const csv = buildRankingCsv(state.report.all_ranked, state.locale);
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -519,6 +654,7 @@ function bindEvents() {
   });
   dom.refreshBtn.addEventListener("click", () => initDatasetsAndLoad({ forceRefresh: true }));
   dom.exportCsvBtn.addEventListener("click", exportCsv);
+  dom.langToggleBtn.addEventListener("click", () => localeController.toggle());
   dom.themeToggleBtn.addEventListener("click", toggleTheme);
   dom.participantSearch.addEventListener("input", (event) => {
     state.searchQuery = event.target.value;
@@ -539,6 +675,9 @@ function bindEvents() {
 }
 
 themeController.init();
+state.locale = localeController.init();
+applyLocaleToUi(state.locale);
+
 const tabController = new TabController({
   tabButtons: Array.from(document.querySelectorAll("[data-tab]")),
   tabPanels: Array.from(document.querySelectorAll("[data-tab-panel]")),

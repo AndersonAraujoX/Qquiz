@@ -31,7 +31,13 @@ export function renderBarChart(
   container,
   buckets,
   tooltipEl,
-  { ariaLabel, barColor = "var(--accent)", doc = globalThis.document } = {}
+  {
+    ariaLabel,
+    barColor = "var(--accent)",
+    doc = globalThis.document,
+    emptyText = "Sem dados suficientes para exibir distribuição.",
+    studentsUnit = "alunos",
+  } = {}
 ) {
   if (!container) {
     return;
@@ -40,7 +46,7 @@ export function renderBarChart(
   if (!Array.isArray(buckets) || buckets.length === 0) {
     const empty = doc.createElement("p");
     empty.className = "muted-small";
-    empty.textContent = "Sem dados suficientes para exibir distribuição.";
+    empty.textContent = emptyText;
     container.appendChild(empty);
     return;
   }
@@ -106,13 +112,13 @@ export function renderBarChart(
       rx: 8,
       fill: barColor,
       tabindex: "0",
-      "aria-label": `${bucket.label}: ${bucket.count} alunos (${formatPercent(bucket.percentage)})`,
+      "aria-label": `${bucket.label}: ${bucket.count} ${studentsUnit} (${formatPercent(bucket.percentage)})`,
     });
     if (tooltipEl) {
       attachTooltipHandlers(
         rect,
         tooltipEl,
-        `${bucket.label} — ${bucket.count} alunos (${formatPercent(bucket.percentage)})`
+        `${bucket.label} — ${bucket.count} ${studentsUnit} (${formatPercent(bucket.percentage)})`
       );
     }
     svg.appendChild(rect);
@@ -159,6 +165,12 @@ export function renderScatterPlot(
     top10Color = "var(--accent)",
     otherColor = "var(--scatter-other, var(--peach-strong, #c27849))",
     doc = globalThis.document,
+    emptyText = "Sem registros com tempo maior que zero para dispersão.",
+    ariaLabel = "Gráfico de dispersão entre tempo total e pontuação",
+    xAxisLabel = "Tempo Total (mm:ss)",
+    pointsUnit = "pts",
+    inTimeLabel = "em",
+    locale = "pt",
   } = {}
 ) {
   if (!container) {
@@ -173,7 +185,7 @@ export function renderScatterPlot(
   if (active.length === 0) {
     const empty = doc.createElement("p");
     empty.className = "muted-small";
-    empty.textContent = "Sem registros com tempo maior que zero para dispersão.";
+    empty.textContent = emptyText;
     container.appendChild(empty);
     return;
   }
@@ -191,7 +203,7 @@ export function renderScatterPlot(
     class: "chart-svg",
     viewBox: `0 0 ${width} ${height}`,
     role: "img",
-    "aria-label": "Gráfico de dispersão entre tempo total e pontuação",
+    "aria-label": ariaLabel,
   });
 
   for (let i = 0; i <= 4; i += 1) {
@@ -261,7 +273,7 @@ export function renderScatterPlot(
         "font-size": "11",
         "font-weight": "600",
       },
-      "Tempo Total (mm:ss)"
+      xAxisLabel
     )
   );
 
@@ -284,13 +296,13 @@ export function renderScatterPlot(
       stroke: isTop10 ? "var(--surface)" : "none",
       "stroke-width": isTop10 ? "2" : "0",
       tabindex: "0",
-      "aria-label": `#${p.rank} ${p.display_name}: ${formatNumber(p.score)} pts em ${formatSeconds(p.total_time_seconds)}`,
+      "aria-label": `#${p.rank} ${p.display_name}: ${formatNumber(p.score, locale)} ${pointsUnit} ${inTimeLabel} ${formatSeconds(p.total_time_seconds)}`,
     });
     if (tooltipEl) {
       attachTooltipHandlers(
         circle,
         tooltipEl,
-        `#${p.rank} ${p.display_name} · ${formatNumber(p.score)} pts · ${formatPercent(p.accuracy_percent)} · ${formatSeconds(p.total_time_seconds)}`
+        `#${p.rank} ${p.display_name} · ${formatNumber(p.score, locale)} ${pointsUnit} · ${formatPercent(p.accuracy_percent)} · ${formatSeconds(p.total_time_seconds)}`
       );
     }
     svg.appendChild(circle);

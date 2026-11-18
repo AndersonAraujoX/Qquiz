@@ -17,8 +17,12 @@ export function computeNextTheme(currentTheme) {
   return normalizeTheme(currentTheme) === "dark" ? "light" : "dark";
 }
 
-export function formatThemeButtonLabel(theme) {
-  return normalizeTheme(theme) === "dark" ? "Tema: Escuro" : "Tema: Claro";
+export function formatThemeButtonLabel(theme, locale = "pt") {
+  const isDark = normalizeTheme(theme) === "dark";
+  if (locale === "en") {
+    return isDark ? "Theme: Dark" : "Theme: Light";
+  }
+  return isDark ? "Tema: Escuro" : "Tema: Claro";
 }
 
 export function resolveInitialTheme({ storage = null, matchMediaFn = null } = {}) {
@@ -52,6 +56,7 @@ export class ThemeController {
     root = globalThis.document?.documentElement ?? null,
     button = null,
     storage = null,
+    locale = "pt",
     matchMediaFn = typeof globalThis.matchMedia === "function"
       ? (query) => globalThis.matchMedia(query)
       : null,
@@ -62,12 +67,20 @@ export class ThemeController {
     this._root = root;
     this._button = button;
     this._storage = storage;
+    this._locale = locale === "en" ? "en" : "pt";
     this._matchMediaFn = matchMediaFn;
     this._currentTheme = "light";
   }
 
   get currentTheme() {
     return this._currentTheme;
+  }
+
+  setLocale(locale) {
+    this._locale = locale === "en" ? "en" : "pt";
+    if (this._button && "textContent" in this._button) {
+      this._button.textContent = formatThemeButtonLabel(this._currentTheme, this._locale);
+    }
   }
 
   init() {
@@ -93,7 +106,7 @@ export class ThemeController {
         this._button.setAttribute("aria-pressed", String(resolved === "dark"));
       }
       if ("textContent" in this._button) {
-        this._button.textContent = formatThemeButtonLabel(resolved);
+        this._button.textContent = formatThemeButtonLabel(resolved, this._locale);
       }
     }
 

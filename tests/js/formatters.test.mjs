@@ -36,6 +36,10 @@ test("medalLabel returns podium descriptions and generic labels", () => {
   assert.match(medalLabel(2), /Prata/);
   assert.match(medalLabel(3), /Bronze/);
   assert.equal(medalLabel(7), "7º Lugar");
+  assert.match(medalLabel(1, "en"), /Gold/);
+  assert.match(medalLabel(2, "en"), /Silver/);
+  assert.match(medalLabel(3, "en"), /Bronze/);
+  assert.equal(medalLabel(7, "en"), "7th Place");
 });
 
 test("filterParticipants filters case-insensitively across name, nickname, and device", () => {

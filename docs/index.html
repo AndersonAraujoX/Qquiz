@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <a class="skip-link" href="#conteudo-principal" data-i18n="skipLink">Pular para o conteúdo principal</a>
 
   <header class="topbar">
     <div class="container topbar-inner">
@@ -28,36 +28,40 @@
         </div>
       </div>
 
-      <div class="controls-bar" role="region" aria-label="Controles do painel">
+      <div class="controls-bar" role="region" aria-label="Controles do painel" data-i18n-aria-label="controlsAria">
         <label class="control-group" for="dataset-select">
-          <span class="control-label">Quiz / Visão</span>
+          <span class="control-label" data-i18n="controlDataset">Quiz / Visão</span>
           <select id="dataset-select" class="select-input" aria-label="Selecionar dataset ou soma geral dos quizzes">
             <option value="">Carregando...</option>
           </select>
         </label>
 
         <label class="control-group" for="sort-select">
-          <span class="control-label">Critério Top 10</span>
+          <span class="control-label" data-i18n="controlSort">Critério Top 10</span>
           <select id="sort-select" class="select-input" aria-label="Critério de ordenação do ranking">
-            <option value="score">Pontuação (Score)</option>
-            <option value="sheet_rank">Acertos + Menor Tempo</option>
+            <option value="score" data-i18n="sortScore">Pontuação (Score)</option>
+            <option value="sheet_rank" data-i18n="sortSheetRank">Acertos + Menor Tempo</option>
           </select>
         </label>
 
         <label class="toggle-chip" for="include-zero-toggle">
           <input type="checkbox" id="include-zero-toggle">
-          <span>Incluir 0 questões</span>
+          <span data-i18n="includeZero">Incluir 0 questões</span>
         </label>
 
-        <button type="button" id="refresh-btn" class="btn btn-secondary" title="Recarregar dados">
+        <button type="button" id="refresh-btn" class="btn btn-secondary" title="Recarregar dados" data-i18n="refreshBtn" data-i18n-title="refreshTitle">
           Atualizar
         </button>
 
-        <button type="button" id="export-csv-btn" class="btn btn-primary" title="Exportar ranking em CSV">
+        <button type="button" id="export-csv-btn" class="btn btn-primary" title="Exportar ranking em CSV" data-i18n="exportCsvBtn" data-i18n-title="exportCsvTitle">
           Exportar CSV
         </button>
 
-        <button type="button" id="theme-toggle-btn" class="btn btn-ghost-dark" aria-pressed="false" title="Alternar tema claro/escuro">
+        <button type="button" id="lang-toggle-btn" class="btn btn-ghost-dark" aria-pressed="false" title="Alternar idioma (Português / English)">
+          PT → EN
+        </button>
+
+        <button type="button" id="theme-toggle-btn" class="btn btn-ghost-dark" aria-pressed="false" title="Alternar tema claro/escuro" data-i18n-title="themeTitle">
           Tema
         </button>
       </div>
@@ -78,6 +82,7 @@
           aria-controls="panel-top10"
           data-tab="top10"
           tabindex="0"
+          data-i18n="tabTop10"
         >
           Top 10 Melhores Alunos
         </button>
@@ -90,6 +95,7 @@
           aria-controls="panel-estatisticas"
           data-tab="estatisticas"
           tabindex="-1"
+          data-i18n="tabStats"
         >
           Dados Estatísticos
         </button>
@@ -106,8 +112,8 @@
       <section class="section-block" aria-labelledby="heading-top10">
         <div class="section-header">
           <div>
-            <h2 id="heading-top10">Top 10 Melhores Alunos</h2>
-            <p class="section-desc" id="top10-desc">Pódio e classificação dos 10 melhores desempenhos.</p>
+            <h2 id="heading-top10" data-i18n="headingTop10">Top 10 Melhores Alunos</h2>
+            <p class="section-desc" id="top10-desc" data-i18n="descTop10">Pódio e classificação dos 10 melhores desempenhos.</p>
           </div>
           <span class="pill-badge" id="ranking-mode-badge">Ordenado por Pontuação</span>
         </div>
@@ -119,14 +125,14 @@
             <table class="data-table" id="top10-table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Aluno</th>
-                  <th scope="col">Apelido</th>
-                  <th scope="col" class="num">Pontuação</th>
-                  <th scope="col">Acurácia</th>
-                  <th scope="col" class="num">Acertos</th>
-                  <th scope="col" class="num">Tempo Total</th>
-                  <th scope="col">Dispositivo</th>
+                  <th scope="col" data-i18n="thRank">#</th>
+                  <th scope="col" data-i18n="thStudent">Aluno</th>
+                  <th scope="col" data-i18n="thNickname">Apelido</th>
+                  <th scope="col" class="num" data-i18n="thScore">Pontuação</th>
+                  <th scope="col" data-i18n="thAccuracy">Acurácia</th>
+                  <th scope="col" class="num" data-i18n="thCorrect">Acertos</th>
+                  <th scope="col" class="num" data-i18n="thTotalTime">Tempo Total</th>
+                  <th scope="col" data-i18n="thDevice">Dispositivo</th>
                 </tr>
               </thead>
               <tbody id="top10-tbody"></tbody>
@@ -138,16 +144,17 @@
       <section class="section-block" aria-labelledby="heading-all">
         <div class="section-header">
           <div>
-            <h2 id="heading-all">Classificação Completa</h2>
+            <h2 id="heading-all" data-i18n="headingAll">Classificação Completa</h2>
             <p class="section-desc" id="all-count-desc">Todos os participantes filtrados.</p>
           </div>
           <label class="search-box" for="participant-search">
-            <span class="sr-only">Buscar aluno</span>
+            <span class="sr-only" data-i18n="searchSrOnly">Buscar aluno</span>
             <input
               type="search"
               id="participant-search"
               class="search-input"
               placeholder="Filtrar por nome, apelido ou dispositivo..."
+              data-i18n-placeholder="searchPlaceholder"
               autocomplete="off"
             >
           </label>
@@ -158,15 +165,15 @@
             <table class="data-table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Rank Planilha</th>
-                  <th scope="col">Aluno</th>
-                  <th scope="col">Apelido</th>
-                  <th scope="col" class="num">Pontuação</th>
-                  <th scope="col">Acurácia</th>
-                  <th scope="col" class="num">Acertos / Tent.</th>
-                  <th scope="col" class="num">Tempo</th>
-                  <th scope="col">Dispositivo</th>
+                  <th scope="col" data-i18n="thRank">#</th>
+                  <th scope="col" data-i18n="thSheetRank">Rank Planilha</th>
+                  <th scope="col" data-i18n="thStudent">Aluno</th>
+                  <th scope="col" data-i18n="thNickname">Apelido</th>
+                  <th scope="col" class="num" data-i18n="thScore">Pontuação</th>
+                  <th scope="col" data-i18n="thAccuracy">Acurácia</th>
+                  <th scope="col" class="num" data-i18n="thCorrectAttempted">Acertos / Tent.</th>
+                  <th scope="col" class="num" data-i18n="thTime">Tempo</th>
+                  <th scope="col" data-i18n="thDevice">Dispositivo</th>
                 </tr>
               </thead>
               <tbody id="all-tbody"></tbody>
@@ -186,8 +193,8 @@
     >
       <section class="hero-summary" aria-label="Resumo da sessão">
         <div class="hero-copy">
-          <span class="hero-eyebrow">Painel Estatístico</span>
-          <span class="muted-small">Visão geral da turma e indicadores de desempenho</span>
+          <span class="hero-eyebrow" data-i18n="heroEyebrow">Painel Estatístico</span>
+          <span class="muted-small" data-i18n="heroHint">Visão geral da turma e indicadores de desempenho</span>
         </div>
         <section class="session-meta" id="session-meta" aria-label="Metadados da sessão"></section>
       </section>
@@ -197,28 +204,28 @@
       <section class="section-block" aria-labelledby="heading-stats">
         <div class="section-header">
           <div>
-            <h2 id="heading-stats">Dados Estatísticos da Turma</h2>
-            <p class="section-desc">Distribuições, dispersão tempo × pontuação, análise descritiva e dificuldade por questão.</p>
+            <h2 id="heading-stats" data-i18n="headingStats">Dados Estatísticos da Turma</h2>
+            <p class="section-desc" data-i18n="descStats">Distribuições, dispersão tempo × pontuação, análise descritiva e dificuldade por questão.</p>
           </div>
           <span class="pill-badge" id="correlation-badge">Correlação: --</span>
         </div>
 
         <div class="charts-grid">
           <article class="card chart-card">
-            <h3>Distribuição de Acurácia (% de acertos)</h3>
-            <p class="chart-subtitle">Quantidade de alunos por faixa de acerto</p>
+            <h3 data-i18n="chartAccTitle">Distribuição de Acurácia (% de acertos)</h3>
+            <p class="chart-subtitle" data-i18n="chartAccSub">Quantidade de alunos por faixa de acerto</p>
             <div id="chart-accuracy-dist" class="chart-host"></div>
           </article>
 
           <article class="card chart-card">
-            <h3>Distribuição de Pontuação (Score)</h3>
-            <p class="chart-subtitle">Frequência de alunos por faixa de pontos</p>
+            <h3 data-i18n="chartScoreTitle">Distribuição de Pontuação (Score)</h3>
+            <p class="chart-subtitle" data-i18n="chartScoreSub">Frequência de alunos por faixa de pontos</p>
             <div id="chart-score-dist" class="chart-host"></div>
           </article>
 
           <article class="card chart-card chart-wide">
-            <h3>Dispersão: Tempo Total vs Pontuação</h3>
-            <p class="chart-subtitle">Relação entre rapidez e nota final (Top 10 em destaque)</p>
+            <h3 data-i18n="chartScatterTitle">Dispersão: Tempo Total vs Pontuação</h3>
+            <p class="chart-subtitle" data-i18n="chartScatterSub">Relação entre rapidez e nota final (Top 10 em destaque)</p>
             <div id="chart-scatter" class="chart-host"></div>
           </article>
         </div>
@@ -226,21 +233,21 @@
         <div class="analytics-split">
           <article class="card">
             <div class="card-head-row">
-              <h3>Estatística Descritiva</h3>
+              <h3 data-i18n="headingDescriptive">Estatística Descritiva</h3>
               <span class="muted-small" id="stats-sample-label">--</span>
             </div>
             <div class="table-responsive">
               <table class="data-table compact-table">
                 <thead>
                   <tr>
-                    <th scope="col">Métrica</th>
-                    <th scope="col" class="num">Média</th>
-                    <th scope="col" class="num">Mediana</th>
-                    <th scope="col" class="num">Desvio Padrão</th>
+                    <th scope="col" data-i18n="thMetric">Métrica</th>
+                    <th scope="col" class="num" data-i18n="thMean">Média</th>
+                    <th scope="col" class="num" data-i18n="thMedian">Mediana</th>
+                    <th scope="col" class="num" data-i18n="thStdDev">Desvio Padrão</th>
                     <th scope="col" class="num">Q1 (25%)</th>
                     <th scope="col" class="num">Q3 (75%)</th>
-                    <th scope="col" class="num">Mínimo</th>
-                    <th scope="col" class="num">Máximo</th>
+                    <th scope="col" class="num" data-i18n="thMin">Mínimo</th>
+                    <th scope="col" class="num" data-i18n="thMax">Máximo</th>
                   </tr>
                 </thead>
                 <tbody id="descriptive-tbody"></tbody>
@@ -250,8 +257,8 @@
 
           <article class="card">
             <div class="card-head-row">
-              <h3>Dispositivos e Navegadores</h3>
-              <span class="muted-small">Origem dos acessos</span>
+              <h3 data-i18n="headingDevices">Dispositivos e Navegadores</h3>
+              <span class="muted-small" data-i18n="devicesSub">Origem dos acessos</span>
             </div>
             <div id="device-breakdown-host" class="device-list"></div>
           </article>
@@ -261,8 +268,8 @@
       <section class="section-block" aria-labelledby="heading-questions">
         <div class="section-header">
           <div>
-            <h2 id="heading-questions">Desempenho por Questão</h2>
-            <p class="section-desc">Clique em uma questão para inspecionar o enunciado e os contadores detalhados.</p>
+            <h2 id="heading-questions" data-i18n="headingQuestions">Desempenho por Questão</h2>
+            <p class="section-desc" data-i18n="descQuestions">Clique em uma questão para inspecionar o enunciado e os contadores detalhados.</p>
           </div>
           <div class="question-highlights" id="question-highlights"></div>
         </div>
@@ -276,8 +283,8 @@
 
   <dialog id="question-dialog" class="modal-dialog" aria-labelledby="dialog-title">
     <div class="dialog-header">
-      <h3 id="dialog-title">Detalhes da Questão</h3>
-      <button type="button" id="dialog-close-btn" class="btn btn-ghost" aria-label="Fechar janela">Fechar</button>
+      <h3 id="dialog-title" data-i18n="dialogDefaultTitle">Detalhes da Questão</h3>
+      <button type="button" id="dialog-close-btn" class="btn btn-ghost" aria-label="Fechar janela" data-i18n="dialogClose">Fechar</button>
     </div>
     <div id="dialog-body" class="dialog-body"></div>
   </dialog>
