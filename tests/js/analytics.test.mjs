@@ -218,6 +218,11 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
   assert.equal(nathalia.quizzes_count, 1);
   assert.equal(report.questions.length, 2);
   assert.equal(report.score_distribution.length, 5);
+  assert.equal(merged.details.quiz_summaries.length, 2);
+  assert.equal(merged.details.quiz_summaries[0].leader_name, "Pedro Marques");
+  assert.equal(merged.details.quiz_summaries[0].max_score, 6330);
+  assert.equal(merged.details.quiz_summaries[1].leader_name, "Arthur Kenzo");
+  assert.equal(merged.details.quiz_summaries[1].active_participants, 3);
 });
 
 test("mergeDatasets throws TypeError on empty or invalid datasets", () => {

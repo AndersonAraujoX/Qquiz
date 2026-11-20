@@ -91,6 +91,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
   const aggregated = new Map();
   const combinedQuestions = [];
   const quizTitles = [];
+  const quizSummaries = [];
   let totalCorrectAll = 0;
   let totalAttemptedAll = 0;
   let totalRawAttempts = 0;
@@ -102,6 +103,25 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
     }
     const label = String(dataset.filename || `Quiz ${datasetIdx + 1}`).replace(/\.xlsx$/i, "");
     quizTitles.push(label);
+
+    const singleReport = buildAnalyticsReport(dataset, {
+      sortBy: "score",
+      includeZeroAttempts,
+    });
+    quizSummaries.push({
+      filename: dataset.filename || label,
+      title: label,
+      started_on: dataset.details?.game_started_on || "--",
+      active_participants: singleReport.active_participants_count,
+      total_attempts: singleReport.total_attempts_count,
+      class_accuracy_percent:
+        dataset.details?.class_accuracy_percent ?? singleReport.accuracy_stats.mean,
+      mean_score: singleReport.score_stats.mean,
+      max_score: singleReport.score_stats.max_value,
+      mean_time_seconds: singleReport.time_stats.mean,
+      leader_name: singleReport.highlights?.leader_name || "--",
+      leader_score: singleReport.highlights?.leader_score ?? 0,
+    });
 
     const allInQuiz = Array.isArray(dataset.participants) ? dataset.participants : [];
     totalRawAttempts += allInQuiz.length;
@@ -222,6 +242,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
       class_accuracy_percent: classAccuracy,
       dataset_count: datasets.length,
       quiz_titles: quizTitles,
+      quiz_summaries: quizSummaries,
       total_raw_attempts: totalRawAttempts,
     },
     participants: combinedParticipants,

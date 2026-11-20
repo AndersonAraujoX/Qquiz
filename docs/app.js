@@ -52,6 +52,8 @@ const dom = {
   statsSampleLabel: document.getElementById("stats-sample-label"),
   descriptiveTbody: document.getElementById("descriptive-tbody"),
   deviceBreakdownHost: document.getElementById("device-breakdown-host"),
+  quizComparisonSection: document.getElementById("quiz-comparison-section"),
+  quizComparisonTbody: document.getElementById("quiz-comparison-tbody"),
   questionHighlights: document.getElementById("question-highlights"),
   questionsChartHost: document.getElementById("questions-chart-host"),
   allCountDesc: document.getElementById("all-count-desc"),
@@ -384,6 +386,39 @@ function renderDevices(breakdown) {
   }
 }
 
+function renderQuizComparison(report) {
+  if (!dom.quizComparisonSection || !dom.quizComparisonTbody) {
+    return;
+  }
+  clear(dom.quizComparisonTbody);
+  const summaries = report.details?.quiz_summaries;
+  if (!Array.isArray(summaries) || summaries.length <= 1) {
+    dom.quizComparisonSection.hidden = true;
+    return;
+  }
+
+  const lang = state.locale;
+  const ptsUnit = t(lang, "chartPointsUnit");
+  dom.quizComparisonSection.hidden = false;
+
+  for (const item of summaries) {
+    dom.quizComparisonTbody.appendChild(
+      el("tr", {}, [
+        el("td", {}, [el("strong", { text: item.title })]),
+        el("td", { text: item.started_on || "--" }),
+        el("td", { className: "num", text: `${item.active_participants} / ${item.total_attempts}` }),
+        el("td", { className: "num", text: formatPercent(item.class_accuracy_percent) }),
+        el("td", { className: "num", text: formatNumber(item.mean_score, lang) }),
+        el("td", { className: "num", text: formatNumber(item.max_score, lang) }),
+        el("td", { className: "num", text: formatSeconds(item.mean_time_seconds) }),
+        el("td", {
+          text: `${item.leader_name} (${formatNumber(item.leader_score, lang)} ${ptsUnit})`,
+        }),
+      ])
+    );
+  }
+}
+
 function openQuestionDialog(q) {
   const lang = state.locale;
   dom.dialogTitle.textContent = t(lang, "questionDialogTitle", {
@@ -547,6 +582,7 @@ function renderReport(report) {
 
   renderDescriptiveStats(report);
   renderDevices(report.device_breakdown);
+  renderQuizComparison(report);
   renderQuestions(report);
   renderAllParticipantsTable(report);
 }
