@@ -1,0 +1,2719 @@
+{
+  "filename": "qquiz-2011-2026-11-20T20_50_33_485300-1e335e.xlsx",
+  "details": {
+    "game_started_on": "Fri 20 Nov 2026,01:00 PM",
+    "game_ended_on": "Fri 20 Nov 2026,01:12 PM",
+    "game_type": "Instructor-paced quiz",
+    "reported_participants": 24,
+    "total_attempts": 41,
+    "class_accuracy_percent": 43.0
+  },
+  "participants": [
+    {
+      "sheet_rank": 1,
+      "first_name": "Ivan",
+      "last_name": "Marinoni",
+      "player_name": "Ivan Marinoni",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 6100,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 152.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Ivan Marinoni",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 2,
+      "first_name": "Felipe",
+      "last_name": "A. Barretto",
+      "player_name": "Felipe A. Barretto",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4540,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 93.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Felipe A. Barretto",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 3,
+      "first_name": "davi",
+      "last_name": "j",
+      "player_name": "davi j",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4480,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 119.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "davi j",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 4,
+      "first_name": "Leopoldo",
+      "last_name": "Agorio",
+      "player_name": "Leopoldo Agorio",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4280,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 163.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Leopoldo Agorio",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 5,
+      "first_name": "andre",
+      "last_name": "obregon",
+      "player_name": "andre obregon",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4180,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 173.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "andre obregon",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 6,
+      "first_name": "Kevin",
+      "last_name": "Duran",
+      "player_name": "Kevin Duran",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4360,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 184.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Kevin Duran",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 7,
+      "first_name": "Luis",
+      "last_name": "Herrera",
+      "player_name": "Lucho",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4080,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 212.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The circular Rydberg state remained stable for 11 ms"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Luis Herrera",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 8,
+      "first_name": "Nara",
+      "last_name": "Avila",
+      "player_name": "Nara Avila",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3650,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 277.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Mobile Safari on iOS",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The trapping field removes electrons from the ion."
+        }
+      ],
+      "display_name": "Nara Avila",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 9,
+      "first_name": "Maria",
+      "last_name": "P.",
+      "player_name": "Maria P.",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3640,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 90.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Maria P.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 10,
+      "first_name": "Diego",
+      "last_name": "hurtado",
+      "player_name": "Diego hurtado",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3600,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 110.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Diego hurtado",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 11,
+      "first_name": "Kevin",
+      "last_name": "Martínez",
+      "player_name": "Kevin Martínez",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3620,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 115.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "An electrostatic field produces decoherence quicker than the operation time for any gate."
+        }
+      ],
+      "display_name": "Kevin Martínez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 12,
+      "first_name": "Dusan",
+      "last_name": "Cvetkovic",
+      "player_name": "Dusan Cvetkovic",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3580,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 138.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "An electrostatic field produces decoherence quicker than the operation time for any gate."
+        }
+      ],
+      "display_name": "Dusan Cvetkovic",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 13,
+      "first_name": "ArtKenzo",
+      "last_name": "",
+      "player_name": "ArtKenzo",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3610,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 140.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "ArtKenzo",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 14,
+      "first_name": "Ronaldo",
+      "last_name": "N. A.",
+      "player_name": "Ronaldo",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3520,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 148.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Ronaldo N. A.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 15,
+      "first_name": "Guillermo",
+      "last_name": "E",
+      "player_name": "Guillermo E",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3740,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 152.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The increased radiative lifetime directly produces a larger interaction-induced energy shift between doubly excited atoms."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Guillermo E",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 16,
+      "first_name": "Sebastian",
+      "last_name": "",
+      "player_name": "Sebastian",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3420,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 163.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Sebastian",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 17,
+      "first_name": "Ernesto",
+      "last_name": "Lana",
+      "player_name": "Ernesto Lana",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3570,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 171.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Ernesto Lana",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 18,
+      "first_name": "Evandro",
+      "last_name": "Chagas Ribeiro da Rosa",
+      "player_name": "Evandro Chagas Ribeiro da Rosa",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3380,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 217.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Evandro Chagas Ribeiro da Rosa",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 19,
+      "first_name": "Daniel",
+      "last_name": "C",
+      "player_name": "Daniel C",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3590,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 248.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Daniel C",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 20,
+      "first_name": "Emily",
+      "last_name": "Escudero",
+      "player_name": "Emily franco",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 2920,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 250.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Emily Escudero",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 21,
+      "first_name": "Angela",
+      "last_name": "Rivas",
+      "player_name": "Angela Rivas",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 2900,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 333.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Angela Rivas",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 22,
+      "first_name": "Natasha",
+      "last_name": "Fonseca",
+      "player_name": "D. Trump",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2670,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 85.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Ruthenium (Ru), Tin (Sn), Cesium (Cs)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Natasha Fonseca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 23,
+      "first_name": "Marcus",
+      "last_name": "Farias",
+      "player_name": "Marcus Farias",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2770,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 158.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Marcus Farias",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 24,
+      "first_name": "José",
+      "last_name": "Fernández",
+      "player_name": "José Fernández",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2490,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 168.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "José Fernández",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 25,
+      "first_name": "José",
+      "last_name": "Libois",
+      "player_name": "José Libois",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2600,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 171.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "An electrostatic field produces decoherence quicker than the operation time for any gate."
+        }
+      ],
+      "display_name": "José Libois",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 26,
+      "first_name": "Felipe",
+      "last_name": "Silveira Fagundes",
+      "player_name": "Felipe Silveira Fagundes",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2580,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 212.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Felipe Silveira Fagundes",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 27,
+      "first_name": "Miquéias",
+      "last_name": "Jacinto Cirino",
+      "player_name": "mikeyas",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2530,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 222.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The circular Rydberg state remained stable for 11 ms"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Miquéias Jacinto Cirino",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 28,
+      "first_name": "Talia",
+      "last_name": "da Costa Rodrigues",
+      "player_name": "Talia da Costa Rodrigues",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2440,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 235.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Ruthenium (Ru), Tin (Sn), Cesium (Cs)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "They differ only by a global phase and produce identical measurement statistics for all observables."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The trapping field removes electrons from the ion."
+        }
+      ],
+      "display_name": "Talia da Costa Rodrigues",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 29,
+      "first_name": "Moisés",
+      "last_name": "Chávez",
+      "player_name": "Moisés Chávez",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2470,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 258.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Moisés Chávez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 30,
+      "first_name": "Nathália",
+      "last_name": "Ferino",
+      "player_name": "Nathália Ferino",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2400,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 272.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The circular Rydberg state remained stable for 11 ms"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Nathália Ferino",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 31,
+      "first_name": "Leandro",
+      "last_name": "Nazarko",
+      "player_name": "Leandro Nazarko",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2240,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 295.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Larger electric-dipole transition matrix elements and smaller relevant energy defects can enhance the second-order van der Waals coefficient ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "is a mixed state, whereas is a pure state."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Leandro Nazarko",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 32,
+      "first_name": "João",
+      "last_name": "Dias",
+      "player_name": "João Dias",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 1970,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 355.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The increased radiative lifetime directly produces a larger interaction-induced energy shift between doubly excited atoms."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The trapping field removes electrons from the ion."
+        }
+      ],
+      "display_name": "João Dias",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 33,
+      "first_name": "Kerry",
+      "last_name": "Caverga",
+      "player_name": "Kerry Caverga",
+      "attempted_questions": 2,
+      "accuracy_percent": 25.0,
+      "score": 1460,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 6,
+      "total_time_seconds": 80.0,
+      "started_at": "Fri 20 Nov 2026,01:09 PM",
+      "device_info": "Samsung Internet on Android",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Kerry Caverga",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 34,
+      "first_name": "Felipe",
+      "last_name": "Peleteiro",
+      "player_name": "Felipe Peleteiro",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1870,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 113.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The increased radiative lifetime directly produces a larger interaction-induced energy shift between doubly excited atoms."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "An electrostatic field produces decoherence quicker than the operation time for any gate."
+        }
+      ],
+      "display_name": "Felipe Peleteiro",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 35,
+      "first_name": "Franquinho",
+      "last_name": "Borgarello",
+      "player_name": "Franquinho",
+      "attempted_questions": 6,
+      "accuracy_percent": 25.0,
+      "score": 1680,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 2,
+      "total_time_seconds": 136.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Franquinho Borgarello",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 36,
+      "first_name": "Maurício",
+      "last_name": "Marques",
+      "player_name": "Dunga",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1670,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 149.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Ruthenium (Ru), Tin (Sn), Cesium (Cs)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They differ by a relative phase of , meaning they can be distinguished with certainty by a single projective measurement."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Gauss’ law and the conservative property of the electrostatic field do not allow restorative forces to exist in free space."
+        }
+      ],
+      "display_name": "Maurício Marques",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 37,
+      "first_name": "Tomas",
+      "last_name": "Zou",
+      "player_name": "Tomas Zou",
+      "attempted_questions": 7,
+      "accuracy_percent": 25.0,
+      "score": 1660,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 222.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Rubidium (Rb), Strontium (Sr), Ytterbium (Yb)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The charge reacts by producing a field that cancels the external trapping field."
+        }
+      ],
+      "display_name": "Tomas Zou",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 38,
+      "first_name": "Cecilia",
+      "last_name": "",
+      "player_name": "Cecilia",
+      "attempted_questions": 4,
+      "accuracy_percent": 12.0,
+      "score": 850,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 4,
+      "total_time_seconds": 120.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "They broke three records: the longest duration ever measured for individual Rydberg atoms, the largest controlled circular system of Rydberg atoms, and the longest storage time for these atoms in optical tweezers"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The increased radiative lifetime directly produces a larger interaction-induced energy shift between doubly excited atoms."
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Cecilia",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 39,
+      "first_name": "Carlos",
+      "last_name": "Sumire",
+      "player_name": "Carlos Sumire",
+      "attempted_questions": 8,
+      "accuracy_percent": 12.0,
+      "score": 740,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 329.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have electrons that are weakly bound to the nucleus and level transitions with lower frequencies."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The circular Rydberg state remained stable for 11 ms"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Circular Rydberg states acquire permanent electric dipole moments even without external fields, making their leading interaction scale as ."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The trapping field removes electrons from the ion."
+        }
+      ],
+      "display_name": "Carlos Sumire",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 40,
+      "first_name": "Pedro",
+      "last_name": "Antonio",
+      "player_name": "Pedro Antonio",
+      "attempted_questions": 8,
+      "accuracy_percent": 12.0,
+      "score": 760,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 352.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they do not have quantized energy levels."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Rubidium (Rb), Strontium (Sr), Cerium (Ce)"
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "all of the above"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "The suppression of blackbody-induced transitions by the surrounding electrodes directly strengthens the interatomic van der Waals potential."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "They are orthogonal states located on opposite poles of the Bloch sphere."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "The trapping field removes electrons from the ion."
+        }
+      ],
+      "display_name": "Pedro Antonio",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 41,
+      "first_name": "María",
+      "last_name": "P.",
+      "player_name": "María P.",
+      "attempted_questions": 0,
+      "accuracy_percent": 0.0,
+      "score": 0,
+      "correct": 0,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 0.0,
+      "started_at": "Fri 20 Nov 2026,01:00 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 0,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "María P.",
+      "is_active": false
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "question_text": "Why are Rydberg atoms particularly susceptible to blackbody-radiation-induced transitions compared to atoms in their ground states?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 93.0,
+      "average_time_seconds": 22.0,
+      "correct_count": 38,
+      "incorrect_count": 1,
+      "unattempted_count": 2
+    },
+    {
+      "number": 2,
+      "question_text": "Select the option that contains only elements useful for Rydberg atom qubits.",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 56.0,
+      "average_time_seconds": 19.0,
+      "correct_count": 23,
+      "incorrect_count": 16,
+      "unattempted_count": 2
+    },
+    {
+      "number": 3,
+      "question_text": "Regarding the record set by researchers at the University of Stuttgart, lead by Florian Meinert, it is correct to say:",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 39.0,
+      "average_time_seconds": 23.0,
+      "correct_count": 16,
+      "incorrect_count": 23,
+      "unattempted_count": 2
+    },
+    {
+      "number": 4,
+      "question_text": "In Florian Meinert’s experiments with circular Rydberg states of strontium atoms, accessing higher principal quantum numbers can significantly enhance the prospects for Rydberg blockade. Assuming fixed interatomic separation and off-resonant dipole–dipole coupling, which physical mechanism best explains this enhancement?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 29.0,
+      "average_time_seconds": 36.0,
+      "correct_count": 12,
+      "incorrect_count": 26,
+      "unattempted_count": 3
+    },
+    {
+      "number": 5,
+      "question_text": "What is the dependency of the coefficient with the principal quantum number ?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 29.0,
+      "average_time_seconds": 15.0,
+      "correct_count": 12,
+      "incorrect_count": 26,
+      "unattempted_count": 3
+    },
+    {
+      "number": 6,
+      "question_text": "Consider the two single-qubit states and . How are these two states physically related?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 34.0,
+      "average_time_seconds": 30.0,
+      "correct_count": 14,
+      "incorrect_count": 24,
+      "unattempted_count": 3
+    },
+    {
+      "number": 7,
+      "question_text": "A single qubit is initialized in the state . Which single-qubit rotation prepares the state , up to a global phase?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 7.0,
+      "average_time_seconds": 24.0,
+      "correct_count": 3,
+      "incorrect_count": 35,
+      "unattempted_count": 3
+    },
+    {
+      "number": 8,
+      "question_text": "Why is it not possible to trap an ion with only electrostatic fields?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 54.0,
+      "average_time_seconds": 28.0,
+      "correct_count": 22,
+      "incorrect_count": 16,
+      "unattempted_count": 3
+    }
+  ]
+}
