@@ -6,10 +6,12 @@ import io
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+from dataclasses import replace
 from typing import Any
 
 from quiz_analytics.models import (
     ParticipantAttempt,
+    ParticipantQuestionAnswer,
     QuestionStat,
     QuizDataset,
     QuizDetails,
@@ -60,6 +62,30 @@ def _read_zip_entry_safely(zf: zipfile.ZipFile, member_path: str) -> bytes:
 
 def _column_from_ref(cell_ref: str) -> str:
     return "".join(ch for ch in cell_ref if ch.isalpha())
+
+
+def _column_to_index(col: str) -> int:
+    index = 0
+    for ch in col.upper():
+        index = index * 26 + (ord(ch) - ord("A") + 1)
+    return index
+
+
+FALLBACK_FILL_STATUS_BY_RGB: dict[str, str] = {
+    "FFD9F7ED": "correct",
+    "FFFCDBE3": "incorrect",
+    "FFFFEDCC": "partial",
+    "FFE5E5E5": "unattempted",
+    "FFB5C4FD": "ungraded",
+}
+
+LEGEND_STATUS_BY_HEADER: dict[str, str] = {
+    "Correct": "correct",
+    "Partially correct": "partial",
+    "Incorrect": "incorrect",
+    "Ungraded": "ungraded",
+    "Unattempted": "unattempted",
+}
 
 
 def _clean_text(value: Any) -> str:
@@ -144,8 +170,17 @@ class SecureXlsxQuizParser:
                 questions: tuple[QuestionStat, ...] = ()
                 overview_path = sheet_map.get("Overview")
                 if overview_path:
-                    overview_rows = self._read_sheet_rows(zf, overview_path, shared_strings)
+                    style_fills = self._load_style_fills(zf)
+                    overview_rows, overview_styles = self._read_sheet_rows_with_styles(
+                        zf, overview_path, shared_strings
+                    )
                     questions = self._parse_questions(overview_rows)
+                    participants = self._attach_question_answers(
+                        participants,
+                        overview_rows,
+                        overview_styles,
+                        style_fills,
+                    )
 
                 details = QuizDetails(
                     game_started_on="",
@@ -213,19 +248,54 @@ class SecureXlsxQuizParser:
         sheet_path: str,
         shared_strings: list[str],
     ) -> list[dict[str, str | None]]:
+        rows, _ = self._read_sheet_rows_with_styles(zf, sheet_path, shared_strings)
+        return rows
+
+    def _load_style_fills(self, zf: zipfile.ZipFile) -> dict[str, str]:
+        if "xl/styles.xml" not in zf.namelist():
+            return {}
+        styles_xml = _parse_xml_safely(
+            _read_zip_entry_safely(zf, "xl/styles.xml"),
+            "xl/styles.xml",
+        )
+        fill_rgbs: list[str] = []
+        for fill_el in styles_xml.findall(".//main:fills/main:fill", NS):
+            fg_el = fill_el.find(".//main:fgColor", NS)
+            rgb = fg_el.attrib.get("rgb", "").upper() if fg_el is not None else ""
+            fill_rgbs.append(rgb)
+
+        xf_to_rgb: dict[str, str] = {}
+        for idx, xf_el in enumerate(styles_xml.findall(".//main:cellXfs/main:xf", NS)):
+            fill_idx_raw = xf_el.attrib.get("fillId", "0")
+            try:
+                fill_idx = int(fill_idx_raw)
+            except ValueError:
+                fill_idx = 0
+            xf_to_rgb[str(idx)] = fill_rgbs[fill_idx] if 0 <= fill_idx < len(fill_rgbs) else ""
+        return xf_to_rgb
+
+    def _read_sheet_rows_with_styles(
+        self,
+        zf: zipfile.ZipFile,
+        sheet_path: str,
+        shared_strings: list[str],
+    ) -> tuple[list[dict[str, str | None]], list[dict[str, str]]]:
         sheet_xml = _parse_xml_safely(
             _read_zip_entry_safely(zf, sheet_path),
             sheet_path,
         )
         rows: list[dict[str, str | None]] = []
+        styles: list[dict[str, str]] = []
         for row_el in sheet_xml.findall(".//main:row", NS):
             row_dict: dict[str, str | None] = {}
+            style_dict: dict[str, str] = {}
             for cell_el in row_el.findall("main:c", NS):
                 ref = cell_el.attrib.get("r", "")
                 col = _column_from_ref(ref)
                 if not col:
                     continue
                 cell_type = cell_el.attrib.get("t", "")
+                style_idx = cell_el.attrib.get("s", "")
                 v_el = cell_el.find("main:v", NS)
                 is_el = cell_el.find("main:is", NS)
                 val: str | None = None
@@ -237,9 +307,12 @@ class SecureXlsxQuizParser:
                 elif is_el is not None:
                     val = "".join(t.text or "" for t in is_el.findall(".//main:t", NS))
                 row_dict[col] = val
+                if style_idx:
+                    style_dict[col] = style_idx
             if row_dict:
                 rows.append(row_dict)
-        return rows
+                styles.append(style_dict)
+        return rows, styles
 
     def _parse_participants(
         self, rows: list[dict[str, str | None]]
@@ -331,6 +404,97 @@ class SecureXlsxQuizParser:
                 )
             )
         return tuple(questions)
+
+    def _attach_question_answers(
+        self,
+        participants: tuple[ParticipantAttempt, ...],
+        overview_rows: list[dict[str, str | None]],
+        overview_styles: list[dict[str, str]],
+        style_fills: dict[str, str],
+    ) -> tuple[ParticipantAttempt, ...]:
+        if not participants or not overview_rows or not overview_styles:
+            return participants
+
+        header_row = overview_rows[0]
+        header_styles = overview_styles[0]
+        header_to_col = {
+            _clean_text(title): col for col, title in header_row.items() if title is not None
+        }
+        unattempted_col = header_to_col.get("Unattempted")
+        if not unattempted_col:
+            return participants
+        min_player_col_idx = _column_to_index(unattempted_col) + 1
+
+        status_by_rgb = dict(FALLBACK_FILL_STATUS_BY_RGB)
+        for header_name, status_val in LEGEND_STATUS_BY_HEADER.items():
+            col = header_to_col.get(header_name)
+            if col and col in header_styles:
+                rgb = style_fills.get(header_styles[col], "")
+                if rgb:
+                    status_by_rgb[rgb] = status_val
+
+        player_cols = sorted(
+            (
+                col
+                for col, title in header_row.items()
+                if _column_to_index(col) >= min_player_col_idx and _clean_text(title)
+            ),
+            key=_column_to_index,
+        )
+        if not player_cols:
+            return participants
+
+        col_to_participant_idx: dict[str, int] = {}
+        if len(player_cols) == len(participants):
+            for idx, col in enumerate(player_cols):
+                col_to_participant_idx[col] = idx
+        else:
+            label_to_idx = {
+                f"{p.player_name} ({p.display_name})".lower(): idx
+                for idx, p in enumerate(participants)
+            }
+            for col in player_cols:
+                hdr = _clean_text(header_row.get(col)).lower()
+                if hdr in label_to_idx:
+                    col_to_participant_idx[col] = label_to_idx[hdr]
+
+        num_col = header_to_col.get("#")
+        q_col = header_to_col.get("Question")
+        if not num_col or not q_col:
+            return participants
+
+        per_participant_answers: list[list[ParticipantQuestionAnswer]] = [
+            [] for _ in participants
+        ]
+
+        for row, row_style in zip(overview_rows[1:], overview_styles[1:]):
+            q_num_raw = row.get(num_col)
+            q_text = _clean_text(row.get(q_col))
+            if not q_num_raw or not q_text:
+                continue
+            q_num = _parse_int(q_num_raw, default=0)
+            if q_num <= 0:
+                continue
+
+            for col, p_idx in col_to_participant_idx.items():
+                style_id = row_style.get(col, "")
+                rgb = style_fills.get(style_id, "")
+                response_text = _clean_text(row.get(col))
+                status = status_by_rgb.get(rgb)
+                if not status:
+                    status = "unattempted" if not response_text else "ungraded"
+                per_participant_answers[p_idx].append(
+                    ParticipantQuestionAnswer(
+                        question_number=q_num,
+                        status=status,
+                        response=response_text,
+                    )
+                )
+
+        return tuple(
+            replace(p, question_answers=tuple(per_participant_answers[idx]))
+            for idx, p in enumerate(participants)
+        )
 
     def _parse_quiz_details(
         self, rows: list[dict[str, str | None]], fallback: QuizDetails

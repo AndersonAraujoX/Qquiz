@@ -132,6 +132,9 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
         correct: 5,
         total_time_seconds: 100,
         device_info: "Chrome",
+        question_answers: [
+          { question_number: 1, status: "correct", response: "Option A" },
+        ],
       },
       {
         sheet_rank: 3,
@@ -184,6 +187,9 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
         correct: 6,
         total_time_seconds: 107,
         device_info: "Firefox",
+        question_answers: [
+          { question_number: 1, status: "incorrect", response: "Option B" },
+        ],
       },
       {
         sheet_rank: 3,
@@ -213,9 +219,14 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
   assert.equal(kevin.correct, 11);
   assert.equal(kevin.attempted_questions, 16);
   assert.equal(kevin.quizzes_count, 2);
+  assert.deepEqual(kevin.question_answers, [
+    { question_number: 1, status: "correct", response: "Option A" },
+    { question_number: 2, status: "incorrect", response: "Option B" },
+  ]);
   const nathalia = report.all_ranked.find((p) => p.display_name.startsWith("Nathália"));
   assert.equal(nathalia.score, 740);
   assert.equal(nathalia.quizzes_count, 1);
+  assert.deepEqual(nathalia.question_answers, []);
   assert.equal(report.questions.length, 2);
   assert.equal(report.score_distribution.length, 5);
   assert.equal(merged.details.quiz_summaries.length, 2);

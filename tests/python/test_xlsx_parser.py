@@ -23,6 +23,7 @@ def _build_minimal_xlsx(
     overview_rows_xml: str = "",
     details_rows_xml: str = "",
     shared_strings: list[str] | None = None,
+    styles_xml: str | None = None,
     inject_doctype: bool = False,
 ) -> bytes:
     buf = io.BytesIO()
@@ -67,6 +68,8 @@ def _build_minimal_xlsx(
         zf.writestr("xl/worksheets/sheet1.xml", sheet_tpl.format(rows=overview_rows_xml))
         zf.writestr("xl/worksheets/sheet2.xml", sheet_tpl.format(rows=participant_rows_xml))
         zf.writestr("xl/worksheets/sheet3.xml", sheet_tpl.format(rows=details_rows_xml))
+        if styles_xml is not None:
+            zf.writestr("xl/styles.xml", styles_xml)
     return buf.getvalue()
 
 
@@ -199,6 +202,104 @@ class TestSecureXlsxQuizParser(unittest.TestCase):
         self.assertEqual(len(dataset.questions), 8)
         self.assertEqual(dataset.participants[0].display_name, "Pedro Marques Pontes")
         self.assertEqual(dataset.participants[0].score, 6330)
+        self.assertEqual(len(dataset.participants[0].question_answers), 8)
+        self.assertTrue(
+            all(qa.status == "correct" for qa in dataset.participants[0].question_answers)
+        )
+
+    def test_parse_extracts_per_student_question_outcomes_from_overview_styles(self) -> None:
+        # Arrange
+        shared = [
+            "Rank",
+            "First Name",
+            "Last Name",
+            "Player Name",
+            "Total Questions Attempted",
+            "Accuracy",
+            "Score",
+            "Correct",
+            "Incorrect",
+            "Unattempted",
+            "Ana",
+            "Silva",
+            "ana_s",
+            "#",
+            "Question",
+            "Q1 text",
+            "Q2 text",
+            "ana_s (Ana Silva)",
+            "Right answer",
+            "Wrong answer",
+        ]
+        styles_xml = (
+            '<?xml version="1.0" encoding="UTF-8"?>'
+            '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+            "<fills>"
+            "<fill><patternFill patternType=\"none\"/></fill>"
+            '<fill><patternFill patternType="solid"><fgColor rgb="FFD9F7ED"/></patternFill></fill>'
+            '<fill><patternFill patternType="solid"><fgColor rgb="FFFCDBE3"/></patternFill></fill>'
+            '<fill><patternFill patternType="solid"><fgColor rgb="FFE5E5E5"/></patternFill></fill>'
+            "</fills>"
+            "<cellXfs>"
+            '<xf fillId="0"/>'
+            '<xf fillId="1"/>'
+            '<xf fillId="2"/>'
+            '<xf fillId="3"/>'
+            "</cellXfs>"
+            "</styleSheet>"
+        )
+        p_rows = (
+            '<row r="1">'
+            '<c r="A1" t="s"><v>0</v></c><c r="B1" t="s"><v>1</v></c>'
+            '<c r="C1" t="s"><v>2</v></c><c r="D1" t="s"><v>3</v></c>'
+            '<c r="E1" t="s"><v>4</v></c><c r="F1" t="s"><v>5</v></c>'
+            '<c r="G1" t="s"><v>6</v></c><c r="H1" t="s"><v>7</v></c>'
+            '<c r="I1" t="s"><v>8</v></c><c r="J1" t="s"><v>9</v></c>'
+            "</row>"
+            '<row r="2">'
+            '<c r="A2"><v>1</v></c><c r="B2" t="s"><v>10</v></c>'
+            '<c r="C2" t="s"><v>11</v></c><c r="D2" t="s"><v>12</v></c>'
+            '<c r="E2"><v>2</v></c><c r="F2"><v>0.5</v></c>'
+            '<c r="G2"><v>1000</v></c><c r="H2"><v>1</v></c>'
+            '<c r="I2"><v>1</v></c><c r="J2"><v>0</v></c>'
+            "</row>"
+        )
+        o_rows = (
+            '<row r="1">'
+            '<c r="A1" t="s"><v>13</v></c><c r="B1" t="s"><v>14</v></c>'
+            '<c r="G1" s="1" t="s"><v>7</v></c>'
+            '<c r="J1" s="2" t="s"><v>8</v></c>'
+            '<c r="L1" s="3" t="s"><v>9</v></c>'
+            '<c r="M1" t="s"><v>17</v></c>'
+            "</row>"
+            '<row r="2">'
+            '<c r="A2"><v>1</v></c><c r="B2" t="s"><v>15</v></c>'
+            '<c r="M2" s="1" t="s"><v>18</v></c>'
+            "</row>"
+            '<row r="3">'
+            '<c r="A3"><v>2</v></c><c r="B3" t="s"><v>16</v></c>'
+            '<c r="M3" s="2" t="s"><v>19</v></c>'
+            "</row>"
+        )
+        raw = _build_minimal_xlsx(
+            participant_rows_xml=p_rows,
+            overview_rows_xml=o_rows,
+            shared_strings=shared,
+            styles_xml=styles_xml,
+        )
+
+        # Act
+        dataset = self.parser.parse(raw, "styled.xlsx")
+
+        # Assert
+        answers = dataset.participants[0].question_answers
+        self.assertEqual(len(answers), 2)
+        self.assertEqual(answers[0].question_number, 1)
+        self.assertEqual(answers[0].status, "correct")
+        self.assertEqual(answers[0].response, "Right answer")
+        self.assertEqual(answers[1].question_number, 2)
+        self.assertEqual(answers[1].status, "incorrect")
+        self.assertEqual(answers[1].response, "Wrong answer")
 
 
 if __name__ == "__main__":

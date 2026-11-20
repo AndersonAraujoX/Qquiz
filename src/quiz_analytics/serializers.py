@@ -29,6 +29,7 @@ def serialize_participant(p: ParticipantAttempt, display_rank: int) -> dict[str,
         "points": p.points,
         "total_points": p.total_points,
         "is_active": p.is_active,
+        "question_answers": [asdict(qa) for qa in p.question_answers],
     }
 
 

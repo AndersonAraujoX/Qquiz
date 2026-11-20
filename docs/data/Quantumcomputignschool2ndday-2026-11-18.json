@@ -28,6 +28,48 @@
       "device_info": "Chrome on Windows",
       "points": 8,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Arthur Kenzo",
       "is_active": true
     },
@@ -50,6 +92,48 @@
       "device_info": "Chrome on Windows",
       "points": 8,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Pedro Marques Pontes",
       "is_active": true
     },
@@ -72,6 +156,48 @@
       "device_info": "Chrome on Windows",
       "points": 7,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Dusan Cvetkovic",
       "is_active": true
     },
@@ -94,6 +220,48 @@
       "device_info": "Chrome on Windows",
       "points": 7,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Guillermo E",
       "is_active": true
     },
@@ -116,6 +284,48 @@
       "device_info": "Chrome on Windows",
       "points": 7,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Felipe Silveira Fagundes",
       "is_active": true
     },
@@ -138,6 +348,48 @@
       "device_info": "Chrome on Windows",
       "points": 7,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Ivan Marinoni",
       "is_active": true
     },
@@ -160,6 +412,48 @@
       "device_info": "Chrome on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a superposition of all computational basis states, with equal probability amplitudes and identical phases."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Kevin Martínez",
       "is_active": true
     },
@@ -182,6 +476,48 @@
       "device_info": "Firefox on Linux",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "José Souza",
       "is_active": true
     },
@@ -204,6 +540,48 @@
       "device_info": "Chrome on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "José Libois",
       "is_active": true
     },
@@ -226,6 +604,48 @@
       "device_info": "Opera on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Chosi",
       "is_active": true
     },
@@ -248,6 +668,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "María P.",
       "is_active": true
     },
@@ -270,6 +732,48 @@
       "device_info": "Chrome on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Moisés Chávez huerta",
       "is_active": true
     },
@@ -292,6 +796,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Ronaldo N. A.",
       "is_active": true
     },
@@ -314,6 +860,48 @@
       "device_info": "Chrome on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a superposition of all computational basis states, with equal probability amplitudes and identical phases."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Luis Herrera",
       "is_active": true
     },
@@ -336,6 +924,48 @@
       "device_info": "Chrome on Windows",
       "points": 6,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Kevin Duran",
       "is_active": true
     },
@@ -358,6 +988,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "GABRIEL Baca",
       "is_active": true
     },
@@ -380,6 +1052,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Ernesto Lana",
       "is_active": true
     },
@@ -402,6 +1116,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Only the energy eigenvalues of the quantum system."
+        }
+      ],
       "display_name": "Sebastian",
       "is_active": true
     },
@@ -424,6 +1180,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The Bose--Hubbard model on an optical lattice."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Evandro Chagas Ribeiro da Rosa",
       "is_active": true
     },
@@ -446,6 +1244,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which both qubits have independent, random computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Yamill Hernandez",
       "is_active": true
     },
@@ -468,6 +1308,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "A nonlinear Kerr parametric oscillator."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Lucas R",
       "is_active": true
     },
@@ -490,6 +1372,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Miquéias Jacinto Cirino",
       "is_active": true
     },
@@ -512,6 +1436,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The Bose--Hubbard model on an optical lattice."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Abel Alejos Cori",
       "is_active": true
     },
@@ -534,6 +1500,48 @@
       "device_info": "Chrome on Windows",
       "points": 5,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a superposition of all computational basis states, with equal probability amplitudes and identical phases."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Diego QUINFOG",
       "is_active": true
     },
@@ -556,6 +1564,48 @@
       "device_info": "Chrome on Windows",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "davi j",
       "is_active": true
     },
@@ -578,6 +1628,48 @@
       "device_info": "Chrome on Windows",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a superposition of all computational basis states, with equal probability amplitudes and identical phases."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Andrei Tsypilnikov",
       "is_active": true
     },
@@ -600,6 +1692,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Angela Rivas",
       "is_active": true
     },
@@ -622,6 +1756,48 @@
       "device_info": "Chrome on Windows",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Option (D)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Daniel Pozo",
       "is_active": true
     },
@@ -644,6 +1820,48 @@
       "device_info": "Chrome on Windows",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The Bose--Hubbard model on an optical lattice."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Victor Brasil",
       "is_active": true
     },
@@ -666,6 +1884,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 4,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "A differential equation only if the Hamiltonian acts on qubits."
+        }
+      ],
       "display_name": "andre obregon",
       "is_active": true
     },
@@ -688,6 +1948,48 @@
       "device_info": "Chrome on Windows",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Leopoldo Agorio",
       "is_active": true
     },
@@ -710,6 +2012,48 @@
       "device_info": "Chrome on Windows",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "diego hurtado",
       "is_active": true
     },
@@ -732,6 +2076,48 @@
       "device_info": "Chrome on Windows",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "A nonlinear Kerr parametric oscillator."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Victor Schucht",
       "is_active": true
     },
@@ -754,6 +2140,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "A differential equation only if the Hamiltonian acts on qubits."
+        }
+      ],
       "display_name": "Emily Escudero",
       "is_active": true
     },
@@ -776,6 +2204,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Carlos Sumire",
       "is_active": true
     },
@@ -798,6 +2268,48 @@
       "device_info": "Chrome on Windows",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It is a maximally entangled pure state with perfectly correlated computational-basis outcomes."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The Bose--Hubbard model on an optical lattice."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "João Dias",
       "is_active": true
     },
@@ -820,6 +2332,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 3,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "A differential equation only if the Hamiltonian acts on qubits."
+        }
+      ],
       "display_name": "Marco",
       "is_active": true
     },
@@ -842,6 +2396,48 @@
       "device_info": "Chrome on Windows",
       "points": 2,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Repeatedly prepare and measure each state in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "José Fernández",
       "is_active": true
     },
@@ -864,6 +2460,48 @@
       "device_info": "Chrome on Windows",
       "points": 2,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "The output is a superposition of all computational basis states, with equal amplitude magnitudes and relative phases determined by x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "It has an overlap of approximately 0.986 with a Gaussian state."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
       "display_name": "L",
       "is_active": true
     },
@@ -886,6 +2524,48 @@
       "device_info": "Chrome on Windows",
       "points": 2,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Apply a Hadamard gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a superposition of all computational basis states, with equal probability amplitudes and identical phases."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (C)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "A nonlinear Kerr parametric oscillator."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Tomas Zou",
       "is_active": true
     },
@@ -908,6 +2588,48 @@
       "device_info": "Chrome on Windows",
       "points": 2,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Trace out the auxiliary qumode, recovering deterministically with probability 1."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Diana Heredia",
       "is_active": true
     },
@@ -930,6 +2652,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 2,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "A Jaynes--Cummings-type model (cavity/circuit QED)"
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Leandro Nazarko",
       "is_active": true
     },
@@ -952,6 +2716,48 @@
       "device_info": "Chrome on Windows",
       "points": 1,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The transverse-field Ising model."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Only the energy eigenvalues of the quantum system."
+        }
+      ],
       "display_name": "S. Sabari",
       "is_active": true
     },
@@ -974,6 +2780,48 @@
       "device_info": "Chrome Mobile on Android",
       "points": 1,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a Pauli-X gate and then measure in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a product state in which the target remains |0⟩ until the control qubit is measured."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Its Fourier transform, proportional to , has finite compact support."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Project using , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "A nonlinear Kerr parametric oscillator."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "A differential equation only if the Hamiltonian acts on qubits."
+        }
+      ],
       "display_name": "João Machado",
       "is_active": true
     },
@@ -996,6 +2844,48 @@
       "device_info": "Chrome on Windows",
       "points": 1,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output is a single computational basis state determined by the Fourier transform of x."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (B)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact Fock state with a fixed photon number."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The transverse-field Ising model."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "A corresponding linear ordinary or partial differential equation."
+        }
+      ],
       "display_name": "Pedro Antonio",
       "is_active": true
     },
@@ -1018,6 +2908,48 @@
       "device_info": "Chrome on Windows",
       "points": 0,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
       "display_name": "Felipe Silveira Fagundes",
       "is_active": false
     },
@@ -1040,6 +2972,48 @@
       "device_info": "Chrome on Windows",
       "points": 0,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
       "display_name": "Talia da Costa Rodrigues",
       "is_active": false
     },
@@ -1062,6 +3036,48 @@
       "device_info": "Chrome on Windows",
       "points": 0,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Only the initial conditions of a differential equation."
+        }
+      ],
       "display_name": "L",
       "is_active": true
     },
@@ -1084,6 +3100,48 @@
       "device_info": "Chrome on Windows",
       "points": 0,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Repeatedly prepare and measure each state in the computational basis."
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
       "display_name": "sabari s",
       "is_active": true
     },
@@ -1106,6 +3164,48 @@
       "device_info": "Chrome on Windows",
       "points": 0,
       "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Apply a CNOT with the prepared qubit as control and a target, then measure only the target."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It is a classical statistical mixture of |00⟩ and |11⟩, without quantum coherence."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "The output preserves the input state, modifying only its global phase."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Option (A)"
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "It is an exact eigenstate of the momentum operator with eigenvalue zero"
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Project onto , with a success probability proportional to ."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "The transverse-field Ising model."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Only the initial conditions of a differential equation."
+        }
+      ],
       "display_name": "Talia da Costa Rodrigues",
       "is_active": true
     }

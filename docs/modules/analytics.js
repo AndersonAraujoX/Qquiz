@@ -125,6 +125,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
 
     const allInQuiz = Array.isArray(dataset.participants) ? dataset.participants : [];
     totalRawAttempts += allInQuiz.length;
+    const questionOffset = questionCounter - 1;
 
     const deduped = deduplicateDatasetParticipants(allInQuiz, includeZeroAttempts);
     for (const [key, p] of deduped.entries()) {
@@ -133,6 +134,13 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
       const attempted = Number(p.attempted_questions) || 0;
       const timeSec = Number(p.total_time_seconds) || 0;
       const isActive = attempted > 0;
+      const mappedAnswers = (Array.isArray(p.question_answers) ? p.question_answers : []).map(
+        (qa) => ({
+          question_number: (Number(qa.question_number) || 0) + questionOffset,
+          status: qa.status || "unattempted",
+          response: qa.response || "",
+        })
+      );
 
       totalCorrectAll += correct;
       totalAttemptedAll += attempted;
@@ -152,6 +160,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
           device_info: p.device_info || "Desconhecido",
           quizzes_count: isActive ? 1 : 0,
           total_quizzes: datasets.length,
+          question_answers: mappedAnswers,
         });
       } else {
         entry.display_name = pickPreferredDisplayName(
@@ -174,6 +183,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
         if (isActive) {
           entry.quizzes_count += 1;
         }
+        entry.question_answers.push(...mappedAnswers);
       }
     }
 
@@ -220,6 +230,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
         quizzes_count: item.quizzes_count,
         total_quizzes: item.total_quizzes,
         is_active: item.attempted_questions > 0,
+        question_answers: item.question_answers,
       };
     });
 

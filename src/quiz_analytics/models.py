@@ -18,6 +18,15 @@ class QuizDetails:
 
 
 @dataclass(frozen=True)
+class ParticipantQuestionAnswer:
+    """Outcome of a single question for a specific participant attempt."""
+
+    question_number: int
+    status: str
+    response: str = ""
+
+
+@dataclass(frozen=True)
 class ParticipantAttempt:
     """Represents a single student/participant attempt in the quiz."""
 
@@ -39,6 +48,7 @@ class ParticipantAttempt:
     device_info: str
     points: int
     total_points: int
+    question_answers: tuple[ParticipantQuestionAnswer, ...] = ()
 
     @property
     def display_name(self) -> str:

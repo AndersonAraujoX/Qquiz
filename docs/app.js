@@ -3,6 +3,7 @@
  */
 
 import { ALL_DATASETS_KEY, QuizApiClient } from "./modules/api_client.js";
+import { normalizeParticipantKey } from "./modules/analytics.js";
 import { renderBarChart, renderScatterPlot } from "./modules/charts.js";
 import { clear, el } from "./modules/dom.js";
 import {
@@ -26,6 +27,7 @@ const state = {
   sortBy: "score",
   includeZero: false,
   searchQuery: "",
+  selectedStudentKey: "",
   locale: "pt",
   report: null,
 };
@@ -54,6 +56,9 @@ const dom = {
   deviceBreakdownHost: document.getElementById("device-breakdown-host"),
   quizComparisonSection: document.getElementById("quiz-comparison-section"),
   quizComparisonTbody: document.getElementById("quiz-comparison-tbody"),
+  studentDetailSelect: document.getElementById("student-detail-select"),
+  studentDetailSummary: document.getElementById("student-detail-summary"),
+  studentQuestionsHost: document.getElementById("student-questions-host"),
   questionHighlights: document.getElementById("question-highlights"),
   questionsChartHost: document.getElementById("questions-chart-host"),
   allCountDesc: document.getElementById("all-count-desc"),
@@ -419,6 +424,149 @@ function renderQuizComparison(report) {
   }
 }
 
+function getStudentSelectionId(participant, index) {
+  const key = normalizeParticipantKey(participant);
+  return key ? `${key}::${participant.sheet_rank ?? index}` : String(index);
+}
+
+function resolveQuestionStatusInfo(status, lang) {
+  switch (status) {
+    case "correct":
+      return { cls: "correct", label: `✓ ${t(lang, "statusCorrect")}` };
+    case "incorrect":
+      return { cls: "incorrect", label: `✕ ${t(lang, "statusIncorrect")}` };
+    case "partial":
+      return { cls: "partial", label: `◐ ${t(lang, "statusPartial")}` };
+    case "ungraded":
+      return { cls: "ungraded", label: `• ${t(lang, "statusUngraded")}` };
+    default:
+      return { cls: "unattempted", label: `— ${t(lang, "statusUnattempted")}` };
+  }
+}
+
+function renderStudentBreakdown(report) {
+  if (!dom.studentDetailSelect || !dom.studentDetailSummary || !dom.studentQuestionsHost) {
+    return;
+  }
+
+  const lang = state.locale;
+  const participants = Array.isArray(report.all_ranked) ? report.all_ranked : [];
+  clear(dom.studentDetailSelect);
+  clear(dom.studentDetailSummary);
+  clear(dom.studentQuestionsHost);
+
+  if (participants.length === 0) {
+    dom.studentQuestionsHost.appendChild(
+      el("p", { className: "muted-small", text: t(lang, "studentNoData") })
+    );
+    return;
+  }
+
+  const entries = participants.map((p, idx) => ({
+    id: getStudentSelectionId(p, idx),
+    key: normalizeParticipantKey(p),
+    participant: p,
+  }));
+
+  const sortedByName = [...entries].sort((a, b) =>
+    String(a.participant.display_name).localeCompare(String(b.participant.display_name))
+  );
+
+  for (const item of sortedByName) {
+    const p = item.participant;
+    const optionText = `${p.display_name} (#${p.rank} · ${formatNumber(p.score, lang)} ${t(lang, "chartPointsUnit")})`;
+    dom.studentDetailSelect.appendChild(
+      el("option", { attrs: { value: item.id }, text: optionText })
+    );
+  }
+
+  let selectedEntry =
+    entries.find((e) => e.id === state.selectedStudentKey) ||
+    entries.find((e) => e.key && e.key === state.selectedStudentKey.split("::")[0]) ||
+    entries[0];
+
+  state.selectedStudentKey = selectedEntry.id;
+  dom.studentDetailSelect.value = selectedEntry.id;
+
+  const student = selectedEntry.participant;
+  const answers = Array.isArray(student.question_answers) ? student.question_answers : [];
+  const answerByNumber = new Map(answers.map((a) => [Number(a.question_number), a]));
+  const questions = Array.isArray(report.questions) ? report.questions : [];
+
+  const correctCount = answers.filter((a) => a.status === "correct").length || student.correct || 0;
+  const incorrectCount =
+    answers.filter((a) => a.status === "incorrect").length || student.incorrect || 0;
+  const unattemptedCount = questions.length
+    ? questions.filter((q) => {
+        const qa = answerByNumber.get(Number(q.number));
+        return !qa || qa.status === "unattempted";
+      }).length
+    : student.unattempted || 0;
+
+  dom.studentDetailSummary.appendChild(
+    el("span", {
+      className: "pill-badge",
+      text: `#${student.rank} · ${formatNumber(student.score, lang)} ${t(lang, "chartPointsUnit")} (${formatPercent(student.accuracy_percent)})`,
+    })
+  );
+  dom.studentDetailSummary.appendChild(
+    el("span", {
+      className: "highlight-tag easy",
+      text: t(lang, "studentCorrectCount", { count: correctCount }),
+    })
+  );
+  dom.studentDetailSummary.appendChild(
+    el("span", {
+      className: "highlight-tag hard",
+      text: t(lang, "studentIncorrectCount", { count: incorrectCount }),
+    })
+  );
+  dom.studentDetailSummary.appendChild(
+    el("span", {
+      className: "meta-chip",
+      text: t(lang, "studentUnattemptedCount", { count: unattemptedCount }),
+    })
+  );
+
+  if (questions.length === 0 || answers.length === 0) {
+    dom.studentQuestionsHost.appendChild(
+      el("p", { className: "muted-small", text: t(lang, "studentAnswersUnavailable") })
+    );
+    return;
+  }
+
+  for (const q of questions) {
+    const qa = answerByNumber.get(Number(q.number)) || {
+      question_number: q.number,
+      status: "unattempted",
+      response: "",
+    };
+    const statusInfo = resolveQuestionStatusInfo(qa.status, lang);
+    const contentChildren = [
+      el("span", { className: "student-question-text", text: q.question_text }),
+    ];
+    if (qa.response) {
+      contentChildren.push(
+        el("span", {
+          className: "student-response-text",
+          text: t(lang, "studentAnswerPrefix", { answer: qa.response }),
+        })
+      );
+    }
+
+    dom.studentQuestionsHost.appendChild(
+      el("div", { className: "student-question-row" }, [
+        el("span", { className: "q-num", text: `Q${q.number}` }),
+        el("div", { className: "student-question-content" }, contentChildren),
+        el("span", {
+          className: `q-status-badge ${statusInfo.cls}`,
+          text: statusInfo.label,
+        }),
+      ])
+    );
+  }
+}
+
 function openQuestionDialog(q) {
   const lang = state.locale;
   dom.dialogTitle.textContent = t(lang, "questionDialogTitle", {
@@ -583,6 +731,7 @@ function renderReport(report) {
   renderDescriptiveStats(report);
   renderDevices(report.device_breakdown);
   renderQuizComparison(report);
+  renderStudentBreakdown(report);
   renderQuestions(report);
   renderAllParticipantsTable(report);
 }
@@ -698,6 +847,14 @@ function bindEvents() {
       renderAllParticipantsTable(state.report);
     }
   });
+  if (dom.studentDetailSelect) {
+    dom.studentDetailSelect.addEventListener("change", (event) => {
+      state.selectedStudentKey = event.target.value;
+      if (state.report) {
+        renderStudentBreakdown(state.report);
+      }
+    });
+  }
   dom.dialogCloseBtn.addEventListener("click", () => {
     if (typeof dom.questionDialog.close === "function") {
       dom.questionDialog.close();

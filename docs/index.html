@@ -294,6 +294,30 @@
         </div>
       </section>
 
+      <section class="section-block" id="student-detail-section" aria-labelledby="heading-student-detail">
+        <div class="section-header">
+          <div>
+            <h2 id="heading-student-detail" data-i18n="headingStudentDetail">Desempenho Individual por Aluno</h2>
+            <p class="section-desc" data-i18n="descStudentDetail">Selecione o nome do aluno para ver quais questões ele acertou e errou.</p>
+          </div>
+
+          <label class="control-group student-select-group" for="student-detail-select">
+            <span class="control-label" data-i18n="selectStudentLabel">Aluno</span>
+            <select
+              id="student-detail-select"
+              class="select-input"
+              aria-label="Selecionar aluno para ver acertos e erros por questão"
+              data-i18n-aria-label="selectStudentAria"
+            ></select>
+          </label>
+        </div>
+
+        <div class="card student-detail-card">
+          <div id="student-detail-summary" class="student-summary-pills"></div>
+          <div id="student-questions-host" class="student-questions-list"></div>
+        </div>
+      </section>
+
       <section class="section-block" aria-labelledby="heading-questions">
         <div class="section-header">
           <div>
