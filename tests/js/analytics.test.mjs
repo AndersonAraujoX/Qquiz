@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   buildAnalyticsReport,
+  buildAttemptedQuestionsDistribution,
   computeDescriptiveStats,
   computePearsonCorrelation,
   mergeDatasets,
@@ -241,4 +242,62 @@ test("mergeDatasets throws TypeError on empty or invalid datasets", () => {
   assert.throws(() => mergeDatasets([]), TypeError);
   assert.throws(() => mergeDatasets(null), TypeError);
   assert.throws(() => mergeDatasets([null]), TypeError);
+});
+
+test("buildAttemptedQuestionsDistribution buckets single-quiz, multi-quiz, zero-attempt, and empty inputs", () => {
+  // Arrange
+  const singleParticipants = [
+    { attempted_questions: 0 },
+    { attempted_questions: 2 },
+    { attempted_questions: 5 },
+    { attempted_questions: 8 },
+    { attempted_questions: 8 },
+  ];
+  const multiParticipants = [
+    { attempted_questions: 4 },
+    { attempted_questions: 8 },
+    { attempted_questions: 16 },
+    { attempted_questions: 24 },
+    { attempted_questions: 32 },
+    { attempted_questions: 32 },
+  ];
+
+  // Act
+  const singleDist = buildAttemptedQuestionsDistribution(singleParticipants, {
+    totalQuestions: 8,
+    datasetCount: 1,
+    includeZeroAttempts: true,
+  });
+  const multiDist = buildAttemptedQuestionsDistribution(multiParticipants, {
+    totalQuestions: 32,
+    datasetCount: 4,
+    includeZeroAttempts: false,
+  });
+  const emptyDist = buildAttemptedQuestionsDistribution([], { totalQuestions: 8 });
+  const nullDist = buildAttemptedQuestionsDistribution(null);
+
+  // Assert
+  assert.deepEqual(
+    singleDist.map((b) => [b.label, b.count]),
+    [
+      ["0", 1],
+      ["1", 0],
+      ["2–3", 1],
+      ["4–5", 1],
+      ["6–7", 0],
+      ["8", 2],
+    ]
+  );
+  assert.deepEqual(
+    multiDist.map((b) => [b.label, b.count]),
+    [
+      ["1–7", 1],
+      ["8–15", 1],
+      ["16–23", 1],
+      ["24–31", 1],
+      ["32", 2],
+    ]
+  );
+  assert.deepEqual(emptyDist, []);
+  assert.deepEqual(nullDist, []);
 });

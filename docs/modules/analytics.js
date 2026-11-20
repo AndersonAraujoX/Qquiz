@@ -379,6 +379,62 @@ function buildDistribution(participants, ranges, extractor) {
   });
 }
 
+export function buildAttemptedQuestionsDistribution(
+  participants,
+  { totalQuestions = 0, datasetCount = 1, includeZeroAttempts = false } = {}
+) {
+  const list = Array.isArray(participants) ? participants : [];
+  if (list.length === 0) {
+    return [];
+  }
+
+  const maxAttempted = Math.max(
+    0,
+    ...list.map((p) => Math.max(0, Number(p?.attempted_questions) || 0))
+  );
+  const maxQ = Math.max(Number(totalQuestions) || 0, maxAttempted);
+  if (maxQ <= 0) {
+    return [];
+  }
+
+  const ranges = [];
+  if (includeZeroAttempts) {
+    ranges.push(["0", 0, 0]);
+  }
+
+  const safeDatasets = Math.max(1, Number(datasetCount) || 1);
+  if (safeDatasets > 1 && maxQ > safeDatasets) {
+    const step = Math.max(1, Math.round(maxQ / safeDatasets));
+    if (step > 1) {
+      ranges.push([`1–${step - 1}`, 1, step - 1]);
+    }
+    for (let k = 1; k < safeDatasets; k += 1) {
+      const low = k * step;
+      const high = (k + 1) * step - 1;
+      ranges.push([low === high ? `${low}` : `${low}–${high}`, low, high]);
+    }
+    const topStart = safeDatasets * step;
+    ranges.push([maxQ > topStart ? `${topStart}+` : `${topStart}`, topStart, 1e9]);
+  } else if (maxQ <= 6) {
+    for (let q = 1; q <= maxQ; q += 1) {
+      ranges.push([`${q}`, q, q]);
+    }
+  } else {
+    const bucketCount = 4;
+    const span = maxQ - 1;
+    for (let i = 0; i < bucketCount; i += 1) {
+      const low = 1 + Math.floor((i * span) / bucketCount);
+      const high = Math.floor(((i + 1) * span) / bucketCount);
+      if (low <= high) {
+        ranges.push([low === high ? `${low}` : `${low}–${high}`, low, high]);
+      }
+    }
+    ranges.push([`${maxQ}`, maxQ, 1e9]);
+  }
+
+  return buildDistribution(list, ranges, (p) => Number(p?.attempted_questions) || 0);
+}
+
 function buildDeviceBreakdown(participants) {
   if (!participants.length) return [];
   const total = participants.length;
@@ -492,6 +548,11 @@ export function buildAnalyticsReport(
       ],
       (p) => p.accuracy_percent
     ),
+    attempted_distribution: buildAttemptedQuestionsDistribution(target, {
+      totalQuestions: questions.length,
+      datasetCount,
+      includeZeroAttempts,
+    }),
     questions,
     easiest_question: easiestQuestion,
     hardest_question: hardestQuestion,

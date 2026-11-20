@@ -50,6 +50,7 @@ const dom = {
   correlationBadge: document.getElementById("correlation-badge"),
   chartAccuracyDist: document.getElementById("chart-accuracy-dist"),
   chartScoreDist: document.getElementById("chart-score-dist"),
+  chartAttemptedDist: document.getElementById("chart-attempted-dist"),
   chartScatter: document.getElementById("chart-scatter"),
   statsSampleLabel: document.getElementById("stats-sample-label"),
   descriptiveTbody: document.getElementById("descriptive-tbody"),
@@ -712,6 +713,12 @@ function renderReport(report) {
   renderBarChart(dom.chartScoreDist, report.score_distribution, dom.chartTooltip, {
     ariaLabel: t(lang, "chartScoreAria"),
     barColor: "var(--accent)",
+    emptyText: t(lang, "chartBarEmpty"),
+    studentsUnit: t(lang, "chartStudentsUnit"),
+  });
+  renderBarChart(dom.chartAttemptedDist, report.attempted_distribution, dom.chartTooltip, {
+    ariaLabel: t(lang, "chartAttemptedAria"),
+    barColor: "var(--chart-questions)",
     emptyText: t(lang, "chartBarEmpty"),
     studentsUnit: t(lang, "chartStudentsUnit"),
   });
