@@ -83,11 +83,43 @@ function deduplicateDatasetParticipants(participants, includeZeroAttempts) {
   return byKey;
 }
 
+export function parseQuizDateMs(value) {
+  if (typeof value !== "string" || !value.trim()) {
+    return null;
+  }
+  const normalized = value.replace(",", " ").replace(/\s+/g, " ").trim();
+  const parsed = Date.parse(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function sortDatasetsChronologically(datasets) {
+  return datasets
+    .map((dataset, index) => ({
+      dataset,
+      index,
+      startMs: parseQuizDateMs(dataset?.details?.game_started_on),
+    }))
+    .sort((a, b) => {
+      if (a.startMs !== null && b.startMs !== null && a.startMs !== b.startMs) {
+        return a.startMs - b.startMs;
+      }
+      return a.index - b.index;
+    })
+    .map((item) => item.dataset);
+}
+
 export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
   if (!Array.isArray(datasets) || datasets.length === 0) {
     throw new TypeError("A non-empty array of datasets is required.");
   }
 
+  for (let i = 0; i < datasets.length; i += 1) {
+    if (!datasets[i] || typeof datasets[i] !== "object") {
+      throw new TypeError(`Invalid dataset at index ${i}.`);
+    }
+  }
+
+  const orderedDatasets = sortDatasetsChronologically(datasets);
   const aggregated = new Map();
   const combinedQuestions = [];
   const quizTitles = [];
@@ -97,10 +129,7 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
   let totalRawAttempts = 0;
   let questionCounter = 1;
 
-  datasets.forEach((dataset, datasetIdx) => {
-    if (!dataset || typeof dataset !== "object") {
-      throw new TypeError(`Invalid dataset at index ${datasetIdx}.`);
-    }
+  orderedDatasets.forEach((dataset, datasetIdx) => {
     const label = String(dataset.filename || `Quiz ${datasetIdx + 1}`).replace(/\.xlsx$/i, "");
     quizTitles.push(label);
 
@@ -234,10 +263,10 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
       };
     });
 
-  const startedDates = datasets
+  const startedDates = orderedDatasets
     .map((d) => d.details?.game_started_on)
     .filter(Boolean);
-  const endedDates = datasets
+  const endedDates = orderedDatasets
     .map((d) => d.details?.game_ended_on)
     .filter(Boolean);
   const classAccuracy =

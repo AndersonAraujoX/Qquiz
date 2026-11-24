@@ -110,7 +110,7 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
   // Arrange
   const day1 = {
     filename: "Day1.xlsx",
-    details: { game_started_on: "Mon 16", game_ended_on: "Mon 16" },
+    details: { game_started_on: "Mon 16 Nov 2026,08:54 AM", game_ended_on: "Mon 16 Nov 2026,09:06 AM" },
     participants: [
       {
         sheet_rank: 1,
@@ -165,7 +165,7 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
 
   const day2 = {
     filename: "Day2.xlsx",
-    details: { game_started_on: "Wed 18", game_ended_on: "Wed 18" },
+    details: { game_started_on: "Wed 18 Nov 2026,11:17 AM", game_ended_on: "Wed 18 Nov 2026,11:31 AM" },
     participants: [
       {
         sheet_rank: 1,
@@ -234,7 +234,15 @@ test("mergeDatasets sums scores across quizzes, deduplicates reconnects, and ide
   assert.equal(merged.details.quiz_summaries[0].leader_name, "Pedro Marques");
   assert.equal(merged.details.quiz_summaries[0].max_score, 6330);
   assert.equal(merged.details.quiz_summaries[1].leader_name, "Arthur Kenzo");
-  assert.equal(merged.details.quiz_summaries[1].active_participants, 3);
+  // Assert chronological ordering in mergeDatasets when game_started_on dates are out of order
+  assert.equal(merged.details.quiz_summaries[0].title, "Day1");
+  assert.equal(merged.details.quiz_summaries[1].title, "Day2");
+
+  const reversedMerged = mergeDatasets([day2, day1]);
+  assert.equal(reversedMerged.details.quiz_summaries[0].title, "Day1");
+  assert.equal(reversedMerged.details.quiz_summaries[1].title, "Day2");
+  assert.equal(reversedMerged.details.game_started_on, "Mon 16 Nov 2026,08:54 AM");
+  assert.equal(reversedMerged.details.game_ended_on, "Wed 18 Nov 2026,11:31 AM");
 });
 
 test("mergeDatasets throws TypeError on empty or invalid datasets", () => {

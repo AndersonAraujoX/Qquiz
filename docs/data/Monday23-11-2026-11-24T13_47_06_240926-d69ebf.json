@@ -1,0 +1,2527 @@
+{
+  "filename": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf.xlsx",
+  "details": {
+    "game_started_on": "Mon 23 Nov 2026,03:26 PM",
+    "game_ended_on": "Mon 23 Nov 2026,03:38 PM",
+    "game_type": "Instructor-paced quiz",
+    "reported_participants": 24,
+    "total_attempts": 38,
+    "class_accuracy_percent": 52.0
+  },
+  "participants": [
+    {
+      "sheet_rank": 1,
+      "first_name": "Luis",
+      "last_name": "Herrera",
+      "player_name": "Lucho",
+      "attempted_questions": 8,
+      "accuracy_percent": 100.0,
+      "score": 6320,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 246.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 8,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Luis Herrera",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 2,
+      "first_name": "Ernesto",
+      "last_name": "Lana",
+      "player_name": "Ernesto Lana",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 6090,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 148.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Ernesto Lana",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 3,
+      "first_name": "Guillermo",
+      "last_name": "E",
+      "player_name": "Guillermo E",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 6170,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 151.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct electrical modulation of the Josephson energy of each trapped-ion qubit."
+        }
+      ],
+      "display_name": "Guillermo E",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 4,
+      "first_name": "Dusan",
+      "last_name": "Cvetkovic",
+      "player_name": "Dusan Cvetkovic",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5490,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 112.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Dusan Cvetkovic",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 5,
+      "first_name": "Kevin",
+      "last_name": "Martínez",
+      "player_name": "Kevin Martínez",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5370,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 129.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "State-selective fluorescence measurements followed by classical electronic feedback alone."
+        }
+      ],
+      "display_name": "Kevin Martínez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 6,
+      "first_name": "María",
+      "last_name": "P.",
+      "player_name": "María P.",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5070,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 160.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "María P.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 7,
+      "first_name": "Moisés",
+      "last_name": "Chávez",
+      "player_name": "Moisés Chávez",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5030,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 175.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Moisés Chávez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 8,
+      "first_name": "José",
+      "last_name": "Libois",
+      "player_name": "José Libois",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5200,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 188.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "José Libois",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 9,
+      "first_name": "Ivan",
+      "last_name": "Marinoni",
+      "player_name": "Ivan Marinoni",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4940,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 224.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Ivan Marinoni",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 10,
+      "first_name": "Leandro",
+      "last_name": "Matheus Morais da Silva",
+      "player_name": "Leandro Matheus Morais da Silva",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4640,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 263.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Leandro Matheus Morais da Silva",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 11,
+      "first_name": "Yamill",
+      "last_name": "Hernandez",
+      "player_name": "Yamx",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4920,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 264.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Yamill Hernandez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 12,
+      "first_name": "Pedro",
+      "last_name": "Marques Pontes",
+      "player_name": "Pedro Marques Pontes",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4480,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 301.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Pedro Marques Pontes",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 13,
+      "first_name": "davi",
+      "last_name": "j",
+      "player_name": "davi j",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4400,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 124.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "High gate fidelity."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By switching off the magnetic-field gradient and relying on Coulomb interactions alone."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "davi j",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 14,
+      "first_name": "Leopoldo",
+      "last_name": "Agorio",
+      "player_name": "Leopoldo Agorio",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4380,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 166.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Leopoldo Agorio",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 15,
+      "first_name": "Diego",
+      "last_name": "QUINFOG",
+      "player_name": "Diego Moreno",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3890,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 217.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Diego QUINFOG",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 16,
+      "first_name": "Talia",
+      "last_name": "da Costa Rodrigues",
+      "player_name": "Talia",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4120,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 222.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because quantum states of intense laser beams completely replace single photons in communication, measurement, and computing."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "State-selective fluorescence measurements followed by classical electronic feedback alone."
+        }
+      ],
+      "display_name": "Talia da Costa Rodrigues",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 17,
+      "first_name": "Daniel",
+      "last_name": "Pozo",
+      "player_name": "Clogged WC",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3740,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 302.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Hadamard gates applied exclusively to connected vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Daniel Pozo",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 18,
+      "first_name": "Ronaldo",
+      "last_name": "N. A.",
+      "player_name": "Ronaldo",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3630,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 166.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Ronaldo N. A.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 19,
+      "first_name": "Kerry",
+      "last_name": "Caverga",
+      "player_name": "Kerry Caverga",
+      "attempted_questions": 5,
+      "accuracy_percent": 50.0,
+      "score": 3090,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 3,
+      "total_time_seconds": 173.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Firefox on Ubuntu",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Kerry Caverga",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 20,
+      "first_name": "José",
+      "last_name": "Fernández",
+      "player_name": "José Fernández",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3370,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 193.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "CNOT gates applied to all edges."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Shorter gate operation time."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By switching off the magnetic-field gradient and relying on Coulomb interactions alone."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "José Fernández",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 21,
+      "first_name": "GABRIEL",
+      "last_name": "Baca",
+      "player_name": "GABRIEL",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3570,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 194.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because we can take advantage of all the fiber-optic cables already installed around the world and thereby save money."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "GABRIEL Baca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 22,
+      "first_name": "Lucas",
+      "last_name": "R",
+      "player_name": "José S.",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3190,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 237.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because quantum states of intense laser beams completely replace single photons in communication, measurement, and computing."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By switching off the magnetic-field gradient and relying on Coulomb interactions alone."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Lucas R",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 23,
+      "first_name": "Diana",
+      "last_name": "Heredia",
+      "player_name": "Diana Heredia",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3170,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 274.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Diana Heredia",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 24,
+      "first_name": "Leandro",
+      "last_name": "Nazarko",
+      "player_name": "Leandro Nazarko",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3080,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 292.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because we can take advantage of all the fiber-optic cables already installed around the world and thereby save money."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Leandro Nazarko",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 25,
+      "first_name": "Tobias",
+      "last_name": "",
+      "player_name": "Tobias",
+      "attempted_questions": 3,
+      "accuracy_percent": 38.0,
+      "score": 2600,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 5,
+      "total_time_seconds": 58.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Tobias",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 26,
+      "first_name": "Diego",
+      "last_name": "hurtado",
+      "player_name": "Diego hurtado",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2730,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 130.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By switching off the magnetic-field gradient and relying on Coulomb interactions alone."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "State-selective fluorescence measurements followed by classical electronic feedback alone."
+        }
+      ],
+      "display_name": "Diego hurtado",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 27,
+      "first_name": "Angela",
+      "last_name": "Rivas",
+      "player_name": "Angela Rivas",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2330,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 276.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "SWAP gates applied between all pairs of vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "By using local DC electrode voltages to displace ions within a static magnetic-field gradient."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "State-selective fluorescence measurements followed by classical electronic feedback alone."
+        }
+      ],
+      "display_name": "Angela Rivas",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 28,
+      "first_name": "Carlos",
+      "last_name": "Sumire",
+      "player_name": "Carlos Sumire",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2270,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 309.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "CNOT gates applied to all edges."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a strongly focused laser."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Carlos Sumire",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 29,
+      "first_name": "marco",
+      "last_name": "",
+      "player_name": "marco",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 1950,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 425.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they can only exist in a classical, deterministic state."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "High gate fidelity."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "marco",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 30,
+      "first_name": "Franquinho",
+      "last_name": "Borgarello",
+      "player_name": "Franquinho",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1730,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 138.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because all quantum systems must rely exclusively on single photons, whose operation is independent of transmission speed and noise."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Phase, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Hadamard gates applied exclusively to connected vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By switching off the magnetic-field gradient and relying on Coulomb interactions alone."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Franquinho Borgarello",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 31,
+      "first_name": "Victor",
+      "last_name": "Brasil",
+      "player_name": "Victor Brasil",
+      "attempted_questions": 7,
+      "accuracy_percent": 25.0,
+      "score": 1760,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 180.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "CNOT gates applied to all edges."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a combination of counter-propagating lasers and a static quadrupolar magnetic field."
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct electrical modulation of the Josephson energy of each trapped-ion qubit."
+        }
+      ],
+      "display_name": "Victor Brasil",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 32,
+      "first_name": "Kevin",
+      "last_name": "Duran",
+      "player_name": "Kevin Duran",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1660,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 246.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they completely eliminate the need for detectors."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because quantum states of intense laser beams completely replace single photons in communication, measurement, and computing."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Hadamard gates applied exclusively to connected vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "The ion is trapped by a time-dependent electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Fundamentaly identical qubits."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct Coulomb coupling between the ions’ internal electronic states, without motional involvement."
+        }
+      ],
+      "display_name": "Kevin Duran",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 33,
+      "first_name": "andre",
+      "last_name": "obregon",
+      "player_name": "andre obregon",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1750,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 253.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "Because they have high transmission speeds and low-noise properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because all quantum systems must rely exclusively on single photons, whose operation is independent of transmission speed and noise."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Hadamard, Pauli matrices (X, Y, Z), Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "Controlled-Z (CZ) gates between the qubits connected by each edge."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a strongly focused laser."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "High gate fidelity."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "State-selective fluorescence measurements followed by classical electronic feedback alone."
+        }
+      ],
+      "display_name": "andre obregon",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 34,
+      "first_name": "Pedro",
+      "last_name": "",
+      "player_name": "Pedro",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1320,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 373.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they can only exist in a classical, deterministic state."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because all quantum systems must rely exclusively on single photons, whose operation is independent of transmission speed and noise."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Hadamard, Phase, Controlled-Not"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Hadamard gates applied exclusively to connected vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a uniform magnetic field and a static quadrupolar electric potential."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "No necessity of very low temperatures."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "By increasing the RF trapping frequency until it matches the qubit transition.."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "State-dependent forces mediated by magnetic-field gradients and shared vibrational modes."
+        }
+      ],
+      "display_name": "Pedro",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 35,
+      "first_name": "Ernesto",
+      "last_name": "Galvão",
+      "player_name": "Ernesto Galvão",
+      "attempted_questions": 2,
+      "accuracy_percent": 12.0,
+      "score": 680,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 6,
+      "total_time_seconds": 67.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Mac OS X",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they cannot carry information."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Photonics is central because photons combine properties that promote fast, low-noise transmission and can be used either as single photons or in quantum states of intense laser beams, depending on the application."
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Ernesto Galvão",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 36,
+      "first_name": "Kevin",
+      "last_name": "Martinez",
+      "player_name": "Kevin Martinez",
+      "attempted_questions": 0,
+      "accuracy_percent": 0.0,
+      "score": 0,
+      "correct": 0,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 0.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 0,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Kevin Martinez",
+      "is_active": false
+    },
+    {
+      "sheet_rank": 37,
+      "first_name": "Talia",
+      "last_name": "da Costa Rodrigues",
+      "player_name": "Talia da Costa Rodrigues",
+      "attempted_questions": 0,
+      "accuracy_percent": 0.0,
+      "score": 0,
+      "correct": 0,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 0.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Windows",
+      "points": 0,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Talia da Costa Rodrigues",
+      "is_active": false
+    },
+    {
+      "sheet_rank": 38,
+      "first_name": "test",
+      "last_name": "",
+      "player_name": "test",
+      "attempted_questions": 6,
+      "accuracy_percent": 0.0,
+      "score": 0,
+      "correct": 0,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 2,
+      "total_time_seconds": 83.0,
+      "started_at": "Mon 23 Nov 2026,03:26 PM",
+      "device_info": "Chrome on Mac OS X",
+      "points": 0,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Because they completely eliminate the need for detectors."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Photonics is central because quantum states of intense laser beams completely replace single photons in communication, measurement, and computing."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "input, output, measurement"
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "Hadamard gates applied exclusively to connected vertices."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "The ion is trapped by a strongly focused laser."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "High gate fidelity."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "test",
+      "is_active": true
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "question_text": "Why are photons considered particularly well suited for quantum technologies?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 84.0,
+      "average_time_seconds": 21.0,
+      "correct_count": 31,
+      "incorrect_count": 5,
+      "unattempted_count": 1
+    },
+    {
+      "number": 2,
+      "question_text": "Which interpretation best explains why photonics tends to play a central role in quantum technologies?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 73.0,
+      "average_time_seconds": 34.0,
+      "correct_count": 27,
+      "incorrect_count": 9,
+      "unattempted_count": 1
+    },
+    {
+      "number": 3,
+      "question_text": "What is the minimal generating set of the Clifford group?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 54.0,
+      "average_time_seconds": 22.0,
+      "correct_count": 20,
+      "incorrect_count": 15,
+      "unattempted_count": 2
+    },
+    {
+      "number": 4,
+      "question_text": "When preparing a graph state , which operation is applied to the qubits associated with the graph’s edges?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 68.0,
+      "average_time_seconds": 25.0,
+      "correct_count": 25,
+      "incorrect_count": 9,
+      "unattempted_count": 3
+    },
+    {
+      "number": 5,
+      "question_text": "How does a Paul trap work?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 35.0,
+      "average_time_seconds": 26.0,
+      "correct_count": 13,
+      "incorrect_count": 21,
+      "unattempted_count": 3
+    },
+    {
+      "number": 6,
+      "question_text": "Which one of the following alternatives is not an advantage of quantum computation with trapped ions?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 22.0,
+      "average_time_seconds": 30.0,
+      "correct_count": 8,
+      "incorrect_count": 24,
+      "unattempted_count": 5
+    },
+    {
+      "number": 7,
+      "question_text": "In the scalable surface-electrode ion-trap architecture proposed by Winfried Hensinger and collaborators, how can selected ions be brought into resonance with globally applied microwave fields to perform quantum logic gates?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 38.0,
+      "average_time_seconds": 32.0,
+      "correct_count": 14,
+      "incorrect_count": 18,
+      "unattempted_count": 5
+    },
+    {
+      "number": 8,
+      "question_text": "In Hensinger and collaborators’ microwave-based trapped-ion quantum computing proposals, what physical mechanism enables entangling two-qubit gates without using laser beams to drive the logic interaction?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 46.0,
+      "average_time_seconds": 31.0,
+      "correct_count": 17,
+      "incorrect_count": 15,
+      "unattempted_count": 5
+    }
+  ]
+}

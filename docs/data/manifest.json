@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-11-20T22:20:50.175690+00:00",
+  "generated_at": "2026-11-24T13:55:35.622268+00:00",
   "datasets": [
+    {
+      "filename": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf.xlsx",
+      "data_file": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf.json",
+      "title": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf",
+      "total_attempts": 38,
+      "active_participants": 36
+    },
     {
       "filename": "QuantumComputingSchool-2026-11-16.xlsx",
       "data_file": "QuantumComputingSchool-2026-11-16.json",
