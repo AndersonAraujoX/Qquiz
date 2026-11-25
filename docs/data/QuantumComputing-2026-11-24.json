@@ -1,0 +1,2655 @@
+{
+  "filename": "QuantumComputing-2026-11-24.xlsx",
+  "details": {
+    "game_started_on": "Tue 24 Nov 2026,11:36 AM",
+    "game_ended_on": "Tue 24 Nov 2026,11:49 AM",
+    "game_type": "Instructor-paced quiz",
+    "reported_participants": 28,
+    "total_attempts": 40,
+    "class_accuracy_percent": 52.0
+  },
+  "participants": [
+    {
+      "sheet_rank": 1,
+      "first_name": "Yamill",
+      "last_name": "Hernandez",
+      "player_name": "Yamx Hernandez",
+      "attempted_questions": 8,
+      "accuracy_percent": 100.0,
+      "score": 7020,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 141.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 8,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "It strengthens the spin–dependent force."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Yamill Hernandez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 2,
+      "first_name": "davi",
+      "last_name": "j",
+      "player_name": "davi j",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 6320,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 126.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "davi j",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 3,
+      "first_name": "Moisés",
+      "last_name": "Chávez Huerta",
+      "player_name": "Moisés Chávez Huerta",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 5760,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 224.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Moisés Chávez Huerta",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 4,
+      "first_name": "Leopoldo",
+      "last_name": "Agorio",
+      "player_name": "Elber Galarga",
+      "attempted_questions": 8,
+      "accuracy_percent": 88.0,
+      "score": 5600,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 249.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "It strengthens the spin–dependent force."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Leopoldo Agorio",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 5,
+      "first_name": "Kevin",
+      "last_name": "Martínez",
+      "player_name": "Kevin Martínez",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5390,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 138.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Kevin Martínez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 6,
+      "first_name": "Lucas",
+      "last_name": "R",
+      "player_name": "José Souza",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5360,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 154.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Lucas R",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 7,
+      "first_name": "Sebastian",
+      "last_name": "",
+      "player_name": "Sebastian",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4960,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 178.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Sebastian",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 8,
+      "first_name": "Érico",
+      "last_name": "Paes Leme",
+      "player_name": "Érico Paes Leme",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5050,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 181.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Érico Paes Leme",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 9,
+      "first_name": "Luis",
+      "last_name": "Herrera",
+      "player_name": "Lucho",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 5050,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 218.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Luis Herrera",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 10,
+      "first_name": "Felipe",
+      "last_name": "Silveira Fagundes",
+      "player_name": "Felipe Silveira Fagundes",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4620,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 247.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Felipe Silveira Fagundes",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 11,
+      "first_name": "Diego",
+      "last_name": "QUINFOG",
+      "player_name": "Diego Moreno",
+      "attempted_questions": 8,
+      "accuracy_percent": 75.0,
+      "score": 4510,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 331.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Diego QUINFOG",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 12,
+      "first_name": "Ernesto",
+      "last_name": "Lana",
+      "player_name": "Ernesto Lana",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4370,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 191.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Ernesto Lana",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 13,
+      "first_name": "Victor",
+      "last_name": "Schucht",
+      "player_name": "Victor Schucht",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4220,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 194.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Victor Schucht",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 14,
+      "first_name": "Guillermo",
+      "last_name": "E",
+      "player_name": "Guillermo E",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 4190,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 215.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Guillermo E",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 15,
+      "first_name": "andre",
+      "last_name": "obregon",
+      "player_name": "andre obregon",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3960,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 256.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "andre obregon",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 16,
+      "first_name": "Mrs",
+      "last_name": "chungus fungus",
+      "player_name": "Mrs chungus fungus",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3900,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 272.0,
+      "started_at": "Tue 24 Nov 2026,11:37 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Heralded photonic entanglement between stationary ions in neighboring modules."
+        }
+      ],
+      "display_name": "Mrs chungus fungus",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 17,
+      "first_name": "Emily",
+      "last_name": "Escudero",
+      "player_name": "Emily franco",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3700,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 286.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Loss of the ability to manipulate qubit states using microwave fields."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Emily Escudero",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 18,
+      "first_name": "Ronaldo",
+      "last_name": "N. A.",
+      "player_name": "Ronaldo",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3770,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 296.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Ronaldo N. A.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 19,
+      "first_name": "Leandro",
+      "last_name": "Nazarko",
+      "player_name": "Leandro Nazarko",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3680,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 313.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Leandro Nazarko",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 20,
+      "first_name": "João",
+      "last_name": "Dias",
+      "player_name": "João Dias",
+      "attempted_questions": 8,
+      "accuracy_percent": 62.0,
+      "score": 3340,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 409.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "João Dias",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 21,
+      "first_name": "Leandro",
+      "last_name": "Matheus Morais da Silva",
+      "player_name": "Leandro Matheus Morais da Silva",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3430,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 152.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Interference between individual photons caused exclusively by spontaneous emission of radiation."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "It strengthens the spin–dependent force."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Leandro Matheus Morais da Silva",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 22,
+      "first_name": "Diego",
+      "last_name": "hurtado",
+      "player_name": "Diego hurtado",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3520,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 159.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Interference between individual photons caused exclusively by spontaneous emission of radiation."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Diego hurtado",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 23,
+      "first_name": "Angela",
+      "last_name": "Rivas",
+      "player_name": "Angela Rivas",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3300,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 242.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Angela Rivas",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 24,
+      "first_name": "Daniel",
+      "last_name": "Pozo",
+      "player_name": "Clogged WC",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3170,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 285.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It removes the need to transport ions between different processing regions."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Daniel Pozo",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 25,
+      "first_name": "Gabriel",
+      "last_name": "Audi",
+      "player_name": "Gabriel Audi",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 3050,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 293.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Gabriel Audi",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 26,
+      "first_name": "Andreitsy",
+      "last_name": "",
+      "player_name": "Andreitsy",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 2880,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 334.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Increased spontaneous emission from the ions’ internal qubit states."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Andreitsy",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 27,
+      "first_name": "Nathália",
+      "last_name": "Ferino",
+      "player_name": "Nathália Ferino",
+      "attempted_questions": 8,
+      "accuracy_percent": 50.0,
+      "score": 2750,
+      "correct": 4,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 362.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 4,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Because it automatically transforms any interferometer into a classical computer."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Nathália Ferino",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 28,
+      "first_name": "Natasha",
+      "last_name": "Fonseca",
+      "player_name": "D. Trump",
+      "attempted_questions": 6,
+      "accuracy_percent": 38.0,
+      "score": 2430,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 2,
+      "total_time_seconds": 91.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Natasha Fonseca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 29,
+      "first_name": "María",
+      "last_name": "P.",
+      "player_name": "María P.",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2680,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 166.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Firefox on Linux",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Heralded photonic entanglement between stationary ions in neighboring modules."
+        }
+      ],
+      "display_name": "María P.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 30,
+      "first_name": "GABRIEL",
+      "last_name": "Baca",
+      "player_name": "GABRIEL",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2360,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 232.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Increased spontaneous emission from the ions’ internal qubit states."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "GABRIEL Baca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 31,
+      "first_name": "Kevin",
+      "last_name": "Duran",
+      "player_name": "Kevin Duran",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 2140,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 284.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "It allows larger quantum computers to be built by connecting smaller ion-trap chips."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Kevin Duran",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 32,
+      "first_name": "Pedro",
+      "last_name": "",
+      "player_name": "Pedro",
+      "attempted_questions": 8,
+      "accuracy_percent": 38.0,
+      "score": 1860,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 452.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Loss of the ability to manipulate qubit states using microwave fields."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need for two-qubit entangling gates within individual modules."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Pedro",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 33,
+      "first_name": "Talia",
+      "last_name": "da Costa Rodrigues",
+      "player_name": "Talia",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1440,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 314.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Interference between individual photons caused exclusively by spontaneous emission of radiation."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": ", so produces a two-body coupling, single-qubit longitudinal fields, and a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Increased spontaneous emission from the ions’ internal qubit states."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Talia da Costa Rodrigues",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 34,
+      "first_name": "Carlos",
+      "last_name": "Sumire",
+      "player_name": "Carlos Sumire",
+      "attempted_questions": 8,
+      "accuracy_percent": 25.0,
+      "score": 1500,
+      "correct": 2,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 350.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 2,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Total internal reflection at the waveguide interfaces, which allows the optical power to be divided equally among multiple outputs."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces an exponential interaction that requires Trotterization before evaluating the energy of a computational basis state."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "Physical shuttling of trapped ions across chip boundaries using connected electric trapping potentials."
+        }
+      ],
+      "display_name": "Carlos Sumire",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 35,
+      "first_name": "Vitor",
+      "last_name": "Lucas",
+      "player_name": "Rosa 🌹",
+      "attempted_questions": 1,
+      "accuracy_percent": 12.0,
+      "score": 630,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 7,
+      "total_time_seconds": 54.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "The two photons tend to exit together through the same exit, instead of separating."
+        },
+        {
+          "question_number": 2,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Vitor Lucas",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 36,
+      "first_name": "Larry",
+      "last_name": "Capija",
+      "player_name": "Larry Capija",
+      "attempted_questions": 8,
+      "accuracy_percent": 12.0,
+      "score": 890,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 149.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Interference between the different guided modes excited in the multimode region, producing replicas of the spatial distribution of the input optical field at specific positions along the propagation path."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the direct magnetic dipole–dipole interaction between ionic spins, eliminating the need for collective vibrational modes."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "Larry Capija",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 37,
+      "first_name": "José",
+      "last_name": "Fernández",
+      "player_name": "José Fernández",
+      "attempted_questions": 8,
+      "accuracy_percent": 12.0,
+      "score": 890,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 221.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The photons no longer exhibit quantum properties."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "Because it automatically transforms any interferometer into a classical computer."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Selective absorption of certain wavelengths, allowing control over the spatial distribution of light."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces only a two-body coupling, without generating single-qubit fields or a constant energy offset in the resulting Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "Increased motional heating caused by electric-field noise from electrode surfaces."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It removes the need to transport ions between different processing regions."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Transfer of qubit states through microwave transmission lines connecting the modules."
+        }
+      ],
+      "display_name": "José Fernández",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 38,
+      "first_name": "Franquinho",
+      "last_name": "Borgarello",
+      "player_name": "Franquinho",
+      "attempted_questions": 7,
+      "accuracy_percent": 12.0,
+      "score": 920,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 286.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Increased spontaneous emission from the ions’ internal qubit states."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Franquinho Borgarello",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 39,
+      "first_name": "Diana",
+      "last_name": "Heredia",
+      "player_name": "Diana Heredia",
+      "attempted_questions": 8,
+      "accuracy_percent": 12.0,
+      "score": 670,
+      "correct": 1,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 325.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome on Windows",
+      "points": 1,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "One of the photons is absorbed by the beam splitter."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "Because it allows subsequent operations to be modified based on the results of previous measurements, enabling more general quantum operations."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Selective absorption of certain wavelengths, allowing control over the spatial distribution of light."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": ", so produces transverse and longitudinal Pauli couplings, introducing non-commuting terms into the resulting cost Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "Reduced Coulomb interactions between neighboring trapped ions."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It suppresses electrode-induced electric-field noise through magnetic compensation, removing the need for motional control."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "It eliminates the need to cool the ions during quantum computations."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "Diana Heredia",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 40,
+      "first_name": "marco",
+      "last_name": "",
+      "player_name": "marco",
+      "attempted_questions": 5,
+      "accuracy_percent": 0.0,
+      "score": 0,
+      "correct": 0,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 3,
+      "total_time_seconds": 273.0,
+      "started_at": "Tue 24 Nov 2026,11:36 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 0,
+      "total_points": 8,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "The two photons always follow separate paths."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "All of the above are incorrect; it is not important."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Selective absorption of certain wavelengths, allowing control over the spatial distribution of light."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "It increases the electric RF confinement strength while leaving the internal spin–motion interaction unchanged."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "Direct magnetic dipole–dipole interactions between stationary ions on separate chips."
+        }
+      ],
+      "display_name": "marco",
+      "is_active": true
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "question_text": "What happens when two identical photons strike a 50/50 beam splitter simultaneously, according to the Hong-Ou-Mandel effect?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 50.0,
+      "average_time_seconds": 28.0,
+      "correct_count": 20,
+      "incorrect_count": 20,
+      "unattempted_count": 0
+    },
+    {
+      "number": 2,
+      "question_text": "Why is the introduction of adaptive and conditional measurements so important for the development of universal photonic quantum computers?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 78.0,
+      "average_time_seconds": 27.0,
+      "correct_count": 31,
+      "incorrect_count": 8,
+      "unattempted_count": 1
+    },
+    {
+      "number": 3,
+      "question_text": "What is the fundamental physical principle that enables a multimode interferometer (MMI) to function in integrated photonic circuits?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 65.0,
+      "average_time_seconds": 34.0,
+      "correct_count": 26,
+      "incorrect_count": 12,
+      "unattempted_count": 2
+    },
+    {
+      "number": 4,
+      "question_text": "When translating a binary decision variable into a Pauli-Z spin operator with eigenvalues , which substitution is used, and what happens to a quadratic interaction term ?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 55.0,
+      "average_time_seconds": 40.0,
+      "correct_count": 22,
+      "incorrect_count": 16,
+      "unattempted_count": 2
+    },
+    {
+      "number": 5,
+      "question_text": "What is a major disadvantage of positioning trapped ions close to the electrode surfaces?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 62.0,
+      "average_time_seconds": 29.0,
+      "correct_count": 25,
+      "incorrect_count": 12,
+      "unattempted_count": 3
+    },
+    {
+      "number": 6,
+      "question_text": "In Hensinger’s microwave-driven trapped-ion quantum computing architecture, why can increasing the static magnetic-field gradient enable faster two-qubit entangling gates, assuming other experimental parameters remain fixed?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 8.0,
+      "average_time_seconds": 35.0,
+      "correct_count": 3,
+      "incorrect_count": 35,
+      "unattempted_count": 2
+    },
+    {
+      "number": 7,
+      "question_text": "What is the main advantage of the modular trapped-ion quantum computing architecture proposed by Winfried Hensinger and collaborators?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 57.0,
+      "average_time_seconds": 25.0,
+      "correct_count": 23,
+      "incorrect_count": 15,
+      "unattempted_count": 2
+    },
+    {
+      "number": 8,
+      "question_text": "In the modular trapped-ion quantum computer developed by Winfried Hensinger and collaborators, what mechanism enables coherent quantum information transfer between adjacent surface-electrode trap modules?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 45.0,
+      "average_time_seconds": 33.0,
+      "correct_count": 18,
+      "incorrect_count": 21,
+      "unattempted_count": 1
+    }
+  ]
+}

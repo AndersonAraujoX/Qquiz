@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:55:35.622268+00:00",
+  "generated_at": "2026-11-25T14:17:05.599403+00:00",
   "datasets": [
     {
       "filename": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf.xlsx",
@@ -7,6 +7,13 @@
       "title": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf",
       "total_attempts": 38,
       "active_participants": 36
+    },
+    {
+      "filename": "QuantumComputing-2026-11-24.xlsx",
+      "data_file": "QuantumComputing-2026-11-24.json",
+      "title": "QuantumComputing-2026-11-24",
+      "total_attempts": 40,
+      "active_participants": 40
     },
     {
       "filename": "QuantumComputingSchool-2026-11-16.xlsx",
