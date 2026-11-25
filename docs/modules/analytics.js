@@ -108,7 +108,7 @@ function sortDatasetsChronologically(datasets) {
     .map((item) => item.dataset);
 }
 
-export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
+export function mergeDatasets(datasets, { includeZeroAttempts = false, sortBy = "score" } = {}) {
   if (!Array.isArray(datasets) || datasets.length === 0) {
     throw new TypeError("A non-empty array of datasets is required.");
   }
@@ -280,14 +280,131 @@ export function mergeDatasets(datasets, { includeZeroAttempts = false } = {}) {
       game_ended_on: endedDates[endedDates.length - 1] || "--",
       reported_participants: combinedParticipants.length,
       class_accuracy_percent: classAccuracy,
-      dataset_count: datasets.length,
+      dataset_count: orderedDatasets.length,
       quiz_titles: quizTitles,
       quiz_summaries: quizSummaries,
+      ranking_progression: buildRankingProgression(orderedDatasets, {
+        sortBy,
+        includeZeroAttempts,
+      }),
       total_raw_attempts: totalRawAttempts,
     },
     participants: combinedParticipants,
     questions: combinedQuestions,
   };
+}
+
+export function buildRankingProgression(
+  datasets,
+  { sortBy = "score", includeZeroAttempts = false } = {}
+) {
+  if (!VALID_SORT_MODES.has(sortBy)) {
+    throw new Error(`Unsupported sortBy: ${sortBy}`);
+  }
+  if (!Array.isArray(datasets) || datasets.length === 0) {
+    return { stages: [], participants: [] };
+  }
+
+  const ordered = sortDatasetsChronologically(
+    datasets.filter((d) => d && typeof d === "object")
+  );
+  if (ordered.length === 0) {
+    return { stages: [], participants: [] };
+  }
+
+  const stages = ordered.map((ds, idx) => ({
+    index: idx,
+    label: `Q${idx + 1}`,
+    title: String(ds.filename || `Quiz ${idx + 1}`).replace(/\.xlsx$/i, ""),
+    started_on: ds.details?.game_started_on || "",
+  }));
+
+  const cumulativeByKey = new Map();
+  const stageRanksByKey = new Map();
+  const stageScoresByKey = new Map();
+
+  ordered.forEach((ds, stageIdx) => {
+    const deduped = deduplicateDatasetParticipants(ds.participants, includeZeroAttempts);
+    for (const [key, p] of deduped.entries()) {
+      const score = Number(p.score) || 0;
+      const correct = Number(p.correct) || 0;
+      const attempted = Number(p.attempted_questions) || 0;
+      const timeSec = Number(p.total_time_seconds) || 0;
+
+      const prev = cumulativeByKey.get(key);
+      if (!prev) {
+        cumulativeByKey.set(key, {
+          key,
+          display_name: p.display_name || p.player_name || key,
+          score,
+          correct,
+          attempted_questions: attempted,
+          total_time_seconds: timeSec,
+          accuracy_percent: attempted > 0 ? roundTo((correct / attempted) * 100, 1) : 0,
+          sheet_rank: Number(p.sheet_rank) || 9999,
+        });
+      } else {
+        prev.display_name = pickPreferredDisplayName(
+          prev.display_name,
+          p.display_name || p.player_name
+        );
+        prev.score += score;
+        prev.correct += correct;
+        prev.attempted_questions += attempted;
+        prev.total_time_seconds += timeSec;
+        prev.accuracy_percent =
+          prev.attempted_questions > 0
+            ? roundTo((prev.correct / prev.attempted_questions) * 100, 1)
+            : 0;
+      }
+    }
+
+    const snapshot = [...cumulativeByKey.values()];
+    const bySheetOrder = [...snapshot].sort((a, b) => {
+      if (b.correct !== a.correct) return b.correct - a.correct;
+      if (a.total_time_seconds !== b.total_time_seconds) {
+        return a.total_time_seconds - b.total_time_seconds;
+      }
+      if (b.score !== a.score) return b.score - a.score;
+      return String(a.display_name).localeCompare(String(b.display_name));
+    });
+    bySheetOrder.forEach((item, idx) => {
+      item.sheet_rank = idx + 1;
+    });
+
+    const ranked = rankParticipants(snapshot, sortBy);
+    ranked.forEach((item, idx) => {
+      if (!stageRanksByKey.has(item.key)) {
+        stageRanksByKey.set(item.key, new Array(ordered.length).fill(null));
+        stageScoresByKey.set(item.key, new Array(ordered.length).fill(null));
+      }
+      stageRanksByKey.get(item.key)[stageIdx] = idx + 1;
+      stageScoresByKey.get(item.key)[stageIdx] = item.score;
+    });
+  });
+
+  const participants = [...cumulativeByKey.values()]
+    .map((item) => {
+      const ranks = stageRanksByKey.get(item.key) || new Array(ordered.length).fill(null);
+      const scores = stageScoresByKey.get(item.key) || new Array(ordered.length).fill(null);
+      const firstRank = ranks.find((r) => r !== null) ?? null;
+      const finalRank = ranks[ranks.length - 1];
+      const delta =
+        firstRank !== null && finalRank !== null ? firstRank - finalRank : 0;
+      return {
+        key: item.key,
+        display_name: item.display_name,
+        final_rank: finalRank ?? 9999,
+        final_score: item.score,
+        first_rank: firstRank,
+        delta,
+        ranks,
+        scores,
+      };
+    })
+    .sort((a, b) => a.final_rank - b.final_rank || a.display_name.localeCompare(b.display_name));
+
+  return { stages, participants };
 }
 
 function quantile(sortedValues, q) {

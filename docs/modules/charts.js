@@ -310,3 +310,212 @@ export function renderScatterPlot(
 
   container.appendChild(svg);
 }
+
+const PROGRESSION_PALETTE = [
+  "#ff319f",
+  "#0b875b",
+  "#d97736",
+  "#6d28d9",
+  "#0284c7",
+  "#e11d48",
+  "#059669",
+  "#b45309",
+  "#7c3aed",
+  "#0d9488",
+  "#db2777",
+  "#2563eb",
+  "#ca8a04",
+  "#9333ea",
+  "#16a34a",
+];
+
+export function renderRankingProgressionChart(
+  container,
+  progression,
+  tooltipEl,
+  {
+    maxSeries = 10,
+    doc = globalThis.document,
+    emptyText = "Adicione pelo menos 2 quizzes para visualizar a evolução no ranking.",
+    ariaLabel = "Gráfico de evolução da colocação dos candidatos ao longo dos quizzes",
+    stagePrefix = "Quiz",
+    pointsUnit = "pts",
+    locale = "pt",
+  } = {}
+) {
+  if (!container) {
+    return;
+  }
+  clear(container);
+
+  const stages = Array.isArray(progression?.stages) ? progression.stages : [];
+  const allParticipants = Array.isArray(progression?.participants)
+    ? progression.participants
+    : [];
+
+  if (stages.length < 2 || allParticipants.length === 0) {
+    const empty = doc.createElement("p");
+    empty.className = "muted-small";
+    empty.textContent = emptyText;
+    container.appendChild(empty);
+    return;
+  }
+
+  const series = allParticipants.slice(0, Math.max(1, Number(maxSeries) || 10));
+  const observedRanks = series.flatMap((p) =>
+    (Array.isArray(p.ranks) ? p.ranks : []).filter((r) => typeof r === "number" && r > 0)
+  );
+  const maxRank = Math.max(series.length, ...observedRanks, 2);
+
+  const width = 940;
+  const height = Math.max(320, Math.min(520, 90 + series.length * 30));
+  const pad = { top: 28, right: 190, bottom: 44, left: 46 };
+  const plotW = width - pad.left - pad.right;
+  const plotH = height - pad.top - pad.bottom;
+
+  const xForStage = (idx) =>
+    stages.length === 1 ? pad.left + plotW / 2 : pad.left + (idx / (stages.length - 1)) * plotW;
+  const yForRank = (rank) =>
+    maxRank === 1 ? pad.top + plotH / 2 : pad.top + ((rank - 1) / (maxRank - 1)) * plotH;
+
+  const svg = svgEl("svg", {
+    class: "chart-svg",
+    viewBox: `0 0 ${width} ${height}`,
+    role: "img",
+    "aria-label": ariaLabel,
+  });
+
+  // Horizontal rank grid lines
+  const yTicks = maxRank <= 12
+    ? Array.from({ length: maxRank }, (_, i) => i + 1)
+    : [1, Math.round(maxRank * 0.25), Math.round(maxRank * 0.5), Math.round(maxRank * 0.75), maxRank];
+
+  for (const rankTick of [...new Set(yTicks)]) {
+    const y = yForRank(rankTick);
+    svg.appendChild(
+      svgEl("line", {
+        x1: pad.left,
+        x2: pad.left + plotW,
+        y1: y,
+        y2: y,
+        stroke: "var(--border)",
+        "stroke-dasharray": rankTick === 1 ? "none" : "3 3",
+      })
+    );
+    svg.appendChild(
+      svgEl(
+        "text",
+        {
+          x: pad.left - 10,
+          y: y + 4,
+          "text-anchor": "end",
+          fill: "var(--text-muted)",
+          "font-size": "11",
+          "font-weight": "700",
+        },
+        `#${rankTick}`
+      )
+    );
+  }
+
+  // Vertical stage lines & labels
+  stages.forEach((stage, idx) => {
+    const x = xForStage(idx);
+    svg.appendChild(
+      svgEl("line", {
+        x1: x,
+        x2: x,
+        y1: pad.top,
+        y2: pad.top + plotH,
+        stroke: "var(--border)",
+        "stroke-dasharray": "3 3",
+      })
+    );
+    svg.appendChild(
+      svgEl(
+        "text",
+        {
+          x,
+          y: height - 16,
+          "text-anchor": "middle",
+          fill: "var(--text-muted)",
+          "font-size": "11",
+          "font-weight": "700",
+        },
+        `${stagePrefix} ${idx + 1}`
+      )
+    );
+  });
+
+  // Series lines, points, and right-side labels
+  series.forEach((student, sIdx) => {
+    const color = PROGRESSION_PALETTE[sIdx % PROGRESSION_PALETTE.length];
+    const points = [];
+    stages.forEach((stage, stageIdx) => {
+      const rank = student.ranks?.[stageIdx];
+      if (typeof rank === "number" && rank > 0) {
+        points.push({
+          stageIdx,
+          stage,
+          rank,
+          score: student.scores?.[stageIdx] ?? 0,
+          x: xForStage(stageIdx),
+          y: yForRank(rank),
+        });
+      }
+    });
+
+    if (points.length >= 2) {
+      svg.appendChild(
+        svgEl("polyline", {
+          fill: "none",
+          stroke: color,
+          "stroke-width": sIdx < 3 ? "3.2" : "2.2",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-opacity": "0.9",
+          points: points.map((pt) => `${pt.x},${pt.y}`).join(" "),
+        })
+      );
+    }
+
+    for (const pt of points) {
+      const tip = `#${pt.rank} ${student.display_name} · ${stagePrefix} ${pt.stageIdx + 1} (${formatNumber(pt.score, locale)} ${pointsUnit})`;
+      const circle = svgEl("circle", {
+        cx: pt.x,
+        cy: pt.y,
+        r: sIdx < 3 ? 5.5 : 4.2,
+        fill: color,
+        stroke: "var(--surface)",
+        "stroke-width": "1.8",
+        tabindex: "0",
+        "aria-label": tip,
+      });
+      if (tooltipEl) {
+        attachTooltipHandlers(circle, tooltipEl, tip);
+      }
+      svg.appendChild(circle);
+    }
+
+    if (points.length > 0) {
+      const last = points[points.length - 1];
+      const rawLabel = `#${student.final_rank} ${student.display_name}`;
+      const shortLabel = rawLabel.length > 24 ? `${rawLabel.slice(0, 23)}…` : rawLabel;
+      svg.appendChild(
+        svgEl(
+          "text",
+          {
+            x: pad.left + plotW + 12,
+            y: last.y + 4,
+            fill: color,
+            "font-size": "11.5",
+            "font-weight": "800",
+          },
+          shortLabel
+        )
+      );
+    }
+  });
+
+  container.appendChild(svg);
+}

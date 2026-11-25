@@ -78,6 +78,7 @@ export class QuizApiClient {
       );
       const combined = mergeDatasets(datasets, {
         includeZeroAttempts: includeZero,
+        sortBy,
       });
       return buildAnalyticsReport(combined, {
         sortBy,

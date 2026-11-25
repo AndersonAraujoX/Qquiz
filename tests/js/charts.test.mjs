@@ -1,7 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { renderBarChart, renderScatterPlot } from "../../docs/modules/charts.js";
+import {
+  renderBarChart,
+  renderRankingProgressionChart,
+  renderScatterPlot,
+} from "../../docs/modules/charts.js";
 
 function createStubElement(tagName, namespaceURI = null) {
   const attrs = new Map();
@@ -174,5 +178,63 @@ test("renderBarChart and renderScatterPlot handle empty, null, and invalid input
     assert.equal(scatterContainer.children[0].tagName, "p");
   } finally {
     globalThis.document = prevDoc;
+  }
+});
+
+test("renderRankingProgressionChart renders polylines, points, tooltips, and handles single-stage fallback", () => {
+  // Arrange
+  const prevDoc = globalThis.document;
+  const prevWin = globalThis.window;
+  const stubDoc = createStubDocument();
+  globalThis.document = stubDoc;
+  globalThis.window = { innerWidth: 1024 };
+
+  try {
+    const container = createStubElement("div");
+    const emptyContainer = createStubElement("div");
+    const tooltip = createStubElement("div");
+    tooltip.hidden = true;
+    const progression = {
+      stages: [
+        { index: 0, label: "Q1", title: "Day1" },
+        { index: 1, label: "Q2", title: "Day2" },
+      ],
+      participants: [
+        { display_name: "Ana", final_rank: 1, ranks: [2, 1], scores: [3000, 7500] },
+        { display_name: "Leo", final_rank: 2, ranks: [1, 2], scores: [4000, 6500] },
+        { display_name: "Mia", final_rank: 3, ranks: [null, 3], scores: [null, 5000] },
+      ],
+    };
+
+    // Act
+    renderRankingProgressionChart(container, progression, tooltip, {
+      maxSeries: 2,
+      doc: stubDoc,
+      stagePrefix: "Quiz",
+      pointsUnit: "pts",
+    });
+    renderRankingProgressionChart(emptyContainer, { stages: [{ index: 0 }], participants: [] }, null, {
+      doc: stubDoc,
+      emptyText: "Need 2+ quizzes",
+    });
+    renderRankingProgressionChart(null, progression, null, { doc: stubDoc });
+
+    // Assert
+    const polylines = collectByTag(container, "polyline");
+    const circles = collectByTag(container, "circle");
+    assert.equal(polylines.length, 2);
+    assert.equal(circles.length, 4);
+
+    circles[0].dispatch("mouseenter", { clientX: 120, clientY: 140 });
+    assert.equal(tooltip.hidden, false);
+    assert.match(tooltip.textContent, /#2 Ana · Quiz 1/);
+    circles[0].dispatch("mouseleave");
+    assert.equal(tooltip.hidden, true);
+
+    assert.equal(emptyContainer.children.length, 1);
+    assert.equal(emptyContainer.children[0].textContent, "Need 2+ quizzes");
+  } finally {
+    globalThis.document = prevDoc;
+    globalThis.window = prevWin;
   }
 });

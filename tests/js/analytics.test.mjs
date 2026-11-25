@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import {
   buildAnalyticsReport,
   buildAttemptedQuestionsDistribution,
+  buildRankingProgression,
   computeDescriptiveStats,
   computePearsonCorrelation,
   mergeDatasets,
@@ -308,4 +309,49 @@ test("buildAttemptedQuestionsDistribution buckets single-quiz, multi-quiz, zero-
   );
   assert.deepEqual(emptyDist, []);
   assert.deepEqual(nullDist, []);
+});
+
+test("buildRankingProgression tracks cumulative ranks, late joiners, empty inputs, and invalid sortBy", () => {
+  // Arrange
+  const q1 = {
+    filename: "Quiz1.xlsx",
+    details: { game_started_on: "Mon 16 Nov 2026,08:54 AM" },
+    participants: [
+      { display_name: "Ana", score: 5000, correct: 7, attempted_questions: 8, total_time_seconds: 100 },
+      { display_name: "Bruno", score: 3000, correct: 4, attempted_questions: 8, total_time_seconds: 120 },
+    ],
+  };
+  const q2 = {
+    filename: "Quiz2.xlsx",
+    details: { game_started_on: "Tue 17 Nov 2026,11:17 AM" },
+    participants: [
+      { display_name: "Bruno", score: 6000, correct: 8, attempted_questions: 8, total_time_seconds: 90 },
+      { display_name: "Ana", score: 2000, correct: 3, attempted_questions: 8, total_time_seconds: 150 },
+      { display_name: "Carla", score: 4000, correct: 6, attempted_questions: 8, total_time_seconds: 110 },
+    ],
+  };
+
+  // Act
+  const prog = buildRankingProgression([q2, q1], { sortBy: "score" });
+  const emptyProg = buildRankingProgression([]);
+
+  // Assert
+  assert.equal(prog.stages.length, 2);
+  assert.equal(prog.stages[0].title, "Quiz1");
+  assert.equal(prog.stages[1].title, "Quiz2");
+
+  const bruno = prog.participants.find((p) => p.display_name === "Bruno");
+  const ana = prog.participants.find((p) => p.display_name === "Ana");
+  const carla = prog.participants.find((p) => p.display_name === "Carla");
+
+  assert.deepEqual(bruno.ranks, [2, 1]);
+  assert.equal(bruno.delta, 1);
+  assert.equal(bruno.final_score, 9000);
+  assert.deepEqual(ana.ranks, [1, 2]);
+  assert.equal(ana.delta, -1);
+  assert.deepEqual(carla.ranks, [null, 3]);
+  assert.equal(carla.delta, 0);
+
+  assert.deepEqual(emptyProg, { stages: [], participants: [] });
+  assert.throws(() => buildRankingProgression([q1], { sortBy: "invalid" }), Error);
 });

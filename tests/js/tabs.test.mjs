@@ -54,6 +54,7 @@ test("normalizeTabId resolves valid hashes and falls back to default", () => {
   // Arrange / Act / Assert
   assert.equal(normalizeTabId("#top10"), "top10");
   assert.equal(normalizeTabId("  ESTATISTICAS "), "estatisticas");
+  assert.equal(normalizeTabId("#evolucao"), "evolucao");
   assert.equal(normalizeTabId("#unknown"), DEFAULT_TAB_ID);
   assert.equal(normalizeTabId(null), DEFAULT_TAB_ID);
 });

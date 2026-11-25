@@ -4,7 +4,11 @@
 
 import { ALL_DATASETS_KEY, QuizApiClient } from "./modules/api_client.js";
 import { normalizeParticipantKey } from "./modules/analytics.js";
-import { renderBarChart, renderScatterPlot } from "./modules/charts.js";
+import {
+  renderBarChart,
+  renderRankingProgressionChart,
+  renderScatterPlot,
+} from "./modules/charts.js";
 import { clear, el } from "./modules/dom.js";
 import {
   accuracyTierClass,
@@ -27,6 +31,8 @@ const state = {
   sortBy: "score",
   includeZero: false,
   searchQuery: "",
+  progressionSearch: "",
+  progressionLimit: 10,
   selectedStudentKey: "",
   locale: "pt",
   report: null,
@@ -60,6 +66,17 @@ const dom = {
   studentDetailSelect: document.getElementById("student-detail-select"),
   studentDetailSummary: document.getElementById("student-detail-summary"),
   studentQuestionsHost: document.getElementById("student-questions-host"),
+  progressionLimitSelect: document.getElementById("progression-limit-select"),
+  progressionNotice: document.getElementById("progression-notice"),
+  progressionSwitchBtn: document.getElementById("progression-switch-btn"),
+  progressionChartCard: document.getElementById("progression-chart-card"),
+  chartRankingProgression: document.getElementById("chart-ranking-progression"),
+  progressionTableHeader: document.getElementById("progression-table-header"),
+  progressionCountDesc: document.getElementById("progression-count-desc"),
+  progressionSearch: document.getElementById("progression-search"),
+  progressionTableCard: document.getElementById("progression-table-card"),
+  progressionTheadRow: document.getElementById("progression-thead-row"),
+  progressionTbody: document.getElementById("progression-tbody"),
   questionHighlights: document.getElementById("question-highlights"),
   questionsChartHost: document.getElementById("questions-chart-host"),
   allCountDesc: document.getElementById("all-count-desc"),
@@ -735,12 +752,110 @@ function renderReport(report) {
     locale: lang,
   });
 
+function renderRankingProgression(report) {
+  if (!dom.chartRankingProgression || !dom.progressionTheadRow || !dom.progressionTbody) {
+    return;
+  }
+
+  const lang = state.locale;
+  const progression = report.details?.ranking_progression;
+  const hasStages =
+    progression && Array.isArray(progression.stages) && progression.stages.length >= 2;
+
+  if (dom.progressionNotice) dom.progressionNotice.hidden = Boolean(hasStages);
+  if (dom.progressionSwitchBtn) {
+    dom.progressionSwitchBtn.hidden = state.datasets.length < 2;
+  }
+  if (dom.progressionChartCard) dom.progressionChartCard.hidden = !hasStages;
+  if (dom.progressionTableHeader) dom.progressionTableHeader.hidden = !hasStages;
+  if (dom.progressionTableCard) dom.progressionTableCard.hidden = !hasStages;
+
+  if (!hasStages) {
+    clear(dom.chartRankingProgression);
+    clear(dom.progressionTheadRow);
+    clear(dom.progressionTbody);
+    return;
+  }
+
+  renderRankingProgressionChart(
+    dom.chartRankingProgression,
+    progression,
+    dom.chartTooltip,
+    {
+      maxSeries: state.progressionLimit,
+      emptyText: t(lang, "progressionNeedCombined"),
+      ariaLabel: t(lang, "progressionChartAria"),
+      stagePrefix: t(lang, "progressionStagePrefix"),
+      pointsUnit: t(lang, "chartPointsUnit"),
+      locale: lang,
+    }
+  );
+
+  clear(dom.progressionTheadRow);
+  dom.progressionTheadRow.appendChild(
+    el("th", { attrs: { scope: "col" }, text: t(lang, "thFinalRank") })
+  );
+  dom.progressionTheadRow.appendChild(
+    el("th", { attrs: { scope: "col" }, text: t(lang, "thStudent") })
+  );
+  progression.stages.forEach((stage, idx) => {
+    dom.progressionTheadRow.appendChild(
+      el("th", {
+        className: "num",
+        attrs: { scope: "col", title: stage.started_on || stage.title },
+        text: `${t(lang, "progressionStagePrefix")} ${idx + 1}`,
+      })
+    );
+  });
+  dom.progressionTheadRow.appendChild(
+    el("th", { className: "num", attrs: { scope: "col" }, text: t(lang, "thDelta") })
+  );
+  dom.progressionTheadRow.appendChild(
+    el("th", { className: "num", attrs: { scope: "col" }, text: t(lang, "thFinalScore") })
+  );
+
+  const needle = state.progressionSearch.trim().toLowerCase();
+  const filtered = needle
+    ? progression.participants.filter((p) =>
+        String(p.display_name).toLowerCase().includes(needle)
+      )
+    : progression.participants;
+
+  if (dom.progressionCountDesc) {
+    dom.progressionCountDesc.textContent = t(lang, "progressionTableSub", {
+      shown: filtered.length,
+      total: progression.participants.length,
+    });
+  }
+
+  clear(dom.progressionTbody);
+  for (const p of filtered) {
+    const rankClass = p.final_rank <= 3 ? `rank-badge top-${p.final_rank}` : "rank-badge";
+    const deltaClass = p.delta > 0 ? "up" : p.delta < 0 ? "down" : "flat";
+    const deltaText = p.delta > 0 ? `▲ +${p.delta}` : p.delta < 0 ? `▼ ${p.delta}` : "=";
+
+    const cells = [
+      el("td", {}, [el("span", { className: rankClass, text: String(p.final_rank) })]),
+      el("td", {}, [el("strong", { text: p.display_name })]),
+      ...p.ranks.map((r) =>
+        el("td", { className: "num", text: typeof r === "number" ? `#${r}` : "—" })
+      ),
+      el("td", { className: "num" }, [
+        el("span", { className: `delta-pill ${deltaClass}`, text: deltaText }),
+      ]),
+      el("td", { className: "num", text: formatNumber(p.final_score, lang) }),
+    ];
+    dom.progressionTbody.appendChild(el("tr", {}, cells));
+  }
+}
+
   renderDescriptiveStats(report);
   renderDevices(report.device_breakdown);
   renderQuizComparison(report);
   renderStudentBreakdown(report);
   renderQuestions(report);
   renderAllParticipantsTable(report);
+  renderRankingProgression(report);
 }
 
 function applyLocaleToUi(locale) {
@@ -859,6 +974,31 @@ function bindEvents() {
       state.selectedStudentKey = event.target.value;
       if (state.report) {
         renderStudentBreakdown(state.report);
+      }
+    });
+  }
+  if (dom.progressionLimitSelect) {
+    dom.progressionLimitSelect.addEventListener("change", (event) => {
+      state.progressionLimit = Number(event.target.value) || 10;
+      if (state.report) {
+        renderRankingProgression(state.report);
+      }
+    });
+  }
+  if (dom.progressionSearch) {
+    dom.progressionSearch.addEventListener("input", (event) => {
+      state.progressionSearch = event.target.value;
+      if (state.report) {
+        renderRankingProgression(state.report);
+      }
+    });
+  }
+  if (dom.progressionSwitchBtn) {
+    dom.progressionSwitchBtn.addEventListener("click", () => {
+      if (state.datasets.length > 1) {
+        state.selectedFile = ALL_DATASETS_KEY;
+        dom.datasetSelect.value = ALL_DATASETS_KEY;
+        loadReport();
       }
     });
   }

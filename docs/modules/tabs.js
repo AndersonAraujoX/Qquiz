@@ -3,7 +3,7 @@
  */
 
 export const DEFAULT_TAB_ID = "top10";
-export const VALID_TABS = new Set(["top10", "estatisticas"]);
+export const VALID_TABS = new Set(["top10", "estatisticas", "evolucao"]);
 
 export function normalizeTabId(candidate, fallback = DEFAULT_TAB_ID) {
   if (typeof candidate !== "string") {

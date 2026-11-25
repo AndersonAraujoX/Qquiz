@@ -1320,3 +1320,45 @@ body {
   color: var(--text-muted);
   border-color: var(--border-strong);
 }
+
+/* Ranking Progression */
+.progression-limit-group .control-label {
+  color: var(--text-muted);
+}
+
+.progression-notice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.progression-notice p {
+  margin: 0;
+}
+
+.delta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.delta-pill.up {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.delta-pill.down {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.delta-pill.flat {
+  background: var(--surface-alt);
+  color: var(--text-muted);
+}

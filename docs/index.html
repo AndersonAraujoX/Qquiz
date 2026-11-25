@@ -99,6 +99,19 @@
         >
           Dados Estatísticos
         </button>
+        <button
+          type="button"
+          id="tab-evolucao"
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-evolucao"
+          data-tab="evolucao"
+          tabindex="-1"
+          data-i18n="tabProgression"
+        >
+          Evolução no Ranking
+        </button>
       </div>
     </nav>
 
@@ -335,6 +348,72 @@
 
         <div class="card">
           <div id="questions-chart-host" class="questions-grid"></div>
+        </div>
+      </section>
+    </section>
+
+    <section
+      id="panel-evolucao"
+      class="tab-panel"
+      role="tabpanel"
+      aria-labelledby="tab-evolucao"
+      data-tab-panel="evolucao"
+      hidden
+    >
+      <section class="section-block" aria-labelledby="heading-progression">
+        <div class="section-header">
+          <div>
+            <h2 id="heading-progression" data-i18n="headingProgression">Evolução da Colocação por Quiz</h2>
+            <p class="section-desc" data-i18n="descProgression">Posição acumulada de cada candidato do primeiro até o último quiz.</p>
+          </div>
+          <label class="control-group progression-limit-group" for="progression-limit-select">
+            <span class="control-label" data-i18n="progressionLimitLabel">Exibir no gráfico</span>
+            <select id="progression-limit-select" class="select-input">
+              <option value="5" data-i18n="progressionTop5">Top 5</option>
+              <option value="10" selected data-i18n="progressionTop10">Top 10</option>
+              <option value="15" data-i18n="progressionTop15">Top 15</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="progression-notice" class="card progression-notice" hidden>
+          <p class="muted-small" data-i18n="progressionNeedCombined">Selecione 'Soma Geral' no topo (com 2 ou mais quizzes) para visualizar a evolução das colocações.</p>
+          <button type="button" id="progression-switch-btn" class="btn btn-primary" data-i18n="progressionSwitchBtn">Ver Soma Geral</button>
+        </div>
+
+        <article class="card chart-card" id="progression-chart-card">
+          <h3 data-i18n="progressionChartTitle">Trajetória no Ranking (1º ao Último Quiz)</h3>
+          <p class="chart-subtitle" data-i18n="progressionChartSub">Quanto mais alto na linha, melhor a colocação (#1 no topo)</p>
+          <div id="chart-ranking-progression" class="chart-host"></div>
+        </article>
+
+        <div class="section-header" id="progression-table-header">
+          <div>
+            <h3 data-i18n="progressionTableTitle">Tabela de Colocações por Quiz</h3>
+            <p class="section-desc" id="progression-count-desc">--</p>
+          </div>
+          <label class="search-box" for="progression-search">
+            <span class="sr-only" data-i18n="searchSrOnly">Buscar aluno</span>
+            <input
+              type="search"
+              id="progression-search"
+              class="search-input"
+              placeholder="Filtrar candidato..."
+              data-i18n-placeholder="progressionSearchPlaceholder"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div class="card table-card" id="progression-table-card">
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr id="progression-thead-row"></tr>
+              </thead>
+              <tbody id="progression-tbody"></tbody>
+            </table>
+          </div>
         </div>
       </section>
     </section>
