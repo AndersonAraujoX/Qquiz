@@ -1,0 +1,3171 @@
+{
+  "filename": "QuantumOptimizationandErrorCorrection-2026-11-26.xlsx",
+  "details": {
+    "game_started_on": "Thu 26 Nov 2026,11:31 AM",
+    "game_ended_on": "Thu 26 Nov 2026,11:52 AM",
+    "game_type": "Instructor-paced quiz",
+    "reported_participants": 22,
+    "total_attempts": 34,
+    "class_accuracy_percent": 54.0
+  },
+  "participants": [
+    {
+      "sheet_rank": 1,
+      "first_name": "ArtKenzo",
+      "last_name": "",
+      "player_name": "ArtKenzo",
+      "attempted_questions": 13,
+      "accuracy_percent": 100.0,
+      "score": 10930,
+      "correct": 13,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 300.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 13,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "ArtKenzo",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 2,
+      "first_name": "Guillermo",
+      "last_name": "E",
+      "player_name": "Guillermo E",
+      "attempted_questions": 13,
+      "accuracy_percent": 92.0,
+      "score": 10610,
+      "correct": 12,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 227.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 12,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Diagonal projection operators that require no two-qubit entangling gates."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Guillermo E",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 3,
+      "first_name": "davi",
+      "last_name": "j",
+      "player_name": "davi j",
+      "attempted_questions": 13,
+      "accuracy_percent": 92.0,
+      "score": 10430,
+      "correct": 12,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 1,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 252.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 12,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "davi j",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 4,
+      "first_name": "Leopoldo",
+      "last_name": "Agorio",
+      "player_name": "Huang’s lover #3",
+      "attempted_questions": 13,
+      "accuracy_percent": 85.0,
+      "score": 9020,
+      "correct": 11,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 370.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 11,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Quantum annealers can only represent linear local fields and cannot implement quadratic couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Leopoldo Agorio",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 5,
+      "first_name": "Evandro",
+      "last_name": "Chagas Ribeiro da Rosa",
+      "player_name": "Evandro Chagas Ribeiro da Rosa",
+      "attempted_questions": 13,
+      "accuracy_percent": 85.0,
+      "score": 8730,
+      "correct": 11,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 434.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 11,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on exactly the same qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Evandro Chagas Ribeiro da Rosa",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 6,
+      "first_name": "Yamill",
+      "last_name": "Hernandez",
+      "player_name": "Yamill H",
+      "attempted_questions": 13,
+      "accuracy_percent": 77.0,
+      "score": 9080,
+      "correct": 10,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 213.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 10,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It replaces two-qubit gates with mid-circuit measurements and teleportation-based operations, repeating the procedure until the system reaches a low-energy state."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code expansion: place both repetition codes side by side and measure them independently."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Yamill Hernandez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 7,
+      "first_name": "Lucas",
+      "last_name": "R",
+      "player_name": "José Souza",
+      "attempted_questions": 13,
+      "accuracy_percent": 77.0,
+      "score": 7410,
+      "correct": 10,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 445.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 10,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Lucas R",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 8,
+      "first_name": "Diego",
+      "last_name": "hurtado",
+      "player_name": "Diego hurtado",
+      "attempted_questions": 13,
+      "accuracy_percent": 69.0,
+      "score": 8000,
+      "correct": 9,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 234.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 9,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Diego hurtado",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 9,
+      "first_name": "Leandro",
+      "last_name": "Matheus Morais da Silva",
+      "player_name": "ChatGPT",
+      "attempted_questions": 13,
+      "accuracy_percent": 69.0,
+      "score": 7060,
+      "correct": 9,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 381.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 9,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Higher-order terms necessarily close the spectral gap, preventing successful ground-state preparation."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Leandro Matheus Morais da Silva",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 10,
+      "first_name": "Diego",
+      "last_name": "QUINFOG",
+      "player_name": "Benito Camela",
+      "attempted_questions": 13,
+      "accuracy_percent": 69.0,
+      "score": 6830,
+      "correct": 9,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 486.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 9,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It replaces the Ising problem Hamiltonian with a commuting mixer, such as the XY mixer, so the spectral gap stays constant throughout the whole evolution."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Diego QUINFOG",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 11,
+      "first_name": "Ronaldo",
+      "last_name": "N. A.",
+      "player_name": "Ronaldo",
+      "attempted_questions": 12,
+      "accuracy_percent": 62.0,
+      "score": 6660,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 301.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 8,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It replaces the Ising problem Hamiltonian with a commuting mixer, such as the XY mixer, so the spectral gap stays constant throughout the whole evolution."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Ronaldo N. A.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 12,
+      "first_name": "Natasha",
+      "last_name": "Fonseca",
+      "player_name": "Jensen Huang",
+      "attempted_questions": 13,
+      "accuracy_percent": 62.0,
+      "score": 6270,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 384.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 8,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It replaces two-qubit gates with mid-circuit measurements and teleportation-based operations, repeating the procedure until the system reaches a low-energy state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Because physical qubits cannot be measured while they are entangled."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Natasha Fonseca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 13,
+      "first_name": "Moisés",
+      "last_name": "Chávez Huerta",
+      "player_name": "Moisés Chávez Huerta",
+      "attempted_questions": 13,
+      "accuracy_percent": 62.0,
+      "score": 6530,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 406.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 8,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Diagonal projection operators that require no two-qubit entangling gates."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It trains a classical neural network between DCQO runs to predict improved Trotter angles and generate the circuit used in the next iteration."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "When the physical error rate is greater than the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Moisés Chávez Huerta",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 14,
+      "first_name": "Andreitsy",
+      "last_name": "",
+      "player_name": "Andreitsy",
+      "attempted_questions": 12,
+      "accuracy_percent": 62.0,
+      "score": 6090,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 4,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 453.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 8,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "incorrect",
+          "response": "Determine the unknown rotation angle and apply its inverse."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "No additional procedure is needed because syndrome measurements are always error-free."
+        }
+      ],
+      "display_name": "Andreitsy",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 15,
+      "first_name": "Angela",
+      "last_name": "Rivas",
+      "player_name": "Angela Rivas",
+      "attempted_questions": 13,
+      "accuracy_percent": 62.0,
+      "score": 6030,
+      "correct": 8,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 495.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 8,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By applying quantum phase estimation to the measured classical bits."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Higher-order terms necessarily close the spectral gap, preventing successful ground-state preparation."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code switching: alternate between the two repetition codes during error correction."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Angela Rivas",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 16,
+      "first_name": "Lyiah",
+      "last_name": "",
+      "player_name": "Lyiah",
+      "attempted_questions": 7,
+      "accuracy_percent": 54.0,
+      "score": 6010,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "ungraded": 0,
+      "unattempted": 6,
+      "total_time_seconds": 143.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 9,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 10,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 11,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 12,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 13,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Lyiah",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 17,
+      "first_name": "Kevin",
+      "last_name": "Martínez",
+      "player_name": "Kevin Martínez",
+      "attempted_questions": 13,
+      "accuracy_percent": 54.0,
+      "score": 6450,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 162.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Exclusively longitudinal three-body operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Kevin Martínez",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 18,
+      "first_name": "Dusan",
+      "last_name": "Cvetkovic",
+      "player_name": "Dusan Cvetkovic",
+      "attempted_questions": 13,
+      "accuracy_percent": 54.0,
+      "score": 6230,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 213.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Quantum annealers can only represent linear local fields and cannot implement quadratic couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "incorrect",
+          "response": "Measure the logical state directly to identify the physical error."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Dusan Cvetkovic",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 19,
+      "first_name": "María",
+      "last_name": "P.",
+      "player_name": "María P.",
+      "attempted_questions": 12,
+      "accuracy_percent": 54.0,
+      "score": 6020,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 263.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code expansion: place both repetition codes side by side and measure them independently."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "María P.",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 20,
+      "first_name": "Ernesto",
+      "last_name": "Lana",
+      "player_name": "Ernesto Lana",
+      "attempted_questions": 13,
+      "accuracy_percent": 54.0,
+      "score": 5760,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 348.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It trains a classical neural network between DCQO runs to predict improved Trotter angles and generate the circuit used in the next iteration."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By applying quantum phase estimation to the measured classical bits."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must have the same number of Pauli operators."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Ernesto Lana",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 21,
+      "first_name": "Felipe",
+      "last_name": "Silveira Fagundes",
+      "player_name": "Felipe Silveira Fagundes",
+      "attempted_questions": 13,
+      "accuracy_percent": 54.0,
+      "score": 5690,
+      "correct": 7,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 423.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 7,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Gate-based processors automatically convert all multi-body terms into single-qubit rotations."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It replaces two-qubit gates with mid-circuit measurements and teleportation-based operations, repeating the procedure until the system reaches a low-energy state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Increase the number of data qubits involved in each stabilizer measurement."
+        }
+      ],
+      "display_name": "Felipe Silveira Fagundes",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 22,
+      "first_name": "Kevin",
+      "last_name": "Duran",
+      "player_name": "Kevin Duran",
+      "attempted_questions": 12,
+      "accuracy_percent": 46.0,
+      "score": 5080,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 6,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 304.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Exclusively longitudinal three-body operators."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 9,
+          "status": "incorrect",
+          "response": "Measure the logical state directly to identify the physical error."
+        },
+        {
+          "question_number": 10,
+          "status": "correct",
+          "response": "They must overlap on an even number of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Increase the number of data qubits involved in each stabilizer measurement."
+        }
+      ],
+      "display_name": "Kevin Duran",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 23,
+      "first_name": "Abel",
+      "last_name": "Alejos Cori",
+      "player_name": "Abel Alejos",
+      "attempted_questions": 11,
+      "accuracy_percent": 46.0,
+      "score": 4250,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 5,
+      "ungraded": 0,
+      "unattempted": 2,
+      "total_time_seconds": 440.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Abel Alejos Cori",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 24,
+      "first_name": "Nathália",
+      "last_name": "Ferino",
+      "player_name": "Nathália Ferino",
+      "attempted_questions": 13,
+      "accuracy_percent": 46.0,
+      "score": 4030,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 561.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Exclusively longitudinal three-body operators."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must have the same number of Pauli operators."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code expansion: place both repetition codes side by side and measure them independently."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "When the physical error rate is greater than the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Nathália Ferino",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 25,
+      "first_name": "Pedro",
+      "last_name": "",
+      "player_name": "Pedro",
+      "attempted_questions": 13,
+      "accuracy_percent": 46.0,
+      "score": 3860,
+      "correct": 6,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 675.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 6,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "incorrect",
+          "response": "Prevent any unwanted rotation from occurring on physical qubits."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must have the same number of Pauli operators."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "Pedro",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 26,
+      "first_name": "Franquinho",
+      "last_name": "Borgarello",
+      "player_name": "Larry Capija",
+      "attempted_questions": 13,
+      "accuracy_percent": 38.0,
+      "score": 4210,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 8,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 300.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By applying quantum phase estimation to the measured classical bits."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Higher-order terms necessarily close the spectral gap, preventing successful ground-state preparation."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Because physical qubits cannot be measured while they are entangled."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must have the same number of Pauli operators."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code expansion: place both repetition codes side by side and measure them independently."
+        },
+        {
+          "question_number": 12,
+          "status": "correct",
+          "response": "When the physical error rate is below the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Franquinho Borgarello",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 27,
+      "first_name": "José",
+      "last_name": "Libois",
+      "player_name": "José Libois",
+      "attempted_questions": 13,
+      "accuracy_percent": 38.0,
+      "score": 4110,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 8,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 382.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Quantum annealers can only represent linear local fields and cannot implement quadratic couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It physically cools the qubits below mid-circuit using ancillary reset gates."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It trains a classical neural network between DCQO runs to predict improved Trotter angles and generate the circuit used in the next iteration."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "José Libois",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 28,
+      "first_name": "João",
+      "last_name": "Dias",
+      "player_name": "João Dias",
+      "attempted_questions": 12,
+      "accuracy_percent": 38.0,
+      "score": 3250,
+      "correct": 5,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 7,
+      "ungraded": 0,
+      "unattempted": 1,
+      "total_time_seconds": 574.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 5,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Diagonal projection operators that require no two-qubit entangling gates."
+        },
+        {
+          "question_number": 4,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms automatically remove measurement errors from the final quantum state."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code switching: alternate between the two repetition codes during error correction."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "When the physical error rate is greater than the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "João Dias",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 29,
+      "first_name": "S.",
+      "last_name": "Sabari",
+      "player_name": "S. Sabari",
+      "attempted_questions": 13,
+      "accuracy_percent": 23.0,
+      "score": 2930,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 10,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 90.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It replaces the Ising problem Hamiltonian with a commuting mixer, such as the XY mixer, so the spectral gap stays constant throughout the whole evolution."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Exclusively longitudinal three-body operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It trains a classical neural network between DCQO runs to predict improved Trotter angles and generate the circuit used in the next iteration."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By performing complete quantum state tomography on the measured register."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Because measuring each physical qubit always produces the same outcome."
+        },
+        {
+          "question_number": 8,
+          "status": "correct",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "correct",
+          "response": "Code concatenation: encode the physical qubits of one code using the other code."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "S. Sabari",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 30,
+      "first_name": "Sebastian",
+      "last_name": "",
+      "player_name": "Sebastian",
+      "attempted_questions": 6,
+      "accuracy_percent": 23.0,
+      "score": 2300,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "ungraded": 0,
+      "unattempted": 7,
+      "total_time_seconds": 194.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "correct",
+          "response": "It avoids order-reduction (quadratization), which typically requires auxiliary binary variables and penalty couplings."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It replaces the Ising problem Hamiltonian with a commuting mixer, such as the XY mixer, so the spectral gap stays constant throughout the whole evolution."
+        },
+        {
+          "question_number": 3,
+          "status": "correct",
+          "response": "Pauli strings containing one operator, specifically single-qubit terms and two-qubit interactions."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By applying quantum phase estimation to the measured classical bits."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 8,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 9,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 10,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 11,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 12,
+          "status": "unattempted",
+          "response": ""
+        },
+        {
+          "question_number": 13,
+          "status": "unattempted",
+          "response": ""
+        }
+      ],
+      "display_name": "Sebastian",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 31,
+      "first_name": "José",
+      "last_name": "Fernández",
+      "player_name": "José Fernández",
+      "attempted_questions": 13,
+      "accuracy_percent": 23.0,
+      "score": 2570,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 10,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 324.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome on Windows",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By evaluating commutators between Pauli-X and Pauli-Z operators."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms automatically remove measurement errors from the final quantum state."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must have the same number of Pauli operators."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code superposition: prepare a superposition of the logical states of both codes."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "José Fernández",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 32,
+      "first_name": "Emily",
+      "last_name": "Escudero",
+      "player_name": "Emily franco",
+      "attempted_questions": 13,
+      "accuracy_percent": 23.0,
+      "score": 2120,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 10,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 412.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "Gate-based processors automatically convert all multi-body terms into single-qubit rotations."
+        },
+        {
+          "question_number": 2,
+          "status": "correct",
+          "response": "It adds an auxiliary velocity-dependent term to the Hamiltonian that actively suppresses nonadiabatic transitions during fast evolutions."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "correct",
+          "response": "It measures after each short DCQO run and uses the results to update longitudinal bias fields in the next iteration’s initial Hamiltonian."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By applying quantum phase estimation to the measured classical bits."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms exactly eliminate all nonadiabatic transitions, regardless of the evolution time."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Because syndrome measurements eliminate all physical errors automatically."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code switching: alternate between the two repetition codes during error correction."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "Whenever more physical qubits are added, independently of the noise level."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "Apply a correction to the ancilla qubits whenever a nontrivial syndrome is measured."
+        }
+      ],
+      "display_name": "Emily Escudero",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 33,
+      "first_name": "GABRIEL",
+      "last_name": "Baca",
+      "player_name": "GABRIEL",
+      "attempted_questions": 13,
+      "accuracy_percent": 23.0,
+      "score": 2140,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 10,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 521.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It replaces the Ising problem Hamiltonian with a commuting mixer, such as the XY mixer, so the spectral gap stays constant throughout the whole evolution."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It applies Quantum Phase Estimation after each Trotter step to project out excited states and progressively guide the system toward its ground state."
+        },
+        {
+          "question_number": 5,
+          "status": "incorrect",
+          "response": "By performing complete quantum state tomography on the measured register."
+        },
+        {
+          "question_number": 6,
+          "status": "correct",
+          "response": "Higher-order terms generally require deeper circuits, increasing the effects of hardware noise."
+        },
+        {
+          "question_number": 7,
+          "status": "incorrect",
+          "response": "Because physical qubits cannot be measured while they are entangled."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on completely disjoint sets of qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code switching: alternate between the two repetition codes during error correction."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "When the physical error rate is greater than the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "correct",
+          "response": "Repeat syndrome extraction for rounds, where is the code distance."
+        }
+      ],
+      "display_name": "GABRIEL Baca",
+      "is_active": true
+    },
+    {
+      "sheet_rank": 34,
+      "first_name": "Carlos",
+      "last_name": "Sumire",
+      "player_name": "Carlos Sumire",
+      "attempted_questions": 13,
+      "accuracy_percent": 23.0,
+      "score": 2080,
+      "correct": 3,
+      "yet_to_be_graded": 0,
+      "partially_correct": 0,
+      "incorrect": 10,
+      "ungraded": 0,
+      "unattempted": 0,
+      "total_time_seconds": 560.0,
+      "started_at": "Thu 26 Nov 2026,11:31 AM",
+      "device_info": "Chrome Mobile on Android",
+      "points": 3,
+      "total_points": 13,
+      "question_answers": [
+        {
+          "question_number": 1,
+          "status": "incorrect",
+          "response": "HUBO problems become convex on gate-based processors, guaranteeing exact solutions in polynomial time."
+        },
+        {
+          "question_number": 2,
+          "status": "incorrect",
+          "response": "It pauses the schedule so hardware decoherence can thermally relax the system."
+        },
+        {
+          "question_number": 3,
+          "status": "incorrect",
+          "response": "Purely transverse two-body mixer operators."
+        },
+        {
+          "question_number": 4,
+          "status": "incorrect",
+          "response": "It trains a classical neural network between DCQO runs to predict improved Trotter angles and generate the circuit used in the next iteration."
+        },
+        {
+          "question_number": 5,
+          "status": "correct",
+          "response": "By substituting its Z eigenvalues into the Hamiltonian’s energy expression."
+        },
+        {
+          "question_number": 6,
+          "status": "incorrect",
+          "response": "Lower-order terms automatically remove measurement errors from the final quantum state."
+        },
+        {
+          "question_number": 7,
+          "status": "correct",
+          "response": "Because syndromes reveal information about errors without revealing the encoded logical information."
+        },
+        {
+          "question_number": 8,
+          "status": "incorrect",
+          "response": "and ."
+        },
+        {
+          "question_number": 9,
+          "status": "correct",
+          "response": "Use a syndrome measurement to project the error into either or ."
+        },
+        {
+          "question_number": 10,
+          "status": "incorrect",
+          "response": "They must act on exactly the same qubits."
+        },
+        {
+          "question_number": 11,
+          "status": "incorrect",
+          "response": "Code switching: alternate between the two repetition codes during error correction."
+        },
+        {
+          "question_number": 12,
+          "status": "incorrect",
+          "response": "When the physical error rate is greater than the error-correction threshold."
+        },
+        {
+          "question_number": 13,
+          "status": "incorrect",
+          "response": "No additional procedure is needed because syndrome measurements are always error-free."
+        }
+      ],
+      "display_name": "Carlos Sumire",
+      "is_active": true
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "question_text": "Many problems naturally contain higher-order -body interactions (HUBO) rather than just quadratic ones (QUBO). What is a primary advantage of tackling HUBO problems natively on a digital gate-based processor compared to a standard 2-local quantum annealer?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 46.0,
+      "average_time_seconds": 34.0,
+      "correct_count": 16,
+      "incorrect_count": 18,
+      "unattempted_count": 1
+    },
+    {
+      "number": 2,
+      "question_text": "In Adiabatic Quantum Optimization (AQO), evolving too rapidly across a small minimum spectral gap induces nonadiabatic transitions out of the ground state. How does Counterdiabatic (CD) driving address this limitation?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 77.0,
+      "average_time_seconds": 29.0,
+      "correct_count": 27,
+      "incorrect_count": 7,
+      "unattempted_count": 1
+    },
+    {
+      "number": 3,
+      "question_text": "Suppose your adiabatic Hamiltonian combines a standard transverse-field mixer with an Ising problem Hamiltonian containing both longitudinal fields and pairwise interactions . When approximating the adiabatic gauge potential through the first-order expression , which Pauli operators appear?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 57.0,
+      "average_time_seconds": 34.0,
+      "correct_count": 20,
+      "incorrect_count": 14,
+      "unattempted_count": 1
+    },
+    {
+      "number": 4,
+      "question_text": "Variational quantum algorithms such as QAOA can face trainability challenges, including barren plateaus in certain regimes, and substantial measurement overhead from classical parameter optimization. How does Bias-Field DCQO (BF-DCQO) iteratively steer the dynamics toward the ground state without variational parameter training?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 40.0,
+      "average_time_seconds": 32.0,
+      "correct_count": 14,
+      "incorrect_count": 15,
+      "unattempted_count": 6
+    },
+    {
+      "number": 5,
+      "question_text": "For an Ising problem Hamiltonian containing only Pauli-Z products, how can the energy of a measured computational-basis state be calculated?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 51.0,
+      "average_time_seconds": 28.0,
+      "correct_count": 18,
+      "incorrect_count": 16,
+      "unattempted_count": 1
+    },
+    {
+      "number": 6,
+      "question_text": "Increasing the order of the nested-commutator expansion can improve the approximation of the adiabatic gauge potential. Why might a lower-order approximation still be preferable on noisy hardware?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 60.0,
+      "average_time_seconds": 31.0,
+      "correct_count": 21,
+      "incorrect_count": 13,
+      "unattempted_count": 1
+    },
+    {
+      "number": 7,
+      "question_text": "Why does quantum error correction measure error syndromes instead of directly measuring the physical qubits storing an encoded quantum state?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 77.0,
+      "average_time_seconds": 25.0,
+      "correct_count": 27,
+      "incorrect_count": 5,
+      "unattempted_count": 3
+    },
+    {
+      "number": 8,
+      "question_text": "Consider the three-qubit repetition code with logical states and . Which pair of stabilizers can be measured to detect and identify single-qubit bit-flip errors?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 34.0,
+      "average_time_seconds": 25.0,
+      "correct_count": 12,
+      "incorrect_count": 19,
+      "unattempted_count": 4
+    },
+    {
+      "number": 9,
+      "question_text": "A physical qubit in a bit-flip repetition code undergoes an unwanted rotation around the axis. How can quantum error correction correct this error, even if the rotation angle is unknown?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 80.0,
+      "average_time_seconds": 26.0,
+      "correct_count": 28,
+      "incorrect_count": 4,
+      "unattempted_count": 3
+    },
+    {
+      "number": 10,
+      "question_text": "In a CSS quantum error-correcting code, an -type stabilizer and a -type stabilizer must commute. What condition ensures that they commute?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 23.0,
+      "average_time_seconds": 28.0,
+      "correct_count": 8,
+      "incorrect_count": 24,
+      "unattempted_count": 3
+    },
+    {
+      "number": 11,
+      "question_text": "Which technique is used to combine the bit-flip and phase-flip repetition codes into the nine-qubit Shor code?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 49.0,
+      "average_time_seconds": 31.0,
+      "correct_count": 17,
+      "incorrect_count": 15,
+      "unattempted_count": 3
+    },
+    {
+      "number": 12,
+      "question_text": "Under which condition can increasing the code distance systematically suppress the logical error rate as the code becomes larger?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 60.0,
+      "average_time_seconds": 30.0,
+      "correct_count": 21,
+      "incorrect_count": 11,
+      "unattempted_count": 3
+    },
+    {
+      "number": 13,
+      "question_text": "How can we protect quantum error correction against syndrome measurement errors as the code distance increases?",
+      "question_type": "Multiple Choice",
+      "accuracy_percent": 46.0,
+      "average_time_seconds": 24.0,
+      "correct_count": 16,
+      "incorrect_count": 16,
+      "unattempted_count": 3
+    }
+  ]
+}

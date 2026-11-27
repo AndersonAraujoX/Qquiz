@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:17:05.599403+00:00",
+  "generated_at": "2026-11-27T00:40:38.380681+00:00",
   "datasets": [
     {
       "filename": "Monday23-11-2026-11-24T13_47_06_240926-d69ebf.xlsx",
@@ -21,6 +21,13 @@
       "title": "QuantumComputingSchool-2026-11-16",
       "total_attempts": 73,
       "active_participants": 67
+    },
+    {
+      "filename": "QuantumOptimizationandErrorCorrection-2026-11-26.xlsx",
+      "data_file": "QuantumOptimizationandErrorCorrection-2026-11-26.json",
+      "title": "QuantumOptimizationandErrorCorrection-2026-11-26",
+      "total_attempts": 34,
+      "active_participants": 34
     },
     {
       "filename": "Quantumcomputignschool2ndday-2026-11-18.xlsx",
